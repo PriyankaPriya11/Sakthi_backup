@@ -1,0 +1,25 @@
+-Arabic version: <JUNE 5, 2020>
+
+- Reduce the header length in Arabic. Make it match the english one. 
+
+-Indent the button on the consent bar a bit left on desktop. Same padding as in English version.
+AND, put the button on the bottem like the english one on mobile.
+
+. Percent Change: (Still ugly)(Just make it look as the english percent change)
+- Stretch the result output box on desktop and mobile.
+
+. Discount Calculator:   ---> 
+4th: Match output box on mobile AND remove excess grey spaces. (Still)
+*Go through all the discount boxes bc there're alot of grey spaces. 
+
+. Loan Calculator:
+- Input the new paragraph with its hyperlinks. Put it before the last paragraph. 
+check link highlighted in yellow https://docs.google.com/document/d/1uDPMo7eCjsLFl9mX8NcainwBNJVMo66AKtTpVGHw0Kw/edit?usp=sharing 
+
+***Little gaps in the homepage boxes: 
+- Now make more padding between any text and box.
+- Also, Small "%" signs on the 2nd, 4th boxes on DESKTOP. (Still)
+
+#############################################################################
+-----------------------------------------------------------------------------
+

@@ -1,0 +1,115 @@
+.overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one { display: inline-flex; cursor: pointer; padding: 15px 10px 15px 38px; background: transparent; box-shadow: none; border:1px solid #fff; text-decoration: none; color: #fff; font-size:16px; border-radius: 45px; transition: all ease-out 0.3s; margin-top:30px; }
+.overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one .arrow { display: inline-block; background: url(../images/more-btn-arrow-white.png); background-repeat: no-repeat; background-size: 26px; background-position: 0px; margin-left: 10px; width: 48px; min-height: 16px; transition: all ease-out 0.3s; }
+
+.cc-innerpage-banner .overlay-section.opacity0 .container .banner-content { width: 40%; }
+.cc-innerpage-banner .overlay-section.opacity0 .container .banner-content-right { width: 60%; text-align: right; }
+
+.text-center{text-align:center;}
+.text-left{text-align:left;}
+
+
+/* ecommerce style start */
+#ecommerce .banner-section .overlay-section.opacity0 {background: rgba(0, 0, 0, 0.60);position: relative;}
+#ecommerce .banner-content .text-two::before { background: rgba(83,224,208,1); background: -moz-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); background: -webkit-gradient(left top, right top, color-stop(0%, rgba(83,224,208,1)), color-stop(100%, rgba(0,154,250,1))); background: -webkit-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); background: -o-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); background: -ms-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); background: linear-gradient(to right, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53e0d0', endColorstr='#009afa', GradientType=1 ); }
+#ecommerce .overlay-section.opacity0 .container .banner-content-right img {top: 0;}
+.cc-ecommerce-development .cc-row {align-items: center;}
+#ecommerce .parallax-overlay-casestudy {background-size: cover; background-color: #f6f9fc;}
+.cc-ecommerce-development {background-image: url('../images/dots-map.png');background-size:contain;background-repeat: no-repeat; padding: 90px 0px; }
+.cc-ecommerce-development .cc-row {align-items: center;}
+.apptech-box-wrapper {position: relative;margin-bottom: 220px;}
+.dark-blue-bg.apptech-box {background: #009bfa;position:absolute;top: 90%;left: 0;}
+.cc-what-we-provide {margin-bottom: 35px;}
+.cc-what-we-provide .cc-icon-list-wrapper { display: flex ;flex-wrap: wrap; }
+.cc-what-we-provide .cc-icon-list-wrapper .cc-icon-wrapper  { text-align: center; width: 33.33%;flex-basis: 33.33%;margin: 30px 0px; }
+.cc-what-we-provide .cc-icon-list-wrapper .cc-icon-wrapper h4 { margin-top: 20px; }
+.cc-list-block .cc-content-box {height:100%;}
+.cc-list-block .content-block .content-block-title h3 {color: #fff;}
+.cc-list-block .content-block .content-block-sub-title h5 {color: #fff;}
+.cc-list-block .small-title-line {background: #fff;}
+.cc-what-we-provide .cc-list-wrapper {margin-top: 30px;}
+.cc-what-we-provide .cc-list-wrapper ul {padding-left: 30px;}
+.cc-what-we-provide .cc-list-wrapper li { list-style-type:none;font-size: 16px;font-family: "poppins";margin: 18px 0px; list-style-image: url(../images/cart-list-icon.png) ; } 
+.cc-what-we-provide .content-block { padding: 40px 20px 20px 54px;background: #009bfa;color: #fff;width: 90%;height: 100%;margin: 0px 0px 0px auto; background-image: url('../images/shopping-cart-bg.png') ; background-repeat: no-repeat; background-position: bottom right; }
+.cc-how-we-work { padding: 70px 0px 45px 0px;margin-top: 100px; background: rgba(83,224,208,1); background: -moz-linear-gradient(right, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); background: -webkit-gradient(right top, left top, color-stop(0%, rgba(83,224,208,1)), color-stop(100%, rgba(0,154,250,1))); background: -webkit-linear-gradient(right, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); background: -o-linear-gradient(right, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); background: -ms-linear-gradient(right, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); background: linear-gradient(to left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53e0d0', endColorstr='#009afa', GradientType=1 ); color: #fff !important; }
+
+.cc-how-we-work .content-block .content-block-title h3 {color: #fff;}
+.cc-how-we-work .content-block .content-block-sub-title h5 {color: #fff;}
+.cc-how-we-work .content-block-sub-title .right-line.small-title-line {background-color: #fff;}
+
+.cc-how-we-work .cc-cont p {margin: 20px 0px;}
+
+.cc-white-box-wrapper {padding: 70px 0px;}
+.cc-white-box-wrapper {display: flex;justify-content: space-around;}
+.cc-white-box-wrapper .cc-white-box {text-align: center;padding: 30px 40px 35px 40px;background: #fff;border-radius: 5px;max-width: 150px;}
+.cc-white-box-wrapper .cc-white-box h3{color: #000;font-family: "poppins";font-size: 16px;font-weight: 500;margin-top: 5px;}
+
+.footer-case-study { background: url(../images/case-study-bg.png); background-repeat: no-repeat; background-position: top left; background-size: cover; display: inline-block; width: 100%; padding: 250px 0 50px 0; position: relative; }
+.parallax-overlay-casestudy{position:absolute;top:0px;left:0px;width:100%;height:100%;background:url(../images/case-study-parallax.png);background-repeat: no-repeat;background-position: top center;margin:100px 0;}
+
+.app-technology{padding:150px 0;background:url(../images/pencil-phone-left.png) no-repeat left 40px,url(../images/glass-right.png) no-repeat right 50%;	background-size:16%;}
+.apptech-txt h3{color:#009bfa;font-size:26px;text-align:left;font-weight: 500;padding:20% 0;position:relative;}
+.apptech-txt .small-title-line{display:inline-block;position:relative;top:-5px;width:60px;}
+.apptech-box{width:33%;box-sizing:border-box;padding:50px 20px;border-radius:5px;color:#fff;display:inline-block;margin:10px;text-align:center;min-height:210px;}
+.blue-bg{background:#53e0d0;}
+.violet-bg{background:#71105f;position:relative;top:100px;}
+.skyblue-bg{background:#009bfa;}
+.darkblue-bg{background:#00a3d3;position:relative;top:100px;}
+.apptech-box span{display:inline-block;width:100%;margin:5px 0;}
+
+/* ecommerce style start */
+
+@media only screen and (min-width:1400px)  {
+    .cc-white-box-wrapper .cc-white-box {min-width: 184px;}
+}
+
+@media only screen and (min-width:1024px) {
+	/*ecommerce*/
+	.cc-white-box-wrapper {background-image: url(../images/line-bg.png);background-repeat: no-repeat;background-position: center;}
+}
+
+
+
+
+@media only screen and (max-width:768px) {
+
+    #ecommerce .overlay-section.opacity0 .container .banner-content { box-sizing: border-box; padding: 10px; }
+    .cc-innerpage-banner .overlay-section.opacity0 .container .banner-content ,
+    .cc-innerpage-banner .overlay-section.opacity0 .container .banner-content-right { width: 100%;}
+
+    /**ecommerce**/
+	#ecommerce .banner-section {padding-top: 0 !important;}
+    #ecommerce .banner-section .overlay-section {padding-top: 90px;}
+    #ecommerce .cc-row {padding: 0px 10px;}
+    #ecommerce .banner-section .overlay-section .cc-row {flex-wrap:wrap;}
+    #ecommerce .banner-section .overlay-section .cc-row .banner-content , #ecommerce .banner-section .overlay-section .cc-row .banner-content-right {width: 100%;}
+    #ecommerce .banner-section {height: auto;position: relative;padding-top: 90px;}
+    #ecommerce .banner-section .overlay-section {position:relative;}
+    #ecommerce .overlay-section.opacity0 .container {top: 0%;transform: translateY(0%);display: inline-block;width: 100%;}
+    #ecommerce .overlay-section.opacity0 .container .banner-content {box-sizing: border-box;padding: 10px;}
+    #ecommerce .banner-content-right {margin-bottom: 20px;}
+    #ecommerce .footer-case-study {padding-top: 45px;}
+    #ecommerce .parallax-overlay-casestudy {margin: 0;}
+    #ecommerce .footer-contact {padding: 50px 0;}
+    #ecommerce .cc-col-55.casestudy-left {padding: 0;}
+    .parallax-overlay-casestudy .cc-col-45 {text-align: center;}
+    .cc-white-box-wrapper {flex-wrap: wrap;padding: 10px 0px;}
+    .cc-white-box-wrapper .cc-white-box {margin: 10px 0px}
+    .cc-white-box-wrapper .cc-white-box {max-width: 113px !important;padding: 25px !important;}
+    .cc-ecommerce-development {padding: 45px 0px; padding-bottom: 0px;}
+    .cc-what-we-provide .cc-icon-list-wrapper {justify-content: center;}
+    .cc-what-we-provide .content-block {width: 100%;padding:30px 10px;}
+    .cc-what-we-provide .cc-icon-list-wrapper .cc-icon-wrapper {margin: 20px;}
+    .cc-how-we-work{margin-top: 0;}
+    .apptech-box {width: 45%; margin: 12px 6px;}
+    #ecommerce .apptech-txt h3 {padding: 0;}
+	#ecommerce .dark-blue-bg.apptech-box{position:relative;top:0px;}
+    #ecommerce .violet-bg.apptech-box{top:0px;}
+    
+    .apptech-box-wrapper { margin-bottom: 0px; }
+}
+
+@media only screen and (min-width:320px) and (max-width:420px) { 
+
+    .cc-innerpage-banner .banner-section .overlay-section.opacity0 .text-one h3{ font-size: 14px; }
+    .cc-innerpage-banner .banner-section .overlay-section.opacity0 .text-two h2{ font-size: 28px; }   
+}

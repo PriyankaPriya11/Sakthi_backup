@@ -1,0 +1,99 @@
+.view {
+   width: 280px;
+   height: 190px;
+   margin: 10px;
+   float: left;
+   border: 5px solid #ddd;
+   overflow: hidden;
+   position: relative;
+   text-align: center;
+   -webkit-box-shadow: 1px 1px 2px #bbb;
+   -moz-box-shadow: 1px 1px 2px #bbb;
+   box-shadow: 1px 1px 2px #bbb;
+   cursor: default;
+   background: #fff;
+}
+.view .mask,.view .content {
+   width: 280px;
+   height: 190px;
+   position: absolute;
+   overflow: hidden;
+   top: 0;
+   left: 0;
+}
+.view img {
+   display: block;
+   position: relative;
+}
+.view h2 {
+   text-transform: uppercase;
+   color: #fff;
+   text-align: center;
+   position: relative;
+   font-size: 16px;
+   padding: 7px 10px;
+   background: rgba(0, 0, 0, 0.8);
+   margin: 20px 0 0 0;
+   text-shadow:0px 1px 1px #333;
+   font-family: 'open_sanssemibold';
+}
+.view p {
+   font-family: 'open_sansitalic';
+   font-size: 12px;
+   position: relative;
+   color: #fff;
+   padding: 5px 10px;
+   text-align: center;
+}
+.view a.info {
+   display: inline-block;
+   text-decoration: none;
+   background-color: #0bbff2;
+   color: #fff;
+   font-size:14px;
+   text-transform: uppercase;
+   border: none;
+	border-radius: 2px;
+	border-bottom: 3px solid;
+	border-bottom-color: #13b0e4;
+	padding: 0px 25px;
+}
+.view a.info:hover {
+   background-color: #13b0e4;
+   border-bottom-color: #0bbff2;
+}
+
+
+@media only screen and (min-width : 320px){
+	.view {margin: 10px 5px;}
+}
+@media only screen and (min-width : 360px){
+	.view {margin: 10px 20px;}
+}
+@media only screen and (min-width : 480px){
+	.view {margin: 10px 75px;}
+}
+
+@media only screen and (min-width : 640px){
+	.view {margin: 10px 10px;}
+}
+
+@media only screen and (min-width : 760px){
+	.view {margin: 10px 40px;}
+}
+
+@media only screen and (min-width : 800px){
+	.view {margin: 10px 50px;}
+}
+
+@media only screen and (min-width : 980px){
+	.view {margin: 10px 10px;}
+}
+
+@media only screen and (min-width : 1000px){
+	.view {margin: 10px 15px;}
+}
+@media only screen and (min-width : 1200px){
+	.view {margin: 10px 20px;}
+}
+

@@ -1,0 +1,136 @@
+.overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one { display: inline-flex; cursor: pointer; padding: 15px 10px 15px 38px; background: transparent; box-shadow: none; border:1px solid #fff; text-decoration: none; color: #fff; font-size:16px; border-radius: 45px; transition: all ease-out 0.3s; margin-top:30px; }
+.overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one .arrow { display: inline-block; background: url(../images/more-btn-arrow-white.png); background-repeat: no-repeat; background-size: 26px; background-position: 0px; margin-left: 10px; width: 48px; min-height: 16px; transition: all ease-out 0.3s; }
+
+.cc-innerpage-banner .overlay-section.opacity0 .container .banner-content { width: 40%; }
+.cc-innerpage-banner .overlay-section.opacity0 .container .banner-content-right { width: 60%; text-align: right; }
+
+
+
+.text-center{text-align:center;}
+.text-left{text-align:left;}
+
+
+
+/* megento style start */
+#megento .megento-expertise {background: url(../images/megento-expertise.png);background-repeat: no-repeat;background-size: contain;}
+#megento .overlay-section.opacity0 .container .banner-content-right img {top: -40px;;width: 95%;}
+#megento .content-block .content-block-title h3 {color: #53e0d0}
+#megento .cc-why-megento {background-image: url('../images/why-megento-banner.png') ;
+    background-size: contain;background-repeat: no-repeat;background-position: center center;
+    background-attachment: fixed;
+}
+.cc-why-megento {padding: 90px 0px;}
+#megento .content-block-contents p {width: 95%;}
+#megento .cc-why-megento .cc-row {align-items: center;}
+#megento .megento-expertise {padding: 90px 0px;background-color: #f4f8fb;}
+#megento .megento-expertise .block-titles {max-width: 960px ;}
+.cc-block-content.megento-title-blocks {max-width: 1060px;margin: 0px auto;}
+.megento-title-blocks h3 { font-size: 20px; font-family: "Poppins"; color: rgb(255, 255, 255);line-height: 1.3;text-align: center;font-weight: normal;margin-top: 17px;}
+.white-box.box h3 {color: #009bfa;}
+#megento .megento-icons {height: 70px; width: 70px;margin:0px auto;background-repeat: no-repeat;background-size: contain;background-position: center center;}
+#megento .megento-title-blocks .two-iconbox {display: flex;min-width: 500px;}
+#megento .megento-title-blocks .two-iconbox .box {max-width: 250px;min-width: 250px;padding: 80px 0px;}
+.megento-title-blocks .cc-col-53 .white-box.box {padding: 80px 0px;}
+.megento-title-blocks .white-box {background: #fff;}
+.white-box.box.mv h3 {color:#fff;}
+.megento-title-blocks .blue-box {
+    background: rgba(83,224,208,1);
+    background: -moz-linear-gradient(right, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: -webkit-gradient(right top, left top, color-stop(0%, rgba(83,224,208,1)), color-stop(100%, rgba(0,154,250,1)));
+    background: -webkit-linear-gradient(right, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: -o-linear-gradient(right, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: -ms-linear-gradient(right, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: linear-gradient(to left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53e0d0', endColorstr='#009afa', GradientType=1 );
+}
+#megento .megento-icons.td {background-image: url('../images/seoimage/megento-them-design.png')} 
+#megento .megento-icons.cs {background-image: url('../images/seoimage/m-customize-service.png')} 
+#megento .megento-icons.mvg {background-image: url('../images/seoimage/m-version-migration.png');background-size:cover;background-repeat: no-repeat;background-position: center;} 
+#megento .white-box.box.mv {background-image: url('../images/megento-version-migration.jpg')}
+
+#megento .cc-megento-why-askan {background-image: url(../images/phone-earphone-bg.png);background-repeat: no-repeat;background-size: contain;background-position: center;}
+#megento .whylist-title {color: #e5e4e4;font-size: 50px;}
+#megento .whylist-title span {color: #009bfa}
+#megento .whylist-p {padding-left: 60px;}
+#megento .cc-megento-why-askan .cc-row {align-items: center;}
+#megento .cc-megento-why-askan .cc-col-50.cc-img{text-align: center;}
+#megento .cc-megento-why-askan .cc-col-50.cc-img img {width: 80%}
+
+
+
+.whylist{padding:50px 20px;display:inline-block;box-sizing:border-box;}
+.whylist-title{font-family: 'Bernard MT Condensed';font-size:42px;color:#009bfa;}
+.whylist-title span{display:inline-block;font-size:22px;font-family: 'Poppins';}
+.whylist-p{font-size:16px;margin:5px 0 25px 0;box-sizing:border-box;padding-left:45px;}
+
+.footer-case-study{background:url(../images/case-study-bg.png);background-repeat: no-repeat;background-position: top left;background-size:cover;display:inline-block;width:100%;padding:250px 0 50px 0;position:relative;}
+.parallax-overlay-casestudy{position:absolute;top:0px;left:0px;width:100%;height:100%;background:url(../images/case-study-parallax.png);background-repeat: no-repeat;background-position: top center;margin:100px 0;}
+.casestudy-left{padding:100px 0;}
+.casestudy-left .casestudy-testimonial{width:90%;float:left;}
+.casestudy-left .casestudy-testimonial .case-study-title{font-size:15px;color:#000;position:relative;font-weight:600;display:inline-block;width:100%;margin-bottom:25px;}
+.casestudy-left .casestudy-testimonial .case-study-title:after{content: "";  display: block;  height: 3px;  width: 70px;  background: rgba(83,224,208,1);  background: -moz-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(83,224,208,1)), color-stop(100%, rgba(0,154,250,1))); background: -webkit-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: -o-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); background: -ms-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: linear-gradient(to right, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53e0d0', endColorstr='#009afa', GradientType=1 );
+    position: absolute; left: 120px; top:5px;}
+.casestudy-left .casestudy-testimonial h3{color:#53e0d0;font-size:36px;margin-bottom:25px;line-height:38px;}
+.casestudy-left .casestudy-testimonial p{font-size:18px;line-height:32px;margin-bottom:25px;}
+.casestudy-left .casestudy-testimonial p.author{color:#53e0d0;font-size:16px;font-weight:normal;}
+.casestudy-left .casestudy-testimonial p.author span{color:#000;font-size:16px;}
+.footer-case-study .container{position:relative;}
+
+
+/* megento style end */
+
+
+@media only screen and (max-width:768px) {
+
+    #megento .cc-row { padding: 0px 10px; }
+
+
+    .cc-innerpage-banner .overlay-section.opacity0 .container .banner-content ,
+    .cc-innerpage-banner .overlay-section.opacity0 .container .banner-content-right { width: 100%; }
+
+    .overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one { padding: 15px 10px 15px 25px; }
+
+    /**magento**/	
+	 #megento .cc-row {padding: 0px 10px;}
+     #megento .banner-section .overlay-section .cc-row {flex-wrap:wrap;}
+     #megento .banner-section .overlay-section .cc-row .banner-content , #megento .banner-section .overlay-section .cc-row .banner-content-right {width: 100%;}
+     #megento .banner-section {height: auto;position: relative;padding-top: 90px;}
+     /* #case-study .banner-section .image-section {height: auto;position: relative} */
+     #megento .banner-section .overlay-section {position:relative;}
+     #megento .overlay-section.opacity0 .container {top: 0%;transform: translateY(0%);display: inline-block;width: 100%;}
+     #megento .overlay-section.opacity0 .container .banner-content {box-sizing: border-box;padding: 10px;}
+     #megento .banner-content-right {margin-bottom: 20px;}
+     #megento .cc-why-megento {padding: 30px 0px;}
+     #megento .cc-why-megento .cc-col-50.cc-img-wrap {text-align: center;}
+     #megento .megento-title-blocks .two-iconbox {width: 100%;min-width: 100%;margin-bottom: 0;}
+     #megento .megento-title-blocks .two-iconbox .box , #megento .megento-title-blocks .two-iconbox .box {width: 50%;min-width: 50%;max-width: 50%;}
+     #megento .cc-block-content.megento-title-blocks .cc-col-53 {margin-bottom: 0;}
+     #megento .cc-block-content.megento-title-blocks .cc-row {margin-bottom: 30px;}
+ 
+     #megento .megento-expertise {padding: 45px 0px 25px 0px;}
+     #megento .cc-megento-why-askan .cc-mws-wrapper {padding: 45px 0px 0px 0px;}
+     #megento .cc-megento-why-askan .cc-col-50.cc-img img {width: 70%;}
+     #megento .whylist {padding: 10px 0px;}
+     #megento .whylist-p {padding-left: 10px;}
+     #megento .whylist-title {font-size:40px;}
+     #megento .whylist-title span {font-size: 18px;}
+ 
+     #megento .cc-web-security {margin-bottom: 0;}
+     #megento .footer-case-study {padding-top: 175px;}
+     #megento .parallax-overlay-casestudy {margin: 0;}
+     #megento .footer-contact {padding: 50px 0;}
+     #megento .cc-col-55.casestudy-left {padding: 0;}
+     .parallax-overlay-casestudy .cc-col-45 {text-align: center;}
+ 
+     #megento .cc-megento-why-askan .cc-mws-wrapper .cc-col-50:last-child {margin-bottom: 0px;}
+     .footer-case-study .cc-col-45 { text-align: center; }    
+
+}
+
+@media only screen and (max-width: 420px) and (min-width: 320px) {
+    .cc-innerpage-banner .banner-section .overlay-section.opacity0 .text-one h3 { font-size: 14px; }
+    .cc-innerpage-banner .banner-section .overlay-section.opacity0 .text-two h2 { font-size: 28px; }
+}

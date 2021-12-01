@@ -1,0 +1,80 @@
+.overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one { display: inline-flex; cursor: pointer; padding: 15px 10px 15px 38px; background: transparent; box-shadow: none; border:1px solid #fff; text-decoration: none; color: #fff; font-size:16px; border-radius: 45px; transition: all ease-out 0.3s; margin-top:30px; }
+.overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one .arrow { display: inline-block; background: url(../images/more-btn-arrow-white.png); background-repeat: no-repeat; background-size: 26px; background-position: 0px; margin-left: 10px; width: 48px; min-height: 16px; transition: all ease-out 0.3s; }
+
+.text-center{text-align:center;}
+.text-left{text-align:left;}
+
+.whyus-box{padding-right:30px;padding-left:25px;position:relative;}
+.whyus-box:after{content:'';position:absolute;top:0px;right:0px;height:100%;width:1px;border-right:1px solid #ddd;}
+.whyus-box:last-child:after{display:none;}
+.whyus-box img{margin-bottom:15px;}
+.whyus-box h3{color:#009bfa;text-transform:uppercase;line-height:28px;margin-bottom:15px;}
+.whyus-box p{font-size:15px;}
+
+/*cms development*/
+.page-template-cms-new .overlay-section.opacity0 .container .banner-content, .page-template-cms-new .overlay-section.opacity0 .container .banner-content-right{width:50%;}
+.page-template-cms-new .banner-section .overlay-section.opacity0 .text-two h2{font-size:46px;}
+.page-template-cms-new .overlay-section.opacity0 .container {transform: translateY(-20%);}
+.page-template-cms-new .overlay-section.opacity0 .container .banner-content-right{text-align:center;}
+.page-template-cms-new .overlay-section.opacity0 .container .banner-content-right img{top:0px;max-width:420px;}
+.page-template-cms-new .cms-developdiv{padding:100px 0;background:url(../images/cms-development-bg.png) no-repeat top left;background-size:100%;}
+.page-template-cms-new  .cms-developdiv .image-one img{position:relative;left:-50px;max-width:450px;top:80px;}
+.page-template-cms-new  .cms-service-development{padding-bottom:100px;}
+.page-template-cms-new .askancms-service .ourcms-service h3{padding:0% 10%;line-height:36px;font-size:30px;}
+.page-template-cms-new .askancms-service .ourcms-service h3 span{color:#1db3eb;}
+.page-template-cms-new .content-block-contents .why-cms-askan p{width:98%;}
+.page-template-cms-new .ourcms-service-div .content-block{display:table;height:100%;}
+.page-template-cms-new .ourcms-service-div .content-block .ourcms-service{display:table-row;}
+.page-template-cms-new .ourcms-service-div .content-block .ourcms-service h3{display:table-cell;vertical-align:middle;}
+.page-template-cms-new .technologies-div{padding:60px 0;background:#009bfa url(../images/smart-tech-bgcircle.png) no-repeat top left;background-size:100%;}
+.page-template-cms-new .technology-title{text-transform:uppercase;font-size:42px;color:#fff;line-height:48px;}
+.page-template-cms-new .technology-title span{color:#51ded1;}
+.page-template-cms-new .technologies-div ul{display:inline-block;margin:50px 0 25px 0;list-style:none;}
+.page-template-cms-new .technologies-div ul li{display:inline-block;padding:15px 45px;border-right:1px solid #fff;}
+.page-template-cms-new .technologies-div ul li:last-child{border-right:0px;}
+.tick-list{list-style:none;float:left;width:100%;margin:35px 0 15px 0;padding:0 0 0 20px;}
+.tick-list li{float:left;width:100%;position:relative;margin-bottom:25px;list-style:none;}
+.tick-list li:before{content: "\f00c";font-family: FontAwesome;display: inline-block;margin-left: -1.3em;width: 1.3em;padding-right:20px;color:#009bfa;}
+.page-template-cms-new .customer-choose{padding:80px 0;}
+.cms-process{background:#f6fafd;display:inline-block;width:100%;padding:125px 0 0 0;}
+.cms-process .block-titles .title h3{font-size:36px;margin-top:20px;margin-bottom:15px;display:inline-block;width:100%;}
+.cms-process .button-center{text-align:center;display:inline-block;width:100%;margin-top:35px;}
+.cms-process a.animated-button.thar-three:hover:before{z-index:0;}
+.cms-process a.animated-button.thar-three span{position:relative;}
+.page-template-cms-new .steps-div {display:inline-block;width:100%;}
+.page-template-cms-new .steps-div .number-span{display:inline-block;width:60px;height:60px;line-height:60px;background:#f6fafd;text-align:center;color:#c9c9c9;font-size:36px;font-family: 'Oswald';}
+.page-template-cms-new .steps-div .dash{width:73%;height:1px;border-top:1px dashed #009bfa;margin:0 auto;}
+.page-template-cms-new .steps-div  p.step-desp{font-family: 'Poppins';font-weight:600;color:#009bfa;text-align:center;padding:0 15px;}
+.step-image{display:inline-block;width:100%;margin:50px 0 0 0;}
+.m-t-30{margin-top:-32px;}
+
+@media only screen and (max-width:768px) {
+
+    .tick-list li { text-align: left; }
+    .tick-list li:before { padding-right: 0px; } 
+    .page-template-cms-new .cms-developdiv , .page-template-cms-new .customer-choose { padding: 45px 0px; }
+    .cms-process { padding-top: 45px; }
+    .page-template-cms-new .cms-service-development { padding-bottom: 45px; }
+    /*cms development*/
+	.page-template-cms-new .overlay-section.opacity0 .container .banner-content-right img{top:10px;max-width:100%;}
+	.page-template-cms-new .banner-section{height:auto;position:relative;padding-top:80px;background-color:#009bfa !important;}
+	.page-template-cms-new .banner-section .image-section{height:auto;position:relative;}
+	.page-template-cms-new .overlay-section.opacity0 .container{top: 0%;transform: translateY(0%);display:inline-block;width:100%;}
+	.page-template-cms-new .banner-section .overlay-section{position:relative;}
+	.page-template-cms-new .overlay-section.opacity0 .container .banner-content, .page-template-cms-new .overlay-section.opacity0 .container .banner-content-right{width:100%;text-align:center;}
+	.page-template-cms-new .cms-developdiv .image-one img{max-width:100%;left:0px;top:0px;}
+	.page-template-cms-new .content-block-contents .why-cms-askan p{text-align:left;}
+	.page-template-cms-new .technologies-div ul li{border:0px;}
+	.page-template-cms-new .steps-div .dash{display:none;}
+    .page-template-cms-new .steps-div{margin-top:20px;}
+    
+    .block-titles .small-title .title-content h3 { font-size: 24px; }
+}
+
+
+@media only screen and (max-width: 420px) and (min-width: 320px) {
+    .tick-list li { padding-left: 30px; }
+    .cc-innerpage-banner .banner-section .overlay-section.opacity0 .text-one h3 { font-size: 14px; }
+    .page-template-cms-new .banner-section .overlay-section.opacity0 .text-two h2 { font-size: 26px; }
+    .page-template-cms-new .technology-title { font-size: 32px;padding: 0 20px }
+}

@@ -1,0 +1,164 @@
+html .cc-innerpage-banner .overlay-section.opacity0 .container { transform: unset !important; top: 0; display: flex; justify-content: center; align-items: center; }
+html .cc-innerpage-banner .overlay-section.opacity0 .container  .cc-row { align-items: center; }
+
+.overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one { display: inline-flex; cursor: pointer; padding: 15px 10px 15px 38px; background: transparent; box-shadow: none; border:1px solid #fff; text-decoration: none; color: #fff; font-size:16px; border-radius: 45px; transition: all ease-out 0.3s; margin-top:30px; }
+.overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one .arrow { display: inline-block; background: url(../images/more-btn-arrow-white.png); background-repeat: no-repeat; background-size: 26px; background-position: 0px; margin-left: 10px; width: 48px; min-height: 16px; transition: all ease-out 0.3s; }
+html .cc-innerpage-banner .overlay-section.opacity0 .container .banner-content { width: 40%; }
+html .cc-innerpage-banner .overlay-section.opacity0 .container .banner-content-right { width: 60%; text-align: right; }
+
+
+.text-center{text-align:center;}
+.text-left{text-align:left;}
+
+/* presta style start */
+
+
+.cc-prest-main-content-block { padding: 90px 0px; }
+.cc-prest-main-content-block .content-block  { width: 80%; margin: 0 auto; }
+.cc-prest-main-content-block .space50 { height: 50px; } 
+
+#presta .presta-expertise {background: url(../img/presta-expertise.png);background-repeat: no-repeat;background-size: contain;}
+#presta .overlay-section.opacity0 .container .banner-content-right img {top: -40px;;width: 95%;}
+#presta .content-block .content-block-title h3 {color: #53e0d0}
+#presta .cc-why-presta {background-image: url('../images/why-presta-banner.png') ; background-size: contain;background-repeat: no-repeat;background-position: center center; background-attachment: fixed; }
+.cc-why-presta {padding: 90px 0px;}
+#presta .content-block-contents p {width: 95%;}
+#presta .cc-why-presta .cc-row {align-items: center;}
+#presta .presta-expertise {padding: 90px 0px;background-color: #f4f8fb;}
+#presta .presta-expertise .block-titles {max-width: 960px ;}
+.cc-block-content.presta-title-blocks {max-width: 1060px;margin: 0px auto;}
+.presta-title-blocks h3 { font-size: 20px; font-family: "Poppins"; color: rgb(255, 255, 255);line-height: 1.3;text-align: center;font-weight: normal;margin-top: 17px;}
+.white-box.box h3 {color: #009bfa;}
+#presta .presta-icons {height: 70px; width: 70px;margin:0px auto;background-repeat: no-repeat;background-size: contain;background-position: center center;}
+#presta .presta-title-blocks .two-iconbox {display: flex;min-width: 500px;}
+#presta .presta-title-blocks .two-iconbox .box {
+    max-width: 250px;min-width: 250px;padding: 80px 0px; padding: 25px 10px; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center;
+}
+.presta-title-blocks .cc-col-53 .white-box.box {padding: 45px 30px;text-align: center;}
+.presta-title-blocks .white-box {background: #fff;}
+.white-box.box.mv h3 {color:#484848;}
+.presta-title-blocks .blue-box {
+    background: linear-gradient(to left, #ff8ac0 0%, rgb(124, 148, 255) 100%); color: #fff;
+   
+}
+#presta .presta-icons.cc-intall-img {background-image: url('../img/install.png')} 
+#presta .presta-icons.cc-opensource {background-image: url('../img/opensource.png')} 
+#presta .presta-icons.cc-em {background-image: url('../img/easy-to-maintain.png')} 
+#presta .presta-icons.cc-uf {background-image: url('../img/user-friendly.png')} 
+#presta .presta-icons.cc-cf {background-image: url('../img/cf.png')} 
+#presta .presta-icons.cc-gr {background-image: url('../img/graph.png')} 
+#presta .presta-icons.mvg {background-size:cover;background-repeat: no-repeat;background-position: center;} 
+#presta .white-box.box.mv {background-color:#bed0ff;}
+
+#presta .cc-presta-why-askan {background-image: url(../images/phone-earphone-bg.png);background-repeat: no-repeat;background-size: contain;background-position: center;}
+#presta .whylist-title {color: #e5e4e4;font-size: 50px;}
+#presta .whylist-title span {color: #009bfa}
+#presta .whylist-p {padding-left: 60px;}
+#presta .cc-presta-why-askan .cc-row {align-items: center;}
+#presta .cc-presta-why-askan .cc-col-50.cc-img{text-align: center;}
+#presta .cc-presta-why-askan .cc-col-50.cc-img img {width: 80%}
+.cc-block-content  p { margin: 20px 0px 10px; }
+
+.ccbb-wrapper {
+    min-height: 235px;
+}
+
+
+.whyus-box{padding-right:30px;padding-left:25px;position:relative;}
+.whyus-box:after{content:'';position:absolute;top:0px;right:0px;height:100%;width:1px;border-right:1px solid #ddd;}
+.whyus-box:last-child:after{display:none;}
+.whyus-box img{margin-bottom:15px;}
+.whyus-box h3{color:#009bfa;text-transform:uppercase;line-height:28px;margin-bottom:15px;}
+.whyus-box p{font-size:15px;}
+
+
+.footer-case-study{background:url(../images/case-study-bg.png);background-repeat: no-repeat;background-position: top left;background-size:cover;display:inline-block;width:100%;padding:250px 0 50px 0;position:relative;}
+.parallax-overlay-casestudy{position:absolute;top:0px;left:0px;width:100%;height:100%;background:url(../images/case-study-parallax.png);background-repeat: no-repeat;background-position: top center;margin:100px 0;}
+.casestudy-left{padding:100px 0;}
+.casestudy-left .casestudy-testimonial{width:90%;float:left;}
+.casestudy-left .casestudy-testimonial .case-study-title{font-size:15px;color:#000;position:relative;font-weight:600;display:inline-block;width:100%;margin-bottom:25px;}
+.casestudy-left .casestudy-testimonial .case-study-title:after{content: "";  display: block;  height: 3px;  width: 70px;  background: rgba(83,224,208,1);  background: -moz-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(83,224,208,1)), color-stop(100%, rgba(0,154,250,1))); background: -webkit-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: -o-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); background: -ms-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: linear-gradient(to right, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53e0d0', endColorstr='#009afa', GradientType=1 );
+    position: absolute; left: 120px; top:5px;}
+.casestudy-left .casestudy-testimonial h3{color:#53e0d0;font-size:36px;margin-bottom:25px;line-height:38px;}
+.casestudy-left .casestudy-testimonial p{font-size:18px;line-height:32px;margin-bottom:25px;}
+.casestudy-left .casestudy-testimonial p.author{color:#53e0d0;font-size:16px;font-weight:normal;}
+.casestudy-left .casestudy-testimonial p.author span{color:#000;font-size:16px;}
+.footer-case-study .container{position:relative;}
+
+
+.cc-why-choose-prestashop { padding: 90px 0px 0px; }
+.cc-why-choose-prestashop img { width: 425px; }
+
+.cc-img-container { display: flex; justify-content: center; align-items: center; }
+
+.cc-why-choose-prestashop h3 { font-size: 35px; color: #009bfa; margin-bottom: 6px; line-height: 38px; }
+.tick-list{list-style:none;float:left;width:100%;margin:35px 0 15px 0;padding:0 0 0 20px;}
+.tick-list li{float:left;width:100%;position:relative;margin-bottom:25px;list-style:none;}
+.tick-list li:before{content: "\f00c";font-family: FontAwesome;display: inline-block;margin-left: -1.3em;width: 1.3em;padding-right:20px;color:#009bfa;}
+
+.cc-opac-dev img { opacity: 0; }
+
+
+/* presta style end */
+
+
+@media only screen and (max-width:768px) {
+
+    #presta .cc-row { padding: 0px 10px; }
+
+
+    html .cc-innerpage-banner .overlay-section.opacity0 .container .banner-content ,
+    html .cc-innerpage-banner .overlay-section.opacity0 .container .banner-content-right { width: 100%; }
+
+    .overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one { padding: 15px 10px 15px 25px; }
+
+    /**magento**/	
+	 #presta .cc-row {padding: 0px 10px;}
+     #presta .banner-section .overlay-section .cc-row {flex-wrap:wrap;}
+     #presta .banner-section .overlay-section .cc-row .banner-content , #presta .banner-section .overlay-section .cc-row .banner-content-right {width: 100%;}
+     #presta .banner-section {height: auto;position: relative;padding-top: 90px;}
+     /* #case-study .banner-section .image-section {height: auto;position: relative} */
+     #presta .banner-section .overlay-section {position:relative;}
+     #presta .overlay-section.opacity0 .container {top: 0%;transform: translateY(0%);display: inline-block;width: 100%;}
+     #presta .overlay-section.opacity0 .container .banner-content {box-sizing: border-box;padding: 10px;}
+     #presta .banner-content-right {margin-bottom: 20px;}
+     #presta .cc-why-presta {padding: 30px 0px;}
+     #presta .cc-why-presta .cc-col-50.cc-img-wrap {text-align: center;}
+     #presta .presta-title-blocks .two-iconbox {width: 100%;min-width: 100%;margin-bottom: 0;}
+     #presta .presta-title-blocks .two-iconbox .box , #presta .presta-title-blocks .two-iconbox .box {width: 50%;min-width: 50%;max-width: 50%;}
+     #presta .cc-block-content.presta-title-blocks .cc-col-53 {margin-bottom: 0;}
+     #presta .cc-block-content.presta-title-blocks .cc-row {margin-bottom: 30px;}
+ 
+     #presta .presta-expertise {padding: 45px 0px 25px 0px;}
+     #presta .cc-presta-why-askan .cc-mws-wrapper {padding: 45px 0px 0px 0px;}
+     #presta .cc-presta-why-askan .cc-col-50.cc-img img {width: 70%;}
+ 
+     .footer-case-study .cc-col-45 { text-align: center; }    
+
+}
+
+@media only screen and (max-width: 420px) and (min-width: 320px) {
+    .cc-innerpage-banner .banner-section .overlay-section.opacity0 .text-one h3 { font-size: 14px; }
+    .cc-innerpage-banner .banner-section .overlay-section.opacity0 .text-two h2 { font-size: 28px; }
+}
+
+
+
+@media only screen and (max-width:768px) {
+    .cc-prest-main-content-block , .cc-why-choose-prestashop { padding: 45px 0px; }
+    .whyus-box::after { display: none; }
+    .cc-prest-main-content-block .content-block { width: 95%; }
+    .footer-case-study { padding: 65px 0 50px 0; }
+    .cc-why-choose-prestashop { padding-bottom: 0px; }
+    .parallax-overlay-casestudy { margin: 0px; }
+    .casestudy-left { padding-bottom: 0; } 
+    .footer-contact { padding-top: 0px; padding-bottom: 25px; }
+}
+
+@media only screen and (max-width:567px) {
+    #presta .presta-title-blocks .two-iconbox { flex-wrap: wrap; }
+    #presta .presta-title-blocks .two-iconbox .box, #presta .presta-title-blocks .two-iconbox .box { width: 100%; min-width: 100%; max-width: 100%; }
+}

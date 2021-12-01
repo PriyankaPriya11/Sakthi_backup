@@ -1,0 +1,104 @@
+/* banner section */
+.overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one { display: inline-flex; cursor: pointer; padding: 15px 10px 15px 38px; background: transparent; box-shadow: none; border:1px solid #fff; text-decoration: none; color: #fff; font-size:16px; border-radius: 45px; transition: all ease-out 0.3s; margin-top:30px; }
+.overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one .arrow { display: inline-block; background: url(../images/more-btn-arrow-white.png); background-repeat: no-repeat; background-size: 26px; background-position: 0px; margin-left: 10px; width: 48px; min-height: 16px; transition: all ease-out 0.3s; }
+.cc-innerpage-banner .overlay-section.opacity0 .container .banner-content { width: 40%; }
+.cc-innerpage-banner .overlay-section.opacity0 .container .banner-content-right { width: 60%; text-align: right; }
+.overlay-section.opacity0 .container .banner-content-right img { position: relative; top: 100px; }
+
+
+
+.footer-case-study{background:url(../images/case-study-bg.png);background-repeat: no-repeat;background-position: top left;background-size:cover;display:inline-block;width:100%;padding:250px 0 50px 0;position:relative;}
+.parallax-overlay-casestudy{position:absolute;top:0px;left:0px;width:100%;height:100%;background:url(../images/case-study-parallax.png);background-repeat: no-repeat;background-position: top center;margin:100px 0;}
+.casestudy-left{padding:100px 0;}
+.casestudy-left .casestudy-testimonial{width:90%;float:left;}
+.casestudy-left .casestudy-testimonial .case-study-title{font-size:15px;color:#000;position:relative;font-weight:600;display:inline-block;width:100%;margin-bottom:25px;}
+.casestudy-left .casestudy-testimonial .case-study-title:after{content: "";  display: block;  height: 3px;  width: 70px;  background: rgba(83,224,208,1);  background: -moz-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(83,224,208,1)), color-stop(100%, rgba(0,154,250,1))); background: -webkit-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: -o-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); background: -ms-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: linear-gradient(to right, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53e0d0', endColorstr='#009afa', GradientType=1 );
+    position: absolute; left: 120px; top:5px;}
+.casestudy-left .casestudy-testimonial h3{color:#53e0d0;font-size:36px;margin-bottom:25px;line-height:38px;}
+.casestudy-left .casestudy-testimonial p{font-size:18px;line-height:32px;margin-bottom:25px;}
+.casestudy-left .casestudy-testimonial p.author{color:#53e0d0;font-size:16px;font-weight:normal;}
+.casestudy-left .casestudy-testimonial p.author span{color:#000;font-size:16px;}
+.footer-case-study .container{position:relative;}
+.mobile-app{margin-top:150px;}
+.text-center{text-align:center;}
+.text-left{text-align:left;}
+.content-block .content-block-title.green-title h3{color:#53e0d0;margin-bottom:25px;}
+.mobile-app .content-block-contents p {  margin-bottom: 18px;  width: 80%;margin-left:auto;margin-right:auto;}
+.space50{display:inline-block;width:100%;height:50px;}
+.space100{display:inline-block;width:100%;height:100px;}
+.whyus-box{padding-right:30px;padding-left:25px;position:relative;}
+.whyus-box:after{content:'';position:absolute;top:0px;right:0px;height:100%;width:1px;border-right:1px solid #ddd;}
+.whyus-box:last-child:after{display:none;}
+.whyus-box img{margin-bottom:15px;}
+.whyus-box h3{color:#009bfa;text-transform:uppercase;line-height:28px;margin-bottom:15px;}
+.whyus-box p{font-size:15px;}
+.mobile-app{background:url(../images/android-doll-left.png) no-repeat left 10%,url(../images/android-doll-right.png) no-repeat right 75%;background-size:16%;}
+.slant-blue{width:100%;padding:0;background:#d8effe;transform:rotate(2deg);margin:150px 0 50px 0;}
+.android-whyaskan img{position:relative;top:-50px;}
+.slant-blue .container{transform:rotate(-2deg);}
+.whylist{padding:50px 20px;display:inline-block;box-sizing:border-box;}
+.whylist-title{font-family: 'Bernard MT Condensed';font-size:42px;color:#009bfa;}
+.whylist-title span{display:inline-block;font-size:22px;font-family: 'Poppins';}
+.whylist-p{font-size:16px;margin:5px 0 25px 0;box-sizing:border-box;padding-left:45px;}
+.app-technology{padding:150px 0;background:url(../images/pencil-phone-left.png) no-repeat left 40px,url(../images/glass-right.png) no-repeat right 50%;	background-size:16%;}
+.apptech-txt h3{color:#009bfa;font-size:26px;text-align:left;font-weight: 500;padding:20% 0;position:relative;}
+.apptech-txt .small-title-line{display:inline-block;position:relative;top:-5px;width:60px;}
+.apptech-box{width:33%;box-sizing:border-box;padding:50px 20px;border-radius:5px;color:#fff;display:inline-block;margin:10px;text-align:center;min-height:210px;}
+.blue-bg{background:#53e0d0;}
+.violet-bg{background:#71105f;position:relative;top:100px;}
+.skyblue-bg{background:#009bfa;}
+.darkblue-bg{background:#00a3d3;position:relative;top:100px;}
+.apptech-box span{display:inline-block;width:100%;margin:5px 0;}
+
+
+@media only screen and (max-width:768px) { 
+
+    .mobile-app {
+        margin-top: 45px;
+    }
+    .slant-blue {
+        margin: 80px 0 0px 0;
+    }
+    .android-whyaskan img {
+        top: 0px;
+    }
+
+
+    /**android development**/
+	#android-development .overlay-section.opacity0 .container .banner-content-right img{top:10px;}
+	#android-development .banner-section{height:auto;position:relative;padding-top:80px;background-color:#009bfa !important;}
+	#android-development .banner-section .image-section{height:auto;position:relative;}
+	#android-development .overlay-section.opacity0 .container{top: 0%;transform: translateY(0%);display:inline-block;width:100%;}
+	#android-development .banner-section .overlay-section{position:relative;}
+	#android-development .overlay-section.opacity0 .container .banner-content-right{width:100%;text-align:center;}
+	#android-development .overlay-section.opacity0 .container .banner-content{width:100%;box-sizing:border-box;padding:10px;}
+	#android-development .slant-blue{transform: rotate(0deg);}
+	#android-development .slant-blue .container{transform: rotate(0deg);}
+	#android-development .whylist{padding:15px;}
+	#android-development .app-technology{padding:50px 0;}
+	#android-development .casestudy-left{padding:0px;}
+	#android-development .footer-case-study{padding-top:175px;}
+    #android-development .footer-contact{padding:50px 0;}
+    #android-development .footer-case-study .cc-col-45 img { width: 80%; margin: 0 auto; display: block; }
+    
+}
+
+@media only screen and (max-width:767px){
+	#app-development .app-type-image img.android-phone{top:0px;}
+}
+
+@media only screen and (min-width:320px) and (max-width:420px) { 
+
+    .cc-innerpage-banner .banner-section .overlay-section.opacity0 .text-one h3{ font-size: 14px; }
+    #android-development .banner-section .overlay-section.opacity0 .text-two h2 { font-size: 28px; }
+    /**android development**/
+	#android-development .banner-section .overlay-section.opacity0 .text-two h2{font-size:28px;}
+	#android-development .whylist-title{font-size:30px;}
+	#android-development .whylist-title span{font-size:18px;}
+	#android-development .whylist-p{padding-left:40px;font-size:14px;}
+	#android-development .apptech-txt h3{text-align:center;padding:10% 0;}
+	#android-development .apptech-box{width:46%;margin:1.5%;}
+}

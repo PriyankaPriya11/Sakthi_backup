@@ -1,0 +1,209 @@
+AuthType Basic
+AuthName "My Protected Area"
+AuthUserFile  /home/askantech/dev.askantech.com/.htpasswd
+Require valid-user
+# BEGIN W3TC Browser Cache
+<IfModule mod_deflate.c>
+        AddOutputFilterByType DEFLATE text/css text/x-component application/x-javascript application/javascript text/javascript text/x-js text/html text/richtext text/plain text/xsd text/xsl text/xml image/bmp application/java application/msword application/vnd.ms-fontobject application/x-msdownload image/x-icon application/json application/vnd.ms-access video/webm application/vnd.ms-project application/x-font-otf application/vnd.ms-opentype application/vnd.oasis.opendocument.database application/vnd.oasis.opendocument.chart application/vnd.oasis.opendocument.formula application/vnd.oasis.opendocument.graphics application/vnd.oasis.opendocument.presentation application/vnd.oasis.opendocument.spreadsheet application/vnd.oasis.opendocument.text audio/ogg application/pdf application/vnd.ms-powerpoint image/svg+xml application/x-shockwave-flash image/tiff application/x-font-ttf application/vnd.ms-opentype audio/wav application/vnd.ms-write application/font-woff application/font-woff2 application/vnd.ms-excel
+    <IfModule mod_mime.c>
+        # DEFLATE by extension
+        AddOutputFilter DEFLATE js css htm html xml
+    </IfModule>
+</IfModule>
+<FilesMatch "\.(bmp|class|doc|docx|eot|exe|ico|json|mdb|webm|mpp|otf|_otf|odb|odc|odf|odg|odp|ods|odt|ogg|pdf|pot|pps|ppt|pptx|svg|svgz|swf|tif|tiff|ttf|ttc|_ttf|wav|wri|woff|woff2|xla|xls|xlsx|xlt|xlw|BMP|CLASS|DOC|DOCX|EOT|EXE|ICO|JSON|MDB|WEBM|MPP|OTF|_OTF|ODB|ODC|ODF|ODG|ODP|ODS|ODT|OGG|PDF|POT|PPS|PPT|PPTX|SVG|SVGZ|SWF|TIF|TIFF|TTF|TTC|_TTF|WAV|WRI|WOFF|WOFF2|XLA|XLS|XLSX|XLT|XLW)$">
+    <IfModule mod_headers.c>
+         Header unset Last-Modified
+    </IfModule>
+</FilesMatch>
+<IfModule mod_headers.c>
+    Header set Referrer-Policy ""
+</IfModule>
+# END W3TC Browser Cache
+# BEGIN W3TC Page Cache core
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{HTTPS} =on
+    RewriteRule .* - [E=W3TC_SSL:_ssl]
+    RewriteCond %{SERVER_PORT} =443
+    RewriteRule .* - [E=W3TC_SSL:_ssl]
+    RewriteCond %{HTTP:X-Forwarded-Proto} =https [NC]
+    RewriteRule .* - [E=W3TC_SSL:_ssl]
+    RewriteCond %{HTTP:Accept-Encoding} gzip
+    RewriteRule .* - [E=W3TC_ENC:_gzip]
+    RewriteCond %{HTTP_COOKIE} w3tc_preview [NC]
+    RewriteRule .* - [E=W3TC_PREVIEW:_preview]
+    RewriteCond %{REQUEST_METHOD} !=POST
+    RewriteCond %{QUERY_STRING} =""
+    RewriteCond %{HTTP_COOKIE} !(comment_author|wp\-postpass|w3tc_logged_out|wordpress_logged_in|wptouch_switch_toggle) [NC]
+    RewriteCond %{REQUEST_URI} \/$
+    RewriteCond "%{DOCUMENT_ROOT}/wp-content/cache/page_enhanced/%{HTTP_HOST}/%{REQUEST_URI}/_index%{ENV:W3TC_SSL}%{ENV:W3TC_PREVIEW}.html%{ENV:W3TC_ENC}" -f
+    RewriteRule .* "/wp-content/cache/page_enhanced/%{HTTP_HOST}/%{REQUEST_URI}/_index%{ENV:W3TC_SSL}%{ENV:W3TC_PREVIEW}.html%{ENV:W3TC_ENC}" [L]
+</IfModule>
+# END W3TC Page Cache core
+# BEGIN WordPress
+# The directives (lines) between `BEGIN WordPress` and `END WordPress` are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+#Redirect 301 /success-stories/reefspeciality/ https://www.askantech.com/success-stories/
+Redirect 301 /success-stories/cybersecurity/ https://www.askantech.com/success-stories/
+Redirect 301 /success-stories/beroe/ https://www.askantech.com/success-stories/
+Redirect 301 /success-stories/beauty-natura/ https://www.askantech.com/success-stories/
+Redirect 301 /success-stories/elosaquastudios/ https://www.askantech.com/success-stories/
+Redirect 301 /success-stories/pacifique-evenments/ https://www.askantech.com/success-stories/
+Redirect 301 /success-stories/nation-wide/ https://www.askantech.com/success-stories/
+Redirect 301 /archive/ http://www.askantech.com/blog/
+Redirect 301 /e-commerce-solutions/ https://www.askantech.com/services/ecommerce-services/
+Redirect 301 /custom-application-development/ https://www.askantech.com/services/custom-app-development/
+Redirect 301 /web-development.htm https://www.askantech.com/services/web-development/
+Redirect 301 /digital-marketing.htm https://www.askantech.com/services/digital-marketing/
+Redirect 301 /contactus.htm https://www.askantech.com/contact-us/
+Redirect 301 /success-stories/reefspeciality/success-stories-banner/ https://www.askantech.com/success-stories/
+Redirect 301 /success-stories/reefspeciality/ss-testi-author/ https://www.askantech.com/success-stories/
+Redirect 301 /success-stories/reefspeciality/related-projects/ https://www.askantech.com/success-stories/
+Redirect 301 /about-us-1/ https://www.askantech.com/about-us/
+Redirect 301 /services-old/ https://www.askantech.com/services/
+
+
+# <Files wp-login.php>
+# Order Deny,Allow
+# Deny from all
+# Allow from 103.98.32.54
+# Allow from 103.98.33.27
+# </Files>
+
+Options All -Indexes
+# php -- BEGIN cPanel-generated handler, do not edit
+# This domain inherits the “PHP” package.
+# php -- END cPanel-generated handler, do not edit
+
+## SPEED ##
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 week"
+ExpiresByType image/jpeg "access 1 week"
+ExpiresByType image/gif "access 1 week"
+ExpiresByType image/png "access 1 week"
+ExpiresByType image/svg+xml "access 1 week"
+ExpiresByType text/css "access 1 week"
+#ExpiresByType text/html "access 1 week"
+ExpiresByType text/woff "access 1 week"
+ExpiresByType application/pdf "access 1 week"
+ExpiresByType text/x-javascript "access plus 1 week"
+ExpiresByType application/x-shockwave-flash "access 1 week"
+ExpiresByType image/x-icon "access 1 week"
+#ExpiresDefault "access 1 week"
+</IfModule>
+## EXPIRES CACHING ##
+
+# BEGIN Cache-Control Headers
+<ifModule mod_headers.c>
+<filesMatch "\.(ico|jpe?g|png|gif|swf|woff|woof2)$">
+Header set Cache-Control "max-age=15768000, public"
+</filesMatch>
+<filesMatch "\.(css)$">
+Header set Cache-Control "max-age=15768000, public"
+</filesMatch>
+<filesMatch "\.(js)$">
+Header set Cache-Control "max-age=15768000, public"
+</filesMatch>
+<filesMatch "\.(js|css|xml|gz|php)$">
+    Header append Vary: Accept-Encoding
+</filesMatch>
+</ifModule>
+# END Cache-Control Headers
+
+<ifmodule mod_mime.c>
+Addtype font/eot .eot
+Addtype font/opentype .otf
+Addtype font/truetype .ttf
+Addtype font/woff .woff
+Addtype image/svg+xml .svg
+</ifmodule>
+<IfModule mod_deflate.c>
+# Insert filters
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE text/map
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/map
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE text/javascript
+AddOutputFilterByType DEFLATE application/x-javascript
+AddOutputFilterByType DEFLATE text/x-javascript
+AddOutputFilterByType DEFLATE application/x-httpd-php
+AddOutputFilterByType DEFLATE application/x-httpd-fastphp
+AddOutputFilterByType DEFLATE application/x-js
+AddOutputFilterByType DEFLATE image/svg+xml
+AddOutputFilterByType DEFLATE application/x-font-ttf
+AddOutputFilterByType DEFLATE application/font-woff
+AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+AddOutputFilterByType DEFLATE application/x-font-otf
+AddOutputFilterByType DEFLATE font/opentype font/truetype font/eot
+AddOutputFilter DEFLATE js css htm html xml map
+
+# Drop problematic browsers
+BrowserMatch ^Mozilla/4 gzip-only-text/html
+BrowserMatch ^Mozilla/4\.0[678] no-gzip
+BrowserMatch \bMSI[E] !no-gzip !gzip-only-text/html
+
+# Make sure proxies dont deliver the wrong content
+Header append Vary User-Agent env=!dont-vary
+</IfModule>
+
+# ETags (Entity Tags) are a mechanism that web servers and browsers use to determine if the component in the browser?s cache matches the
+# To disable ETags, paste this into your .htaccess file
+Header unset ETag
+FileETag None
+#End Etag
+
+<Files xmlrpc.php>
+order deny,allow
+deny from all
+</Files>
+
+<IfModule mod_headers.c>
+    Header always set Referrer-Policy "same-origin"
+</IfModule>
+## SPEED ##
+
+
+# Fonts
+# Add correct content-type for fonts
+AddType application/vnd.ms-fontobject .eot 
+AddType application/x-font-ttf .ttf
+AddType application/x-font-opentype .otf
+AddType application/x-font-woff .woff
+AddType application/x-font-woff .woff2
+AddType application/x-font-woff2 .woff2
+AddType image/svg+xml .svg
+
+# Compress compressible fonts
+# only uncomment if you dont have compression turned on already. Otherwise it will cause all other filestypes not to get compressed
+# AddOutputFilterByType DEFLATE application/x-font-ttf application/x-font-opentype image/svg+xml
+
+ExpiresActive on
+
+# Add a far future Expires header for fonts
+ExpiresByType application/vnd.ms-fontobject "access plus 1 year"
+ExpiresByType application/x-font-ttf "access plus 1 year"
+ExpiresByType application/x-font-opentype "access plus 1 year"
+ExpiresByType application/x-font-woff "access plus 1 year"
+ExpiresByType application/x-font-woff2 "access plus 1 year"
+ExpiresByType image/svg+xml "access plus 1 year"

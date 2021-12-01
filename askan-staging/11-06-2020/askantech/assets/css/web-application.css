@@ -1,0 +1,107 @@
+.overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one { display: inline-flex; cursor: pointer; padding: 15px 10px 15px 38px; background: transparent; box-shadow: none; border:1px solid #fff; text-decoration: none; color: #fff; font-size:16px; border-radius: 45px; transition: all ease-out 0.3s; margin-top:30px; }
+.overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one .arrow { display: inline-block; background: url(../images/more-btn-arrow-white.png); background-repeat: no-repeat; background-size: 26px; background-position: 0px; margin-left: 10px; width: 48px; min-height: 16px; transition: all ease-out 0.3s; }
+
+.text-center{text-align:center;}
+.text-left{text-align:left;}
+
+
+.content-block .content-block-title.green-title h3{color:#53e0d0;margin-bottom:25px;}
+
+.tick-list{list-style:none;float:left;width:100%;margin:35px 0 15px 0;padding:0 0 0 20px;}
+.tick-list li{float:left;width:100%;position:relative;margin-bottom:25px;list-style:none;}
+.tick-list li:before{content: "\f00c";font-family: FontAwesome;display: inline-block;margin-left: -1.3em;width: 1.3em;padding-right:20px;color:#009bfa;}
+
+/*web application*/
+#web-application .overlay-section.opacity0 .container .banner-content, #web-application .overlay-section.opacity0 .container .banner-content-right{width:50%;}
+#web-application .banner-section .overlay-section.opacity0 .text-two h2{font-size:40px;}
+#web-application .overlay-section.opacity0 .container {transform: translateY(-20%);}
+#web-application .overlay-section.opacity0 .container .banner-content-right{text-align:center;}
+#web-application .overlay-section.opacity0 .container .banner-content-right img{top:0px;max-width:420px;}
+#web-application .webapp-developdiv .content-block-contents p {  margin-bottom: 18px;  width: 80%;margin-left:auto;margin-right:auto;}
+#web-application .webapp-developdiv{margin-top:80px;}
+#web-application .askan-adv{padding:80px 0;}
+#web-application .askan-adv .image-one{text-align:center;}
+#web-application .askan-adv .image-one img{padding:40px;}
+#web-application .tick-list{margin-top:0px;}
+#web-application .tick-list li{float:left;width:100%;position:relative;margin-bottom:20px;list-style:none;}
+#web-application .webapp-framework{background:url(../images/webapp-framebg.png) no-repeat 140% 5%;}
+#web-application .bluebold{font-family: 'Poppins';font-weight:500;color:#009bfa;font-size:20px;}
+#web-application .webapp-workflow{padding:80px 0;}
+#web-application .webapp-steps{position:relative;height:100%;}
+#web-application .webapp-steps .step-dash{width:1px;height:80%;position:absolute;top:5%;border-right:1px dashed #009bfa;left:50px;}
+#web-application .webapp-steps .wsteps{float:left;width:100%;margin-bottom:30px;margin-top:15px;}
+#web-application .webapp-steps .wsteps span.blue-circle{float:left;width:100px;height:100px;background:#019bfa;text-align:center;border-radius:50%;line-height:100px;}
+#web-application .webapp-steps .wsteps span.blue-circle img{max-height:48px;position:relative;top:20px;}
+#web-application .webapp-steps .wsteps p{padding:5px 0px 5px 125px;}
+#web-application .webapp-steps .wsteps p span.title{font-size:18px;color:#000;float:left;width:100%;margin-bottom:5px;font-weight:600;}
+#web-application .workflow-image img{max-height:500px;width:auto;}
+#web-application  .webapp-workflow .pad5{padding-left:5%;}
+#web-application .footer-case-study{padding:150px 0;}
+#web-application .apptech-txt{position:relative;}
+#web-application .webapp-casestudy{position:absolute;top:50%;transform:translateY(-50%);width:90%;}
+#web-application .apptech-txt h3{padding:15px 0;}
+
+
+.app-technology{padding:150px 0;background:url(../images/pencil-phone-left.png) no-repeat left 40px,url(../images/glass-right.png) no-repeat right 50%;	background-size:16%;}
+.apptech-txt h3{color:#009bfa;font-size:26px;text-align:left;font-weight: 500;padding:20% 0;position:relative;}
+.apptech-txt .small-title-line{display:inline-block;position:relative;top:-5px;width:60px;}
+.apptech-box{width:33%;box-sizing:border-box;padding:50px 20px;border-radius:5px;color:#fff;display:inline-block;margin:10px;text-align:center;min-height:210px;}
+.blue-bg{background:#53e0d0;}
+.violet-bg{background:#71105f;position:relative;top:100px;}
+.skyblue-bg{background:#009bfa;}
+.darkblue-bg{background:#00a3d3;position:relative;top:100px;}
+.apptech-box span{display:inline-block;width:100%;margin:5px 0;}
+
+.footer-case-study{background:url(../images/case-study-bg.png);background-repeat: no-repeat;background-position: top left;background-size:cover;display:inline-block;width:100%;padding:250px 0 50px 0;position:relative;}
+.parallax-overlay-casestudy{position:absolute;top:0px;left:0px;width:100%;height:100%;background:url(../images/case-study-parallax.png);background-repeat: no-repeat;background-position: top center;margin:100px 0;}
+.casestudy-left{padding:100px 0;}
+.casestudy-left .casestudy-testimonial{width:90%;float:left;}
+.casestudy-left .casestudy-testimonial .case-study-title{font-size:15px;color:#000;position:relative;font-weight:600;display:inline-block;width:100%;margin-bottom:25px;}
+.casestudy-left .casestudy-testimonial .case-study-title:after{content: "";  display: block;  height: 3px;  width: 70px;  background: rgba(83,224,208,1);  background: -moz-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(83,224,208,1)), color-stop(100%, rgba(0,154,250,1))); background: -webkit-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: -o-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); background: -ms-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: linear-gradient(to right, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53e0d0', endColorstr='#009afa', GradientType=1 );
+    position: absolute; left: 120px; top:5px;}
+.casestudy-left .casestudy-testimonial h3{color:#53e0d0;font-size:36px;margin-bottom:25px;line-height:38px;}
+.casestudy-left .casestudy-testimonial p{font-size:18px;line-height:32px;margin-bottom:25px;}
+.casestudy-left .casestudy-testimonial p.author{color:#53e0d0;font-size:16px;font-weight:normal;}
+.casestudy-left .casestudy-testimonial p.author span{color:#000;font-size:16px;}
+.footer-case-study .container{position:relative;}
+
+
+@media only screen and (max-width:768px) { 
+
+    .overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one { padding: 15px 10px 15px 25px; }
+
+    /**web-application**/
+    #web-application .overlay-section.opacity0 .container .banner-content-right img{top:10px;}
+    #web-application .banner-section{height:auto;position:relative;padding-top:80px;background-color:#009bfa !important;}
+    #web-application .banner-section .image-section{height:auto;position:relative;}
+    #web-application .overlay-section.opacity0 .container{top: 0%;transform: translateY(0%);display:inline-block;width:100%;}
+    #web-application .banner-section .overlay-section{position:relative;}
+    #web-application .overlay-section.opacity0 .container .banner-content-right{width:100%;text-align:center;}
+    #web-application .overlay-section.opacity0 .container .banner-content-right img{max-width:100%;}
+    #web-application .overlay-section.opacity0 .container .banner-content{width:100%;box-sizing:border-box;padding:10px;}
+    #web-application .webapp-framework{background:#f2f2f2;padding-top:40px;}
+    #web-application .askan-adv{padding:10px 0;}
+    #web-application .webapp-casestudy{position:relative;top:0px;transform: translateY(0%);width:100%;}
+    #web-application .violet-bg , #web-application .darkblue-bg{top:0px;}
+    #web-application .webapp-workflow{padding:80px 0 0 0;}
+    #web-application .footer-case-study{padding:100px 0 0 0;}
+
+    #web-application .webapp-workflow { padding: 45px 0px; }
+    #web-application .webapp-developdiv { margin-top: 45px; }
+    .apptech-box {width: 45%; margin: 12px 6px;}
+    .tick-list li:before { padding-right: 0px; }
+    #web-application .webapp-developdiv .content-block-contents p { width: 98%; }
+}
+
+
+@media only screen and (max-width: 420px) and (min-width: 320px) { 
+    .cc-innerpage-banner .banner-section .overlay-section.opacity0 .text-one h3 { font-size :14px; }
+    #web-application .banner-section .overlay-section.opacity0 .text-two h2 { font-size: 24px; }
+
+    .tick-list li {
+        padding-left: 30px;
+    }
+}

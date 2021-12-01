@@ -1,0 +1,79 @@
+/* banner section */
+.overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one { display: inline-flex; cursor: pointer; padding: 15px 10px 15px 38px; background: transparent; box-shadow: none; border:1px solid #fff; text-decoration: none; color: #fff; font-size:16px; border-radius: 45px; transition: all ease-out 0.3s; margin-top:30px; }
+.overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one .arrow { display: inline-block; background: url(../images/more-btn-arrow-white.png); background-repeat: no-repeat; background-size: 26px; background-position: 0px; margin-left: 10px; width: 48px; min-height: 16px; transition: all ease-out 0.3s; }
+
+
+.text-center{text-align:center;}
+.text-left{text-align:left;}
+.content-block .content-block-title.green-title h3{color:#53e0d0;margin-bottom:25px;}
+
+.apptech-txt .small-title-line { display: inline-block; position: relative; top: -5px; width: 60px; }
+.apptech-txt h3{color:#009bfa;font-size:26px;text-align:left;font-weight: 500;padding:20% 0;position:relative;}
+
+/*app development*/
+#app-development .overlay-section.opacity0 .container .banner-content, #app-development .overlay-section.opacity0 .container .banner-content-right{width:50%;}
+#app-development .overlay-section.opacity0 .container {transform: translateY(-20%);}
+#app-development .overlay-section.opacity0 .container .banner-content-right{text-align:center;}
+#app-development .overlay-section.opacity0 .container .banner-content-right img{top:0px;max-width:420px;}
+#app-development .app-developdiv{margin-top:80px;}
+#app-development .app-developdiv .content-block-contents p {  margin-bottom: 18px;  width: 80%;margin-left:auto;margin-right:auto;}
+#app-development .app-develop-whybg-top{padding:30px 0;background:url(../images/app-develop-why-bg-top.png) no-repeat bottom left;background-size:100%;position:relative;top:2px;margin-top:50px;}
+#app-development .app-develop-whybg-bottom{padding:30px 0;background:url(../images/app-develop-why-bg-btm.png) no-repeat top left;background-size:100%;padding-top:150px;}
+#app-development .app-develop-whybg{background-color:#39cadd;}
+#app-development .why-app-content{box-sizing:border-box;padding-left:20px;border-left:3px solid #54e0cc;}
+#app-development .why-app-content p{margin-bottom:25px;}
+#app-development .why-askan-content{box-sizing:border-box;padding-left:20px;border-left:3px solid #009bfa;}
+#app-development .why-askan-content p{margin-bottom:15px;}
+#app-development .howwedo .block-titles .title .big-title h2 { font-size: 95px; font-weight: 900; font-style: normal; text-transform: uppercase; color: rgba(255, 255, 255, 0.15); }
+#app-development .howwedo .block-titles .small-title .title-content h3{color:#fff;}
+#app-development .howwedo .small-title-line{background:#fff;}
+#app-development .clear-div{width:100%;display:inline-block;min-height:1px;}
+#app-development .top-step{max-width:75%;margin:0 auto;}
+#app-development .step-arrow{margin-top:-30px;}
+#app-development .step-arrow img{max-width:70%;}
+#app-development .desktop-steps{display:block;}
+#app-development .mobile-steps{display:none;}
+#app-development .app-type-image img.ios-phone{max-width:65%;}
+#app-development .app-type-image img.android-phone{max-width:90%;position:relative;left:-5%;top:-75px;}
+#app-development .app-type .apptech-txt h3{padding-bottom:50px;padding-top:10%;}
+
+
+@media only screen and (max-width: 420px) and (min-width: 320px) {
+    .cc-innerpage-banner .banner-section .overlay-section.opacity0 .text-one h3{ font-size: 14px; }
+    #app-development .banner-section .overlay-section.opacity0 .text-two h2 { font-size: 26px; }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    /**app development**/
+
+    #app-development .app-developdiv { margin-top: 45px; }
+    #app-development .app-develop-whybg-top { margin-top: 0px; }
+
+    #app-development .overlay-section.opacity0 .container .banner-content-right img{top:10px;}
+    #app-development .banner-section{height:auto;position:relative;padding-top:80px;background-color:#009bfa !important;}
+    #app-development .banner-section .image-section{height:auto;position:relative;}
+    #app-development .overlay-section.opacity0 .container{top: 0%;transform: translateY(0%);display:inline-block;width:100%;}
+    #app-development .banner-section .overlay-section{position:relative;}
+    #app-development .overlay-section.opacity0 .container .banner-content-right{width:100%;text-align:center;}
+    #app-development .overlay-section.opacity0 .container .banner-content{width:100%;box-sizing:border-box;padding:10px;}
+    #app-development .slant-blue{transform: rotate(0deg);}
+    #app-development .slant-blue .container{transform: rotate(0deg);}
+    #app-development .whylist{padding:15px;}
+    #app-development .app-technology{padding:50px 0;}
+    #app-development .casestudy-left{padding:0px;}
+    #app-development .footer-case-study{padding-top:175px;}
+    #app-development .footer-contact{padding:50px 0;}
+    #app-development .mobile-how-steps{width:80px;margin:15px 10px;}
+    #app-development .desktop-steps{display:none;}
+    #app-development .mobile-steps{display:block;}
+    #app-development .mobile-steps .cc-row{align-items: center;justify-content: center;}
+    #app-development .howwedo .block-titles .title .big-title h2{font-size:50px;}
+    #app-development .overlay-section.opacity0 .container .banner-content-right img{max-width:100%;}
+}
+
+@media only screen and (max-width:767px){
+	#app-development .app-type-image img.android-phone{top:0px;}
+}

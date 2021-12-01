@@ -1,0 +1,91 @@
+.overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one { display: inline-flex; cursor: pointer; padding: 15px 10px 15px 38px; background: transparent; box-shadow: none; border:1px solid #fff; text-decoration: none; color: #fff; font-size:16px; border-radius: 45px; transition: all ease-out 0.3s; margin-top:30px; }
+.overlay-section.opacity0 .container .banner-content .more-btn .button-wrapper .btn-sty-one .arrow { display: inline-block; background: url(../images/more-btn-arrow-white.png); background-repeat: no-repeat; background-size: 26px; background-position: 0px; margin-left: 10px; width: 48px; min-height: 16px; transition: all ease-out 0.3s; }
+.text-center{text-align:center;}
+.text-left{text-align:left;}
+.content-block .content-block-title.green-title h3{color:#53e0d0;margin-bottom:25px;}
+
+.space50 { display: inline-block; width: 100%; height: 50px; }
+
+/**wp development**/
+#wp-development .overlay-section.opacity0{position:relative;}
+#wp-development .overlay-section.opacity0 .container .banner-content, #yii-development .overlay-section.opacity0 .container .banner-content-right{width:50%;}
+#wp-development .overlay-section.opacity0 .container {transform: translateY(-20%);}
+#wp-development .overlay-section.opacity0 .container .banner-content-right{text-align:center;}
+#wp-development .overlay-section.opacity0 .container .banner-content-right img{top:0px;max-width:420px;}
+#wp-development .wp-developdiv{padding:50px 0 30px 0;background:url(../images/wp-aboutbg.png) no-repeat top left, url(../images/wp-askan-expertisebg.png) no-repeat bottom left;	background-size:100%;}
+#wp-development .wp-developdiv .content-block-contents p {  margin-bottom: 18px;  width: 80%;margin-left:auto;margin-right:auto;}
+#wp-development .askan-expertise{display:flex;align-items: center;justify-content: center;}
+#wp-development .box-exp{box-shadow:0px 0px 20px #dfdfdd;display:inline-block;padding:60px 20px;background:#fff;margin:15px;border-radius:5px;}
+#wp-development .box-exp img{margin-bottom:20px;}
+#wp-development .box-exp h3{text-transform:uppercase;font-weight:600;color:#009bfa;text-transform:uppercase;text-align:center;margin-bottom:5px;line-height:26px;}
+#wp-development .box-exp p{text-align:center;}
+#wp-development .casestudy-left{padding:0 0 70px 0;}
+#wp-development .parallax-overlay-casestudy{background-size:100%;}
+#wp-development .whywp-askan{padding:60px 0;}
+#wp-development .whywp-askan{padding:0;background:url(../images/whyaskan-wpbg.jpg) no-repeat 0px 0px;background-size:100%;margin:80px 0;position:relative;}
+#wp-development .yaskan-steps{position:relative;height:100%;padding-bottom:60px;float:left;padding-left:10%;}
+#wp-development .yaskan-steps .wsteps{float:left;width:100%;margin-bottom:20px;margin-top:5px;}
+#wp-development .yaskan-steps .wsteps span.white-circle{float:left;width:75px;height:75px;background:#fff;text-align:center;border-radius:50%;line-height:60px;box-shadow:0px 0px 10px #dfdfdd;}
+#wp-development .yaskan-steps .wsteps span.white-circle img{max-height:40px;position:relative;top:18px;}
+#wp-development .yaskan-steps .wsteps p{padding:5px 0px 5px 95px;margin-bottom:0px;width:100%;font-size:14px;}
+#wp-development .yaskan-steps .wsteps p span{font-size:18px;color:#009bfa;float:left;width:100%;margin-bottom:0px;font-weight:500;}
+.mobile-whywp-askan img{display:none;}
+#wp-development .whywordpress-askan{padding:80px 0 0 0;}
+#wp-development .whywordpress-askan .content-block-contents p {  margin-bottom: 18px;  width: 80%;margin-left:auto;margin-right:auto;}
+
+
+
+
+.footer-case-study{background:url(../images/case-study-bg.png);background-repeat: no-repeat;background-position: top left;background-size:cover;display:inline-block;width:100%;padding:250px 0 50px 0;position:relative;}
+.parallax-overlay-casestudy{position:absolute;top:0px;left:0px;width:100%;height:100%;background:url(../images/case-study-parallax.png);background-repeat: no-repeat;background-position: top center;margin:100px 0;}
+.casestudy-left{padding:100px 0;}
+.casestudy-left .casestudy-testimonial{width:90%;float:left;}
+.casestudy-left .casestudy-testimonial .case-study-title{font-size:15px;color:#000;position:relative;font-weight:600;display:inline-block;width:100%;margin-bottom:25px;}
+.casestudy-left .casestudy-testimonial .case-study-title:after{content: "";  display: block;  height: 3px;  width: 70px;  background: rgba(83,224,208,1);  background: -moz-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(83,224,208,1)), color-stop(100%, rgba(0,154,250,1))); background: -webkit-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: -o-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); background: -ms-linear-gradient(left, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%);
+    background: linear-gradient(to right, rgba(83,224,208,1) 0%, rgba(0,154,250,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#53e0d0', endColorstr='#009afa', GradientType=1 );
+    position: absolute; left: 120px; top:5px;}
+.casestudy-left .casestudy-testimonial h3{color:#53e0d0;font-size:36px;margin-bottom:25px;line-height:38px;}
+.casestudy-left .casestudy-testimonial p{font-size:18px;line-height:32px;margin-bottom:25px;}
+.casestudy-left .casestudy-testimonial p.author{color:#53e0d0;font-size:16px;font-weight:normal;}
+.casestudy-left .casestudy-testimonial p.author span{color:#000;font-size:16px;}
+.footer-case-study .container{position:relative;}
+
+
+
+
+@media only screen and (max-width:768px) { 
+
+
+    /**wp development**/
+    #wp-development .overlay-section.opacity0 .container .banner-content-right img{top:10px;max-width:95%;}
+    #wp-development .banner-section{height:auto;position:relative;padding-top:80px;background-color:#009bfa !important;}
+    #wp-development .banner-section .image-section{height:auto;position:relative;}
+    #wp-development .overlay-section.opacity0 .container{top: 0%;transform: translateY(0%);display:inline-block;width:100%;}
+    #wp-development .banner-section .overlay-section{position:relative;}
+    #wp-development .overlay-section.opacity0 .container .banner-content-right{width:100%;text-align:center;}
+    #wp-development .overlay-section.opacity0 .container .banner-content{width:100%;box-sizing:border-box;padding:10px;}
+    #wp-development .askan-expertise{display:block;}
+    #wp-development .box-exp{margin:15px !important;}
+    #wp-development .yaskan-steps{padding-left:10px;}
+    #wp-development .yaskan-steps .wsteps p{text-align:left;}
+    #wp-development .whywp-askan{margin:20px 0;}
+    #wp-development .yaskan-steps{padding-bottom:0px;}
+    #wp-development .casestudy-left{padding:0 0 20px 0;}
+    #wp-development .parallax-overlay-casestudy{margin:100px 0 0 0;display:none;}
+    #wp-development .footer-case-study{padding:50px 0 0 0;}
+
+    .mobile-whywp-askan img {
+        display: inline-block;
+        margin-bottom: 75px;
+    }
+}
+
+
+@media only screen and (max-width: 420px) and (min-width: 320px) { 
+
+    .cc-innerpage-banner .banner-section .overlay-section.opacity0 .text-one h3 { font-size: 14px; }
+    .cc-innerpage-banner .banner-section .overlay-section.opacity0 .text-two h2 { font-size: 28px;  }
+
+}

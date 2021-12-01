@@ -1,0 +1,72 @@
+/*about us css*/
+
+/**about-us**/
+
+
+#about-us .overlay-section.opacity0{position:relative;}
+#about-us .overlay-section.opacity0 .container .banner-content, #about-us .overlay-section.opacity0 .container .banner-content-right{width:50%;}
+#about-us .overlay-section.opacity0 .container {transform: translateY(-20%);}
+#about-us .overlay-section.opacity0 .container .banner-content-right{text-align:center;}
+#about-us .overlay-section.opacity0 .container .banner-content-right img{top:0px;max-width:420px;}
+#about-us .aboutusdiv .content-block-contents p {  margin-bottom: 18px;  width: 80%;margin-left:auto;margin-right:auto;}
+#about-us .app-technology .apptech-box h3{font-weight:200;font-size:44px;}
+#about-us .app-technology .apptech-box .fa{font-size:36px;margin-bottom:15px;}
+#about-us .customer-choose{padding:100px 0 80px 0;background:#bfe2f7;margin-top:80px;}
+#about-us .ourmission, #about-us .ourvision{box-sizing:border-box;padding:10%;color:#fff;max-width:90%;margin:60px 0;background-size:100%;}
+#about-us .ourvision{margin-top:100px;}
+#about-us .ourmission h4, #about-us .ourvision h4{font-size:24px;text-align:left;margin-bottom:25px;}
+#about-us .ourmission p, #about-us .ourvision p{text-align:left;}
+#about-us .apptech-txt h3{color:#009bfa;font-size:26px;text-align:left;font-weight: 500;position:relative;padding:10px 0;}
+#about-us .apptechbox{padding:17% 0;}
+
+.apptech-txt h3{color:#009bfa;font-size:26px;text-align:left;font-weight: 500;padding:20% 0;position:relative;}
+.apptech-txt .small-title-line{display:inline-block;position:relative;top:-5px;width:60px;}
+.apptech-box { width: 33%; box-sizing: border-box; padding: 50px 20px; border-radius: 5px; color: #fff; display: inline-block; margin: 10px; text-align: center; min-height: 210px; }
+.blue-bg{background:#53e0d0;}
+.violet-bg{background:#71105f;position:relative;top:100px;}
+.skyblue-bg{background:#009bfa;}
+.darkblue-bg{background:#00a3d3;position:relative;top:100px;}
+.apptech-box span{display:inline-block;width:100%;margin:5px 0;}
+
+#about-us .ourmission { background-image: url('../images/ourmission.jpg') }
+#about-us .ourvision { background-image: url('../images/ourvision.jpg') }
+
+.app-technology{padding:150px 0;background:url('../images/pencil-phone-left.png') no-repeat left 40px,url(../images/glass-right.png) no-repeat right 50%;	background-size:16%;}
+
+
+
+.whyus-box{padding-right:30px;padding-left:25px;position:relative;}
+.whyus-box:after{content:'';position:absolute;top:0px;right:0px;height:100%;width:1px;border-right:1px solid #ddd;}
+.whyus-box:last-child:after{display:none;}
+.whyus-box img{margin-bottom:15px;}
+.whyus-box h3{color:#009bfa;text-transform:uppercase;line-height:28px;margin-bottom:15px;}
+.whyus-box p{font-size:15px;}
+
+
+.tick-list {list-style:none;float:left;width:100%;margin:35px 0 15px 0;padding:0 0 0 20px;}
+.tick-list li {float:left;width:100%;position:relative;margin-bottom:25px;list-style:none;}
+.tick-list li:before {content: "\f00c";font-family: FontAwesome;display: inline-block;margin-left: -1.3em;width: 1.3em;padding-right:20px;color:#009bfa;}
+
+@media only screen and (max-width:768px) {
+    /*about us*/
+	#about-us .overlay-section.opacity0 .container .banner-content-right img{top:10px;max-width:100%;}
+	#about-us .banner-section{height:auto;position:relative;padding-top:80px;background-color:#009bfa !important;}
+	#about-us .banner-section .image-section{height:auto;position:relative;}
+	#about-us .overlay-section.opacity0 .container{top: 0%;transform: translateY(0%);display:inline-block;width:100%;}
+	#about-us .banner-section .overlay-section{position:relative;}
+	#about-us .overlay-section.opacity0 .container .banner-content-right{width:100%;text-align:center;}
+	#about-us .overlay-section.opacity0 .container .banner-content{width:100%;box-sizing:border-box;padding:10px;}
+	#about-us .ourmission, #about-us .ourvision{max-width:100%;margin:25px 0 0 0;}
+	#about-us .ourvision{margin-top:15px;margin-bottom:30px;}
+	#about-us .mivisn{margin-bottom:0px;}
+	.tick-list li{text-align:left;}
+	.tick-list li:before{padding-right:0px;}
+	#about-us .app-technology{padding:50px 0;}
+	#about-us .apptech-txt h3, #about-us .apptechbox p{text-align:center;}
+	#about-us .apptechbox{padding:10% 0;}
+    .whyus-box:after{border:0px;}
+    
+
+    .tick-list li{text-align:left;}
+	.tick-list li:before{padding-right:0px;}
+ }
