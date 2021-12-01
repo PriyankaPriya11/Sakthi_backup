@@ -1,0 +1,121 @@
+html body .site-menubar {
+    background: rgba(255, 255, 255, 0.64) !important;
+}
+
+html body ul.site-menu a, html body .site-menu>.site-menu-item.open>a {
+    color: #525252;
+}
+
+html body .site-menu>.site-menu-item:hover>a {
+    color: #1ca8f1;
+}
+
+html body .site-navbar .navbar-container {
+    background-color: #1ca8f1;
+}
+
+html body ul.site-menu li {
+    box-shadow: 2px 2px 0px -1px #cecece;
+}
+
+html body li.site-menu-item.has-sub:hover {
+    box-shadow: 2px 2px 6px 1px #cecece80;
+    border-bottom: 2px solid #1ca8f1;
+}
+
+html body.site-menubar-unfold .site-menu>.site-menu-item>a {
+    padding: 10px 30px;
+}
+
+html body .navbar-default .navbar-toolbar .nav-link {
+    color: #ffffff;
+}
+
+html body .navbar-default .hamburger .hamburger-bar,
+html body .navbar-default .hamburger::after,
+html body .navbar-default .hamburger::before {
+    background: #ffffff;
+}
+
+html body .netbanking {
+    background-position: center;
+    background-size: 53px;
+}
+
+html body .wallet {
+    background-position: center;
+    background-size: 44px;
+}
+
+html body .upi {
+    background-size: cover;
+}
+
+html body .pricing-price {
+    background-color: #1ca8f1 !important;
+}
+
+html body .pearl.active .pearl-icon,
+html body .pearl.active .pearl-number,
+html body .pearl.current .pearl-icon,
+html body .pearl.current .pearl-number {
+    color: #1ca8f1;
+    background-color: #fff;
+    border-color: #1ca8f1;
+}
+
+html body .pearl.active::after,
+html body .pearl.active::before,
+html body .pearl.current::after,
+html body .pearl.current::before {
+    background-color: #1ca8f1;
+}
+html body .bg-blue-600 .ss-bg { 
+    background-color: #1ca8f100 !important;
+}
+
+html body .bg-blue-600 { 
+    background-color: #1ca8f1 !important;
+}
+
+html body .counter-label.mb-20 center {
+    display: none;
+}
+html body button#sendpaymentdashboardclick {
+    color: #1ca8f1;
+    background-color: var(--white);
+    border-color: #1ca8f1;
+}
+img.ss-pay {
+    width: 45%;
+    float: left;
+}
+.ss-btn-pay button#sendpaymentdashboardclick {
+    width: 40%;
+    margin: 15%;
+}
+.ss-btn-pay {
+    position: absolute;
+    top: -30px;
+}
+html body .site-menubar-unfold .site-menu>.site-menu-item>a .site-menu-title {
+    font-size: 16px;
+}
+html body i.site-menu-icon.icon.fa-home {
+    font-size: 18px;
+}
+html body .site-navbar {
+    background-color: #1ca8f1 !important;
+}
+.card.card-shadow.card-inverse.bg-blue-600.white.ss-bg {
+    background-color: #00000000 !important;
+}
+html body .site-menu>.site-menu-item.open {
+    background-color: #ffffff !important;
+} 
+html body .site-menu .site-menu-sub .site-menu-item.hover>a, html body .site-menu .site-menu-sub .site-menu-item:hover>a {
+    color: #1ca8f1;
+    background-color: rgba(255,255,255,.02);
+}
+li.site-menu-item.has-sub.open:hover { border: 0;}
+html body .site-menu .site-menu-sub .site-menu-item>a { padding: 10px 30px;}
