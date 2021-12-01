@@ -1,0 +1,8 @@
+2020-06-22T05:50:59+00:00 CRITICAL Uncaught Error: Call to undefined function layerslider() in C:\xampp\htdocs\hub1\wp-content\themes\erum\template_parts\home.php:48
+Stack trace:
+#0 C:\xampp\htdocs\hub1\wp-includes\template-loader.php(78): include()
+#1 C:\xampp\htdocs\hub1\wp-blog-header.php(19): require_once('C:\\xampp\\htdocs...')
+#2 C:\xampp\htdocs\hub1\index.php(17): require('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\hub1\wp-content\themes\erum\template_parts\home.php on line 48
+
