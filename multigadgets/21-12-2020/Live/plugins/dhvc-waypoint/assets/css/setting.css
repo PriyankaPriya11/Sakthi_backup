@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+
+div.dhvc_waypoint.wpb_sortable{
+	border:1px dashed #0d3d63;
+}
+.dhvc_waypoint{
+	position: relative;
+	margin-bottom: 10px;
+}
+.dhvc_waypoint > .controls_column{
+	text-align: center;
+	position: relative;
+	width: 100%;
+	top: 4px;
+	line-height: 1px
+}
+.dhvc_waypoint > .bottom-controls{
+	top: auto;
+	bottom: 4px;
+}
+.dhvc_waypoint > .controls_column a{
+	display: inline-block;
+	width: 12px;
+	height: 16px;
+	margin-left: 3px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+.dhvc_waypoint > .controls_column .column_add{
+	background-image: url(../images/add_grey.png);
+}
+.dhvc_waypoint > .controls_column .column_edit{
+	background-image: url(../images/edit_grey.png);
+}
+.dhvc_waypoint > .controls_column .column_clone{
+	background-image: url(../images/clone_grey.png);
+}
+.dhvc_waypoint > .controls_column .column_delete{
+	background-image: url(../images/remove_grey.png);
+}
+.dhvc_waypoint .empty_container{
+	background-position: center center;
+}
+.dhvc_waypoint > .controls .column_add{
+	display: none;
+}
+.dhvc_waypoint > .controls.bottom-controls .column_add{
+	display: inline-block;
+}
+
+body.compose-mode .dhvc_waypoint.vc-element-container{
+	background-color: #f7f7f7;
+	padding: 1em;
+	/* margin-bottom: 2em; */
+	border:1px dashed #0d3d63;
+}
+.vc_shortcodes_container[data-element_type="dhvc_waypoint"]{
+	background:#a9dff8;
+	border: 1px dashed #317291;
+}
+.vc_shortcodes_container[data-element_type="dhvc_waypoint"] .wpb_element_wrapper .wpb_element_title{
+	display:none;
+}
+.vc_shortcodes_container[data-element_type="dhvc_waypoint"] .wpb_element_wrapper .wpb_column_container{
+	margin:0 10px;
+	background-color:#fff;
+}
