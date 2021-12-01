@@ -1,0 +1,22 @@
+2020-02-11T07:40:14+00:00 CRITICAL Call to undefined function woocommerce_wp_text_input() in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php on line 171
+
+2020-02-11T09:43:12+00:00 CRITICAL Cannot redeclare display_technical_specs_product_tab_content() (previously declared in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php:202) in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php on line 208
+
+2020-02-11T09:43:15+00:00 CRITICAL Cannot redeclare display_technical_specs_product_tab_content() (previously declared in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php:202) in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php on line 208
+
+2020-02-11T09:43:27+00:00 CRITICAL Cannot redeclare display_technical_specs_product_tab_content() (previously declared in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php:202) in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php on line 208
+
+2020-02-11T09:43:36+00:00 CRITICAL Cannot redeclare display_technical_specs_product_tab_content() (previously declared in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php:202) in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php on line 208
+
+2020-02-11T09:43:37+00:00 CRITICAL Cannot redeclare display_technical_specs_product_tab_content() (previously declared in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php:202) in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php on line 208
+
+2020-02-11T09:44:11+00:00 CRITICAL Cannot redeclare display_technical_specs_product_tab_content() (previously declared in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php:202) in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php on line 208
+
+2020-02-11T09:45:37+00:00 CRITICAL Cannot redeclare create_product_technical_specs_meta_box() (previously declared in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php:158) in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php on line 218
+
+2020-02-11T09:45:38+00:00 CRITICAL Cannot redeclare create_product_technical_specs_meta_box() (previously declared in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php:158) in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php on line 218
+
+2020-02-11T09:46:25+00:00 CRITICAL Cannot redeclare create_product_technical_specs_meta_box() (previously declared in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php:158) in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php on line 218
+
+2020-02-11T09:46:33+00:00 CRITICAL Cannot redeclare create_product_technical_specs_meta_box() (previously declared in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php:158) in /var/www/vhosts/desarrollo3dids.net/erum.desarrollo3dids.net/wp-content/themes/erum/functions.php on line 218
+

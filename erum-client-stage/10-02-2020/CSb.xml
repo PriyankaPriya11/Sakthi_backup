@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config>
+  <settings>
+    <preloader image="images/CSb.1.png" />
+    <userInterface showZoomButtons="true" showToolTips="true" showHotspotsButton="true" showFullScreenButton="true" showTogglePlayButton="true" showArrows="true" toolbarAlign="center" toolbarBackColor="transparent" toolbarHoverColor="#808285" toolbarForeColor="#A7A9AE" toolbarBackAlpha="0" toolbarAlpha="1" showProgressNumbers="true" showFullScreenToolbar="false" fullScreenBackColor="#FFFFFF" toolbarPosition="0" customCursorClass="default_cursor" viewerHint="" toolbarAutohide="false" />
+    <control dragSpeed="0.13" doubleClickZooms="true" disableMouseControl="false" showHighresOnFullScreen="true" mouseHoverDrag="false" hideHotspotsOnLoad="false" hideHotspotsOnZoom="true" rowSensitivity="15" dragSensitivity="10" inBrowserFullScreen="false" doubleClickFullscreen="false" zoomSteps="1" zoomSpeed="300" singleClickZooms="false" pauseOnPreload="false" resumePreloadOnHover="false" mouseWheelDrag="false" mouseWheelDragZoomOnly="false" />
+    <rotation firstImage="0" rotate="false" rotatePeriod="7" bounce="false" rotateDirection="-1" forceDirection="false" inertiaRelToDragSpeed="true" inertiaTimeToStop="700" inertiaMaxInterval="120" useInertia="true" flipHorizontalInput="false" flipVerticalInput="false" bounceRows="true" rowsOnSingleIndex="false" flipAxis="false" />
+  </settings>
+  <hotspots />
+  <images rows="1">
+    <image src="images/CSb.1.png" />
+    <image src="images/CSb.2.png" />
+    <image src="images/CSb.3.png" />
+    <image src="images/CSb.4.png" />
+    <image src="images/CSb.5.png" />
+    <image src="images/CSb.6.png" />
+    <image src="images/CSb.7.png" />
+    <image src="images/CSb.8.png" />
+    <image src="images/CSb.9.png" />
+    <image src="images/CSb.10.png" />
+    <image src="images/CSb.11.png" />
+    <image src="images/CSb.12.png" />
+    <image src="images/CSb.13.png" />
+    <image src="images/CSb.14.png" />
+    <image src="images/CSb.15.png" />
+    <image src="images/CSb.16.png" />
+    <image src="images/CSb.17.png" />
+    <image src="images/CSb.18.png" />
+    <image src="images/CSb.19.png" />
+    <image src="images/CSb.20.png" />
+    <image src="images/CSb.21.png" />
+    <image src="images/CSb.22.png" />
+    <image src="images/CSb.23.png" />
+    <image src="images/CSb.24.png" />
+    <image src="images/CSb.25.png" />
+    <image src="images/CSb.26.png" />
+    <image src="images/CSb.27.png" />
+    <image src="images/CSb.28.png" />
+    <image src="images/CSb.29.png" />
+    <image src="images/CSb.30.png" />
+    <image src="images/CSb.31.png" />
+    <image src="images/CSb.32.png" />
+    <image src="images/CSb.33.png" />
+    <image src="images/CSb.34.png" />
+    <image src="images/CSb.35.png" />
+  </images>
+</config>

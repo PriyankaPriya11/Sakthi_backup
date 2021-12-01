@@ -1,0 +1,112 @@
+body { -ms-overflow-style: scrollbar;}
+pre { -webkit-overflow-scrolling: touch; white-space: pre-wrap;}
+.ss-carousel { -webkit-overflow-scrolling: touch; overflow-x: auto;}
+#wrapper > .scrollZone { cursor: -moz-grab; cursor: -webkit-grab; cursor: -ms-grab; cursor: grab; z-index: 10100;}
+#wrapper > .scrollZone.left { left: 0;}
+#wrapper > .scrollZone.right { right: 0;}
+.ss-header-txt h1 {color: #FFFFFF; font-family: "Playfair Display";	font-size: 200px; letter-spacing: 6.67px; line-height: 266px; text-align: left; padding: 10% 0 0;}
+body.page-template-origen, body.page-template-origen-vertical { background-color: rgba(232,232,232,0.86);}
+body.page-template-origen .light-logo > a:first-child, body.page-template-origen-vertical .light-logo > a:first-child { display: none;}
+.ss-header-txt h3 { color: #525252; font-family: Arimo; font-size: 50px; font-weight: bold; letter-spacing: 1.67px; line-height: 58px; text-align: left; margin-top: -9%; margin-left: 7%; margin-bottom: 7%;}
+body.page-template-origen .elg-navigation p, body.page-template-origen-vertical .elg-navigation p { color: #000000;}
+body.page-template-origen .elg-nav-line, body.page-template-origen-vertical .elg-nav-line { background-color: #000000;} 
+.ss-paragraph p { color: #525252; font-family: Arimo;  font-size: 15px; line-height: 24px;  font-weight: normal;}
+.ss-video-1 { position: absolute; top: 0; z-index: -1; left: 44%; opacity: 0.3;}
+.ss-video-2 { position: absolute; bottom: 0; z-index: -1; right: 0; opacity: 0.3;}
+body.page-template-origen .ss-section-one .col-md-6, body.page-template-origen-vertical .ss-section-one .col-md-6 { width: 46%;}
+#myVideo, #myVideo-1  { width: 554px; height: 415px; object-fit: cover; z-index: -100;}
+.ss-col-ig { margin: 0 0 7%;}
+.ss-col-txt h4 { color: #525252; font-family: Arimo; font-size: 20px; letter-spacing: 0.67px; line-height: 23px; font-weight: 100;}
+.ss-col-txt h3 { color: #525252; font-family: Arimo; font-size: 30px; font-weight: bold; letter-spacing: 1px; line-height: 34px;}
+.ss-col-txt { padding: 0 25% 0 0;}
+.ss-col-txt p { color: #525252; font-family: Arimo; font-size: 15px; line-height: 24px; font-weight: 100;}
+.ss-section-two { padding: 8% 0 0;}
+.owl-item { height: 100vh;}
+.owl-nav { display: none;}
+.owl-dots { position: absolute; bottom: 40px; left: 30%;}
+button.owl-dot.active span:after { content: ""; position: absolute; top: 20px; color: #525252; font-family: Arimo; font-size: 15px; letter-spacing: 2.57px; line-height: 24px;
+    text-align: center; text-transform: uppercase; margin-left: -30px;}
+button.owl-dot.active:first-child span:after { content: "Origen"; background: #75B331;animation-name: drawLines; animation-duration: .3s; 
+    animation-delay: .3s; animation-timing-function: cubic-bezier(.16,.71,.68,.86); animation-iteration-count: 1; animation-fill-mode: forwards; height: 1px; position: absolute; top: 9px; left: 37px;}
+button.owl-dot.active:nth-child(2) span:after { content: "Lorem"; margin-left: -60px; background: #75B331;animation-name: drawLines; animation-duration: .3s; 
+    animation-delay: .3s; animation-timing-function: cubic-bezier(.16,.71,.68,.86); animation-iteration-count: 1; animation-fill-mode: forwards; height: 1px; position: absolute; top: 9px; left: 321px;}
+button.owl-dot.active:nth-child(3) span:after { content: "Ipsum"; margin-left: -60px; background: #75B331;animation-name: drawLines; animation-duration: .3s; 
+    animation-delay: .3s; animation-timing-function: cubic-bezier(.16,.71,.68,.86); animation-iteration-count: 1; animation-fill-mode: forwards; height: 1px; position: absolute; top: 9px; left: 575px;}
+.ss-tt { position: absolute; width: 30%; right: 10%; top: 19%;}
+/* body.page-template-origen-vertical .ss-tt { position: absolute; width: 30%; right: 10%; top: 122%;} */
+.ss-tt .ss-col-txt { padding: 0;}
+@media only screen and (min-width: 1921px) {
+    .ss-header-txt h1 { font-size: 212px; padding: 25% 0 0;}
+    #myVideo { width: 660px; height: 630px;}
+    #myVideo-1 { width: 950px; height: 630px;}
+    body.page-template-origen .ss-section-one .col-md-6, body.page-template-origen-vertical .ss-section-one .col-md-6 { width: 36%;}
+    .ss-video-2 { right: -10%;}
+    .owl-dots { left: 35%;}
+    .ss-section-two { padding: 15% 0 0;}
+    .cc-map-point.cc-mp-2 { top: 45%; left: 41%;}
+    .cc-map-point.cc-mp-3 { top: 41%;}
+    .cc-map-point.cc-mp-4 { top: 54%; left: 60.5%;}
+    .cc-map-point.cc-mp-5 { top: 35%; left: 73%;}
+    .cc-map-point.cc-mp-6 { top: 48%; left: 62.5%;}
+    .cc-map-point.cc-mp-7 { left: 59%;}
+    .cc-map-point.cc-mp-8 { top: 58%; left: 68.5%;}
+}
+html body .extraClassCrop {
+    -webkit-transform: scale(1) !important;
+}
+
+
+/* 12-05-2020 */
+body.page-template-origen-vertical .ss-video-2 { position: unset;}
+body.page-template-origen-vertical .cc-map-section { position: unset; height: auto; width: 60%; top: 122%;}
+/* 12-05-2020 */
+/* 13-05-2020 */
+body.page-template-origen-vertical .ss-carousel { overflow: auto; width: 100%;}
+body.page-template-origen-vertical .ss-carousel.ss-ofw { overflow: unset;}
+body.page-template-origen-vertical .ss-section-one, body.page-template-origen-vertical .ss-section-two, body.page-template-origen-vertical .ss-section-three { width: 3000px; height: auto;}
+body.page-template-origen-vertical .ss-video-1, body.page-template-origen-vertical .ss-video-2, body.page-template-origen-vertical .ss-tt { position: unset;}
+.cc-map-section img { margin-left: -6px; margin-top: -4px;}
+
+html body.page-template-origen-vertical #wrapper { height: 100%; position: absolute; padding-left: 210px; padding-right: 210px;}
+html body.page-template-origen-vertical .ss-scroll { display: flex; justify-content: space-between; overflow: unset;}
+html body.page-template-origen-vertical .ss-section-one { margin-right: 20%;}
+html body.page-template-origen-vertical .ss-video-1, html body.page-template-origen-vertical .ss-video-2 { position: absolute;}
+html body.page-template-origen-vertical .ss-section-two { max-width: 100%; }
+html body.page-template-origen-vertical .ss-tt { position: absolute; margin-left: 195px; width: 23.15%; right: 0; top: 19%; left: 219%;}
+html body.page-template-origen-vertical .cc-map-section { position: absolute; height: auto; width: 60%; top: 23%; left: 157%;}
+html body.page-template-origen-vertical .ss-section-two img { width: 100%;}
+html body.page-template-origen-vertical .ss-section-three .ss-tt img { width: 92.5%;}
+html body.page-template-origen-vertical .ss-video-2 { right: 12%;}
+html body.page-template-origen-vertical .ss-section-three .ss-tt .ss-content-txt { position: relative; right: 50%;}
+html body.page-template-origen-vertical .ss-carousel::-webkit-scrollbar { display: none;}
+html::-webkit-scrollbar { display: none;}
+html body.page-template-origen-vertical .ss-carousel, html { -ms-overflow-style: none;}
+
+
+
+
+html body.page-template-origen-vertical .ss-section-three.scrolled .cc-line { animation-name: drawLine; animation-duration: 1s; animation-delay: .3s; animation-timing-function: cubic-bezier(.16,.71,.68,.86); animation-iteration-count: 1; animation-fill-mode: forwards; display: block;}
+html body.page-template-origen-vertical .ss-section-three.scrolled .cc-imgpopup .cc-img-wrapper, html body.page-template-origen-vertical .ss-section-three.scrolled .cc-imgpopup h5 { opacity: 1; display: block; transition: 1s; }
+html body.page-template-origen-vertical .ss-section-two .col-md-6:first-child { position: absolute; top: 500%; transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94); transition-delay: 2s;}
+html body.page-template-origen-vertical .ss-section-two.scrolled .col-md-6:first-child, html body.page-template-origen-vertical .ss-section-two.scrolled .col-md-6:last-child { opacity: 1; transform: none; transition-delay: .4s; position: unset;}
+html body.page-template-origen-vertical .ss-section-two .col-md-6:last-child { position: absolute; top: 500%; transition: opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94); transition-delay: 2s;}
+html body.page-template-origen-vertical .cc-map-point .cc-circle2 { opacity: 0; transition-delay: 0.s;}
+html body.page-template-origen-vertical .ss-section-three.scrolled .cc-map-point .cc-circle2 { opacity: 1; transition-delay: 0.5s;}
+/* 14-05-2020 */
+@media only screen and (min-width: 1921px) and (max-width: 3000px) {
+    html body.page-template-origen-vertical .ss-section-one { margin-right: 55%;}
+    .fs-menu.fs-menu-in .menu-main-menu-container .ss-language { position: relative; top: -57px; left: 67%;}
+    html body .ss-pagination { width: 84%;}
+    html body.page-template-origen-vertical .ss-carousel::-webkit-scrollbar { display: none;}
+html::-webkit-scrollbar { display: none;}
+html body.page-template-origen-vertical .ss-carousel, html { -ms-overflow-style: none;}
+}
+.ss-pagination .ss-flx a.scrollto.ss-js:first-child span:after { content: "Origen"; color: #525252; font-family: Arimo; font-size: 15px; letter-spacing: 2.57px; line-height: 24px; text-align: center; text-transform: uppercase; display: flex; justify-content: center; position: relative; top: 10px;}
+.ss-pagination .ss-flx a.scrollto.ss-js:nth-child(2) span:after { content: "Lorem"; color: #525252; font-family: Arimo; font-size: 15px; letter-spacing: 2.57px; line-height: 24px; text-align: center; text-transform: uppercase; display: flex; justify-content: center; position: relative; top: 10px;}
+.ss-pagination .ss-flx a.scrollto.ss-js:first-child span, .ss-pagination .ss-flx a.scrollto.ss-js:nth-child(2) span, .ss-pagination .ss-flx a.scrollto.ss-js:last-child span { background: #75B331; animation-name: drawLines; animation-duration: .3s; animation-delay: .3s; animation-timing-function: cubic-bezier(.16,.71,.68,.86); animation-iteration-count: 1; animation-fill-mode: forwards; height: 1px;}
+.ss-pagination .ss-flx a.scrollto.ss-js:last-child span:after { content: "Ipsum"; color: #525252; font-family: Arimo; font-size: 15px; letter-spacing: 2.57px; line-height: 24px; text-align: center; text-transform: uppercase; display: flex; justify-content: center; position: relative; top: 10px;}
+.ss-pagination .ss-flx a.scrollto:hover, .ss-pagination .ss-flx a.scrollto:focus { text-decoration: none;}
+.ss-pagination { position: fixed; bottom: 5%; width: 75%;}
+.ss-pagination a span { margin: 5px 7px; background: rgb(37, 36, 36); display: block; -webkit-backface-visibility: visible; transition: opacity 20ms ease; border-radius: 30px; box-sizing: border-box; height: 1px; width: 240px;}
+.ss-flx { display: flex; justify-content: center;}
+/* 14-05-2020 */

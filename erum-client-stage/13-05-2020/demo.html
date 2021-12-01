@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        .target1 {
+            font-family: arial, sans-serif;
+            height: auto;
+            width: 100%;
+            overflow: auto;
+            margin: 0 auto 20px;
+            display: block;
+        }
+
+        .target1 {
+            color: white;
+            background: red;
+        }
+
+        .target2 {}
+
+        .nested_content {
+            height: auto;
+            width: 100%;
+            display: block;
+            padding: 30px;
+        }
+
+        .target1.scrolled {
+            background: green;
+        }
+
+        .target2.scrolled {
+            box-shadow: inset 0px 0px 3px 1px #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="target1">
+        <div class="nested_content">
+            Scroll me!
+            <br>
+            <br>
+            <br>
+            And I'll add a class. But only if you scroll away from the top. And if you come back I'll reset!
+        </div>
+    </div>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var scrollFunction = function () {
+            var scrollPosition = $(this).scrollLeft();
+            if (scrollPosition == 0) {
+                $(this).removeClass('scrolled');
+            }
+            else {
+                $(this).addClass('scrolled');
+            }
+        }
+        $('.target1').scroll(scrollFunction);
+    });
+</script>
+
+</html>
