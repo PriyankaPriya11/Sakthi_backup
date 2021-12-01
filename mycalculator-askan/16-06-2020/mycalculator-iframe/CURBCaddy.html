@@ -1,0 +1,876 @@
+
+    <!doctype html>
+    <html ⚡>
+    <head>
+    <meta charset="utf-8">
+    <title>CURB-65 (Pneumonia) | Caddy</title>
+    <link rel="canonical" href="/curb65-pneumonia">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://caddy.health/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://caddy.health/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://caddy.health/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="https://caddy.health/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="https://caddy.health/assets/favicons/safari-pinned-tab.svg" color="#4366a0">
+    <meta name="msapplication-TileColor" content="#4366a0">
+    <meta name="theme-color" content="#4366a0">
+
+    <style amp-custom>
+     @font-face {
+    font-display: block;
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v36/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format("woff2");
+}
+
+/* latin */
+@font-face {
+    font-display: fallback;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Rubik Light"), local("Rubik-Light"), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7Fqj2md8WA.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Rubik Medium"), local("Rubik-Medium"), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7Eyjmmd8WA.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html,
+body {
+    background: #f3f8fb;
+    color: #263238;
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik", Roboto, sans-serif;
+    font-weight: 300;
+}
+
+.norubik body {
+    font-family: Roboto, sans-serif;
+}
+
+a {
+    color: #ff5722;
+}
+
+h1,
+h2,
+h3,
+b {
+    font-weight: 500;
+}
+
+h3 {
+    margin-block-start: 0.3em;
+}
+
+.preview-container {
+    background: #4366a0;
+    display: flex;
+    height: 65px;
+}
+
+.material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+}
+
+.hasicons .material-icons {
+    display: inline-block;
+    opacity: 1;
+}
+
+.material-icons {
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+    max-width: 18px;
+}
+.material-icons.md-24 {
+    font-size: 24px;
+}
+.material-icons.md-36 {
+    font-size: 36px;
+}
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.search-box {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1;
+    flex: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 140px;
+    max-width: 800px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.search-box input {
+    font-weight: 250;
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 10px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/*#auto-suggest {
+    box-shadow: var(--box-shadow-1);
+}*/
+
+.search-suggestion {
+    position: absolute;
+    width: 99%;
+    overflow-x: hidden;
+    z-index: 100;
+    padding: 0;
+    border: 0;
+    top: 50px;
+    border-radius: 0;
+}
+
+.search-suggestion amp-list {
+    background-color: #fff;
+}
+
+.search-suggestion [role=listitem] {
+    border-bottom: 1px solid #f1efefbd;
+}
+
+.search-suggestion [role=listitem] a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.search-suggestion [role=listitem] a:hover{
+    background-color:#f1efefbd;
+}
+
+/*
+.search-suggestion [option] {
+  padding: var(--space-1);
+}
+*/
+
+.app-brand {
+    align-items: center;
+    display: flex;
+    color: #fff;
+    padding: 10px;
+}
+
+.app-brand a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-brand amp-img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.calculator{
+    /*display: flex;
+    justify-content: center;*/
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5px 15px;
+}
+
+.output-box{
+    background-color: #4366a0;
+    padding: 20px 20px 10px 20px;
+    color: #fff;
+    margin-top: 17px;
+    border-radius: 10px;
+}
+
+.output-box .output{
+    padding-bottom: 10px;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+
+/*.form-control input[type=number],
+.form-control input[type=text],
+.form-control input[type=email]{
+    min-width: 73%;
+    padding: 0 5px;
+    border: 1px;
+    margin-right:5px;
+    border-radius: 5px;
+}*/
+
+.amp-input{
+  position:relative; 
+  margin-right: 25px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.amp-input input {
+  font-size:18px;
+  padding: 5px;
+  display:block;
+  width: 100%;
+  border:none;
+  border-bottom:1px solid #a59999;
+  background: transparent;
+}
+
+.amp-input input:focus { 
+  outline:none;
+  border-bottom: 2px solid #4366a0;
+}
+
+.amp-input label {
+    position:absolute;
+    pointer-events:none;
+    color: #a59999;
+    left:5px;
+    top: 0px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.amp-input input:focus ~ label,
+.amp-input input:valid ~ label {
+    top: -15px;
+    font-size:12px;
+    color: #000;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4366a0;
+    color: #fff;
+    min-width: 110px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+.reference-box {
+    background: #eceff1;
+    padding: 20px 20px 15px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.table-responsive {
+    min-height: 0.01%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table td,
+.table th {
+    color: #333;
+    font-family: sans-serif;
+    font-size: 100%;
+    padding: 10px;
+    vertical-align: top;
+    font-weight: normal
+}
+
+.table tr:nth-child(even) td {
+    background-color: #fff;
+}
+
+.table th {
+    padding-bottom: 20px;
+    font-size: 110%;
+    font-weight: bold
+}
+
+table  th:nth-child(1){
+    border-radius: 10px 0px 0px 10px;
+}
+table  th:nth-last-child(1){
+    border-radius: 0px 10px 10px 0px;
+}
+
+.table td {
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+}
+
+.tg-bf {
+    font-weight: 700;
+}
+
+.tg-center {
+    text-align: center;
+}
+
+.tg-right {
+    text-align: right;
+}
+
+.equationRef {
+    margin-bottom: 10px
+}
+
+@media screen and (max-width: 767px) {
+    .table-responsive {
+        width: 100%;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+  
+    .table-responsive > .table {
+        margin-bottom: 0;
+    }
+
+    .table-responsive > .table > tbody > tr > td,
+    .table-responsive > .table > tbody > tr > th,
+    .table-responsive > .table > tfoot > tr > td,
+    .table-responsive > .table > tfoot > tr > th,
+    .table-responsive > .table > thead > tr > td,
+    .table-responsive > .table > thead > tr > th {
+        white-space: nowrap;
+    }
+
+    .table td,
+    .table th {
+        font-size: 70%;
+    }
+}
+
+footer .footer-nav{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+footer .footer-nav li{
+    display: inline-block;
+}
+
+footer .footer-nav li:after {
+    content: '|';
+    font-size: 5px;
+    margin-left: 5px;
+}
+
+footer .footer-nav li:last-child:after{
+    content: none;
+}
+
+footer .footer-nav li a{
+    color: #8a8585;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+footer .footer-nav li a:hover{
+    border-bottom: 1px dashed #bdbdbd;
+}
+
+@media only screen and (max-width: 600px) {
+    .search-box{
+        margin: auto;
+    }
+
+    .app-brand .brand-text{
+        display:none;
+    }
+
+    .btn {
+        min-width: 25%;
+        font-size: 12px;
+        padding: 0 7px;
+    }
+}
+amp-selector {
+    padding: 6px 0;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 10px 0;
+}
+
+amp-selector.inline-flex {
+    display: flex;
+    align-items: center;
+}
+
+amp-selector .option-text{
+    flex-grow: 1;
+    display: inline-block;
+    padding: 0 10px;
+    flex-basis: 10%;
+    white-space: pre-wrap;
+}
+
+amp-selector [option] {
+    display: inline-block;
+    padding: 8px 15px;
+    min-width: 45px;
+    font-size: 14px;
+    margin-bottom: 0;
+    border: 1px solid #c0bdbd;
+    border-radius: 10px;
+    color: #b3b3b3;
+    -webkit-box-shadow: 0 1px 4px 0 #d1d8dc;
+    box-shadow: 0 1px 4px 0 #d1d8dc;
+    text-align: center;
+}
+
+amp-selector [option]:focus {
+    outline: none;
+}
+
+amp-selector.radio-selector .selector-opt [option] {
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    border-bottom: 0;
+    width: 80px;
+    box-shadow:none;
+    text-align: left;
+}
+
+amp-selector.radio-selector{
+    align-items: flex-start;
+}
+
+amp-selector.radio-selector .selector-opt [option] {
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    border-bottom: 0;
+    min-width: 138px;
+    box-shadow:none;
+}
+
+amp-selector.radio-selector .selector-opt [option]:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-box-shadow: 0 -1px 6px 0 #d1d8dc;
+    box-shadow: 0 -1px 6px 0 #d1d8dc;
+}
+
+amp-selector.radio-selector .selector-opt [option]:last-child{
+    border-bottom: 1px solid #c0bdbd;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-box-shadow: 0 1px 6px 0 #d1d8dc;
+    box-shadow: 0 1px 6px 0 #d1d8dc;
+}
+
+amp-selector [option][selected] {
+    background-color: #4366a0;
+    color: #fff;
+    outline: none;  
+}
+
+amp-selector.radio-selector [option] {
+    padding: 10px;
+}
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <body on="tap:AMP.setState({ filteredCalculators: [] })" tabindex="0" role="button">
+  
+    
+      <header>
+        <div class="preview-container" on="tap: AMP.setState({ filteredCalculators: [] })" tabindex="0" role="button">
+          <h1 class="app-brand">
+            <a href="https://caddy.health">
+              <amp-img alt="Caddy" src="https://caddy.health/assets/caddy_white_logo.png" layout="responsive" width="50" height="43.36" ></amp-img>
+              <span class="brand-text">Caddy</span>
+            </a>
+          </h1>
+          <div class="search-box">
+            <label style="display:none">Enter search:</label>
+            <input [value]="search" [placeholder]="'Search Calculators'" placeholder="Search Calculators" on="input-debounced:AMP.setState({ 
+                filteredCalculators: event.value.length == 0 ? 
+                [] : calculators.items.filter(search => search.title.toLowerCase().indexOf(event.value.toLowerCase()) >= 0 )
+                ,myRangeValue: event.value,visible: !visible})" [class]="visible ? 'show event-test' : 'hide'" class="hide">
+            <amp-selector class="search-suggestion" keyboard-select-mode="focus" on="select:AMP.setState({ search: event.targetOption, filteredCalculators: [] })" >
+              <amp-list id="auto-suggest" items="" height="0" layout="fixed-height" [src]="filteredCalculators" [height]="(filteredCalculators.length > 0 ? (filteredCalculators.length*40) : 0)" >
+                <template type="amp-mustache">
+                  <div><a href="{{url}}" >{{title}}</a></div>
+                </template>
+              </amp-list>
+            </amp-selector>
+            <amp-state id="calculators" src="/calculator_list.json"></amp-state>
+          </div>
+        </div>
+      </header>
+      <main class="calculator">
+        <div>
+          
+    <h2>CURB-65 (Pneumonia)</h2>
+    
+          <amp-selector layout="container" class="inline-flex"
+          on="select: AMP.setState({item0: event.selectedOptions})">
+
+            <span class="selector-opt option-text">Confusion</span>
+        
+            <div class="selector-opt">
+              <span option=0 selected class="confusion-no">No &nbsp;&nbsp;0</span>
+              <span option=1 class="confusion-yes">Yes &nbsp;+1</span>
+            </div>
+          </amp-selector>
+          
+          <amp-selector layout="container" class="inline-flex"
+          on="select: AMP.setState({item1: event.selectedOptions})">
+
+            <span class="selector-opt option-text">Urea > 7mmol/L</span>
+        
+            <div class="selector-opt">
+              <span option=0 selected class="urea_no">No &nbsp;&nbsp;0</span>
+              <span option=1 class="urea_yes">Yes &nbsp;+1</span>
+            </div>
+          </amp-selector>
+          
+          <amp-selector layout="container" class="inline-flex"
+          on="select: AMP.setState({item2: event.selectedOptions})">
+
+            <span class="selector-opt option-text">Respiratory rate > 30</span>
+        
+            <div class="selector-opt">
+              <span option=0 selected class="respiratory_no">No &nbsp;&nbsp;0</span>
+              <span option=1 class="respiratory_yes">Yes &nbsp;+1</span>
+            </div>
+          </amp-selector>
+          
+          <amp-selector layout="container" class="inline-flex"
+          on="select: AMP.setState({item3: event.selectedOptions})">
+
+            <span class="selector-opt option-text">Systolic BP < 90mmHg OR Diastolic BP < 60mmHg</span>
+        
+            <div class="selector-opt">
+              <span option=0 selected class="systolic-no">No &nbsp;&nbsp;0</span>
+              <span option=1 class="systolic-yes">Yes &nbsp;+1</span>
+            </div>
+          </amp-selector>
+          
+          <amp-selector layout="container" class="inline-flex"
+          on="select: AMP.setState({item4: event.selectedOptions})">
+
+            <span class="selector-opt option-text">Age => 65</span>
+        
+            <div class="selector-opt">
+              <span option=0 selected class="age65-no">No &nbsp;&nbsp;0</span>
+              <span option=1 class="age65-yes">Yes &nbsp;+1</span>
+            </div>
+          </amp-selector>
+          
+  
+  <amp-bind-macro id="result0" expression="(round(([item0,item1,item2,item3,item4].reduce((x, y) => +(+x) + (+y)))*10)/10).toFixed(1)"></amp-bind-macro>
+  
+  <amp-bind-macro id="interpretationResult" arguments="originalResult" 
+  expression="(originalResult < 1 ? 0 : (2 > originalResult ? 1 : (3 > originalResult ? 2 : (4 > originalResult ? 3 : (5 > originalResult) ? 4 : 5)))).toFixed(1)"></amp-bind-macro>
+
+  <amp-state id="interpretations">
+    <script type="application/json">
+      {
+        
+    "0.0": {
+        "result1": "Treat as an outpatient",
+        "result0": "30-day death rate = 0.7%"},
+    "1.0": {
+        "result0": "30-day death rate = 3.2%",
+        "result1": "Treat as an outpatient"},
+    "2.0": {
+        "result1": "Consider a short stay in hospital",
+        "result0": "30-day death rate = 13.0%"},
+    "3.0": {
+        "result0": "30-day death rate = 17.0%",
+        "result1": "Consider a short stay in hospital"},
+    "4.0": {
+        "result0": "30-day death rate = 41.5%",
+        "result1": "Requires hospitalization"},
+    "5.0": {
+        "result1": "Requires hospitalization",
+        "result0": "30-day death rate = 57.0%"}
+      }
+    </script>
+  </amp-state>
+      
+  <div class="output-box"><div class="output">Results <span [text]="result0()">0.0</span></div>
+
+            <div class="output">
+              <span [text]="interpretations[interpretationResult(result0())].result1">Treat as an outpatient</span>
+            </div>
+          
+
+            <div class="output">
+              <span [text]="interpretations[interpretationResult(result0())].result0">30-day death rate = 0.7%</span>
+            </div>
+          </div>
+
+  <div class="reference-box">
+    
+      <div class="refs-block">
+        <div class='table-responsive'>
+          <table class="table">
+              <thead>
+                <tr>
+                    <th align="left" class="tg-left tg-bf">Score</th>
+                    <th class="tg-right tg-bf">Interpretation</th>
+                </tr>
+              </thead>
+              <tbody><tr><td>0.0</td><td class="tg-right">Treat as an outpatient<br></br>30-day death rate = 0.7%</td></tr><tr><td>1.0</td><td class="tg-right">30-day death rate = 3.2%<br></br>Treat as an outpatient</td></tr><tr><td>2.0</td><td class="tg-right">Consider a short stay in hospital<br></br>30-day death rate = 13.0%</td></tr><tr><td>3.0</td><td class="tg-right">30-day death rate = 17.0%<br></br>Consider a short stay in hospital</td></tr><tr><td>4.0</td><td class="tg-right">30-day death rate = 41.5%<br></br>Requires hospitalization</td></tr><tr><td>5.0</td><td class="tg-right">Requires hospitalization<br></br>30-day death rate = 57.0%</td></tr></tbody>
+             </table>
+        </div>
+      </div>
+      
+  </div>
+  <div class="reference-box">
+    
+      <div class="refs-block">
+        <h3>Evidence</h3>
+        <p>
+        W Lim, M M van der Eerden, R Laing, W Boersma, N Karalus, G Town, S Lewis, and J Macfarlane. Defining community acquired pneumonia severity on presentation to hospital: an international derivation and validation study. Thorax. 2003 May; 58(5): 377–382. doi: 10.1136/thorax.58.5.377.</p><p>
+        Shah BA, et. al. Validity of Pneumonia Severity Index and CURB-65 Severity Scoring Systems in Community Acquired Pneumonia in an Indian Setting. The Indian Journal of Chest Diseases &amp; Allied Sciences. 2010;Vol.52.</p><p>
+        Aujesky D, Auble TE, Yealy DM, et al. Prospective comparison of three validated prediction rules for prognosis in community-acquired pneumonia. Am. J. Med. 2005;118(4): 384–92.doi:10.1016/j.amjmed.2005.01.006. PMID 15808136</p><p>
+        Myint PK, Kamath AV, Vowler SL, Maisey DN, Harrison BD. Severity assessment criteria recommended by the British Thoracic Society (BTS) for community-acquired pneumonia (CAP) and older patients. Should SOAR (systolic blood pressure, oxygenation, age and respiratory rate) criteria be used in older people? A compilation study of two prospective cohorts. Age Ageing. 2006;35(3):286-91.</p><p>
+        Capelastegui A, España PP, Quintana JM, et al. Validation of a predictive rule for the management of community-acquired pneumonia. Eur Respir J. 2006;27(1):151-7.</p>
+      </div>
+     
+  </div>
+    
+        </div>
+      </main>
+      
+  <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+      {
+      "vars" : {
+      "gtag_id": "UA-140401390-1",
+      "config" : {
+        "UA-140401390-1": { "groups": "default" }
+      }
+    },
+    "triggers": {
+      "trackPageview": {
+        "on": "visible",
+        "request": "pageview"
+        }
+      }
+    }   
+    </script>
+    </amp-analytics>
+    <amp-analytics type="googleanalytics">
+    <script type="application/json">
+        {
+            "extraUrlParams" : {
+                "input-search": "${ampState(myRangeValue)}"
+            },
+            "vars": {
+            "account": "UA-140401390-1"
+            },
+            "triggers": {
+                    "scrollPings14": {
+                      "on": "scroll",
+                      "scrollSpec": {
+                        "verticalBoundaries": [25, 50, 90],
+                        "horizontalBoundaries": [90]
+                      },
+                      "request": "event",
+                      "vars": {
+                        "eventCategory": "Pneumonia",
+                        "eventAction": "page-scroll",
+                        "eventLabel": "page scrolling"
+                    }
+                    },
+                              "trackAnchorClicks15": {
+                                "on": "click",
+                                "selector": ".event-test",
+                                "request": "event",
+                                "vars": {
+                                  "eventCategory": "Pneumonia search box", 
+                                  "eventAction": "${ampState(myRangeValue)}",
+                                  "eventLabel": "${ampState(myRangeValue)}"
+                                }
+                            },
+                                "trackspandivcontent16": {
+                                    "on": "click",
+                                    "selector": ".confusion-no",
+                                    "request": "event",
+                                    "vars": {
+                                      "eventCategory": "Pneumonia", 
+                                      "eventAction": "confusion-no",
+                                      "eventLabel": "Confusion No"
+                                    }
+                                },
+                                "trackspandivcontent17": {
+                                    "on": "click",
+                                    "selector": ".confusion-yes",
+                                    "request": "event",
+                                    "vars": {
+                                        "eventCategory": "Pneumonia", 
+                                        "eventAction": "confusion-yes",
+                                        "eventLabel": "Confusion Yes"
+                                    }
+                                },
+                                "trackspandivcontent18": {
+                                    "on": "click",
+                                    "selector": ".urea_yes",
+                                    "request": "event",
+                                    "vars": {
+                                        "eventCategory": "Pneumonia", 
+                                        "eventAction": "urea-yes",
+                                        "eventLabel": "Urea Yes"
+                                    }
+                                },
+                                "trackspandivcontent19": {
+                                    "on": "click",
+                                    "selector": ".urea_no",
+                                    "request": "event",
+                                    "vars": {
+                                        "eventCategory": "Pneumonia", 
+                                        "eventAction": "urea-no",
+                                        "eventLabel": "Urea No"
+                                    }
+                                },
+                                "trackspandivcontent20": {
+                                    "on": "click",
+                                    "selector": ".respiratory_yes",
+                                    "request": "event",
+                                    "vars": {
+                                        "eventCategory": "Pneumonia", 
+                                        "eventAction": "respiratory-yes",
+                                        "eventLabel": "Respiratory Yes"
+                                    }
+                                },
+                                "trackspandivcontent21": {
+                                    "on": "click",
+                                    "selector": ".respiratory_no",
+                                    "request": "event",
+                                    "vars": {
+                                        "eventCategory": "Pneumonia", 
+                                        "eventAction": "respiratory_no",
+                                        "eventLabel": "Respiratory No"
+                                    }
+                                },
+                                "trackspandivcontent22": {
+                                    "on": "click",
+                                    "selector": ".systolic-yes",
+                                    "request": "event",
+                                    "vars": {
+                                        "eventCategory": "Pneumonia", 
+                                        "eventAction": "systolic-yes",
+                                        "eventLabel": "Systolic Yes"
+                                    }
+                                },
+                                "trackspandivcontent23": {
+                                    "on": "click",
+                                    "selector": ".systolic-no",
+                                    "request": "event",
+                                    "vars": {
+                                        "eventCategory": "Pneumonia", 
+                                        "eventAction": "systolic-no",
+                                        "eventLabel": "Systolic No"
+                                    }
+                                },
+                                "trackspandivcontent24": {
+                                    "on": "click",
+                                    "selector": ".age65-yes",
+                                    "request": "event",
+                                    "vars": {
+                                        "eventCategory": "Pneumonia", 
+                                        "eventAction": "age65-yes",
+                                        "eventLabel": "Age 65 Yes"
+                                    }
+                                },
+                                "trackspandivcontent25": {
+                                    "on": "click",
+                                    "selector": ".age65-no",
+                                    "request": "event",
+                                    "vars": {
+                                        "eventCategory": "Pneumonia", 
+                                        "eventAction": "age65-no",
+                                        "eventLabel": "Age 65 No"
+                                    }
+                                },
+                                "trackspandivcontent26": {
+                                    "on": "click",
+                                    "selector": ".diabetes-mellitus-yes",
+                                    "request": "event",
+                                    "vars": {
+                                        "eventCategory": "Pneumonia", 
+                                        "eventAction": "diabetes-mellitus-yes",
+                                        "eventLabel": "Diabetes Mellitus Yes"
+                                    }
+                                }
+                  }
+            }
+    </script>
+    </amp-analytics>
+    
+        <footer>
+            <ul class="footer-nav">
+                <li><a href="https://caddy.health/privacy-policy">Privacy Policy</a></li>
+                <li><a href="https://caddy.health/terms-of-use">Terms Of Use</a></li>
+                <li><a href="https://caddy.health/disclaimer">Disclaimer</a></li>
+                <li><a href="https://caddy.health/categories">Categories</a></li>
+            </ul>
+        </footer>
+      </body>
+    </html>
+  
+  

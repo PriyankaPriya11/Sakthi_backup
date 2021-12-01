@@ -1,0 +1,11 @@
+[06-May-2020 08:15:44 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/askantech/public_html/amp_test/validate.php:18) in /home/askantech/public_html/amp_test/validate.php on line 19
+[06-May-2020 08:16:27 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/askantech/public_html/amp_test/validate.php:18) in /home/askantech/public_html/amp_test/validate.php on line 19
+[06-May-2020 08:17:43 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/askantech/public_html/amp_test/validate.php:18) in /home/askantech/public_html/amp_test/validate.php on line 19
+[11-May-2020 12:50:19 UTC] PHP Warning:  Division by zero in /home/askantech/public_html/amp_test/discount_validate1.php on line 34
+[11-May-2020 12:50:30 UTC] PHP Warning:  Division by zero in /home/askantech/public_html/amp_test/discount_validate1.php on line 34
+[12-May-2020 06:02:05 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/askantech/public_html/amp_test/discount_validate4.php on line 37
+[12-May-2020 06:02:19 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/askantech/public_html/amp_test/discount_validate4.php on line 37
+[12-May-2020 06:02:46 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO) in /home/askantech/public_html/amp_test/discount_validate4.php on line 37
+[16-May-2020 04:43:49 UTC] PHP Warning:  Division by zero in /home/askantech/public_html/amp_test/grade_validate.php on line 30
+[16-May-2020 04:43:56 UTC] PHP Warning:  Division by zero in /home/askantech/public_html/amp_test/grade_validate.php on line 30
+[16-May-2020 04:44:32 UTC] PHP Warning:  Division by zero in /home/askantech/public_html/amp_test/grade_validate.php on line 30

@@ -1,0 +1,888 @@
+
+    <!doctype html>
+    <html ⚡>
+    <head>
+    <meta charset="utf-8">
+    <title>CHA2DSS2-VASc (Atrial Fibrillation Stroke Risk) | Caddy</title>
+    <link rel="canonical" href="/cha2dss2vasc-atrial-fibrillation-stroke-risk">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://caddy.health/assets/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://caddy.health/assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://caddy.health/assets/favicons/favicon-16x16.png">
+    <link rel="manifest" href="https://caddy.health/assets/favicons/site.webmanifest">
+    <link rel="mask-icon" href="https://caddy.health/assets/favicons/safari-pinned-tab.svg" color="#4366a0">
+    <meta name="msapplication-TileColor" content="#4366a0">
+    <meta name="theme-color" content="#4366a0">
+
+    <style amp-custom>
+     @font-face {
+    font-display: block;
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialicons/v36/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2) format("woff2");
+}
+
+/* latin */
+@font-face {
+    font-display: fallback;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Rubik Light"), local("Rubik-Light"), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7Fqj2md8WA.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    src: local("Rubik Medium"), local("Rubik-Medium"), url(https://fonts.gstatic.com/s/rubik/v7/iJWHBXyIfDnIV7Eyjmmd8WA.woff2) format("woff2");
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html,
+body {
+    background: #f3f8fb;
+    color: #263238;
+    padding: 0;
+    margin: 0;
+    font-family: "Rubik", Roboto, sans-serif;
+    font-weight: 300;
+}
+
+.norubik body {
+    font-family: Roboto, sans-serif;
+}
+
+a {
+    color: #ff5722;
+}
+
+h1,
+h2,
+h3,
+b {
+    font-weight: 500;
+}
+
+h3 {
+    margin-block-start: 0.3em;
+}
+
+.preview-container {
+    background: #4366a0;
+    display: flex;
+    height: 65px;
+}
+
+.material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+}
+
+.hasicons .material-icons {
+    display: inline-block;
+    opacity: 1;
+}
+
+.material-icons {
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+.material-icons.md-18 {
+    font-size: 18px;
+    max-width: 18px;
+}
+.material-icons.md-24 {
+    font-size: 24px;
+}
+.material-icons.md-36 {
+    font-size: 36px;
+}
+.material-icons.md-48 {
+    font-size: 48px;
+}
+
+.search-box {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex: 1;
+    flex: 1;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0 140px;
+    max-width: 800px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.search-box input {
+    font-weight: 250;
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    border-radius: 10px;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+/*#auto-suggest {
+    box-shadow: var(--box-shadow-1);
+}*/
+
+.search-suggestion {
+    position: absolute;
+    width: 99%;
+    overflow-x: hidden;
+    z-index: 100;
+    padding: 0;
+    border: 0;
+    top: 50px;
+    border-radius: 0;
+}
+
+.search-suggestion amp-list {
+    background-color: #fff;
+}
+
+.search-suggestion [role=listitem] {
+    border-bottom: 1px solid #f1efefbd;
+}
+
+.search-suggestion [role=listitem] a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+.search-suggestion [role=listitem] a:hover{
+    background-color:#f1efefbd;
+}
+
+/*
+.search-suggestion [option] {
+  padding: var(--space-1);
+}
+*/
+
+.app-brand {
+    align-items: center;
+    display: flex;
+    color: #fff;
+    padding: 10px;
+}
+
+.app-brand a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-brand amp-img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.calculator{
+    /*display: flex;
+    justify-content: center;*/
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 5px 15px;
+}
+
+.output-box{
+    background-color: #4366a0;
+    padding: 20px 20px 10px 20px;
+    color: #fff;
+    margin-top: 17px;
+    border-radius: 10px;
+}
+
+.output-box .output{
+    padding-bottom: 10px;
+}
+
+.form-control {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 10px
+}
+
+/*.form-control input[type=number],
+.form-control input[type=text],
+.form-control input[type=email]{
+    min-width: 73%;
+    padding: 0 5px;
+    border: 1px;
+    margin-right:5px;
+    border-radius: 5px;
+}*/
+
+.amp-input{
+  position:relative; 
+  margin-right: 25px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.amp-input input {
+  font-size:18px;
+  padding: 5px;
+  display:block;
+  width: 100%;
+  border:none;
+  border-bottom:1px solid #a59999;
+  background: transparent;
+}
+
+.amp-input input:focus { 
+  outline:none;
+  border-bottom: 2px solid #4366a0;
+}
+
+.amp-input label {
+    position:absolute;
+    pointer-events:none;
+    color: #a59999;
+    left:5px;
+    top: 0px;
+    transition:0.2s ease all; 
+    -moz-transition:0.2s ease all; 
+    -webkit-transition:0.2s ease all;
+}
+
+/* active state */
+.amp-input input:focus ~ label,
+.amp-input input:valid ~ label {
+    top: -15px;
+    font-size:12px;
+    color: #000;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4366a0;
+    color: #fff;
+    min-width: 110px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+    padding: 0 15px;
+}
+
+.reference-box {
+    background: #eceff1;
+    padding: 20px 20px 15px 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.table-responsive {
+    min-height: 0.01%;
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.table td,
+.table th {
+    color: #333;
+    font-family: sans-serif;
+    font-size: 100%;
+    padding: 10px;
+    vertical-align: top;
+    font-weight: normal
+}
+
+.table tr:nth-child(even) td {
+    background-color: #fff;
+}
+
+.table th {
+    padding-bottom: 20px;
+    font-size: 110%;
+    font-weight: bold
+}
+
+table  th:nth-child(1){
+    border-radius: 10px 0px 0px 10px;
+}
+table  th:nth-last-child(1){
+    border-radius: 0px 10px 10px 0px;
+}
+
+.table td {
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+}
+
+.tg-bf {
+    font-weight: 700;
+}
+
+.tg-center {
+    text-align: center;
+}
+
+.tg-right {
+    text-align: right;
+}
+
+.equationRef {
+    margin-bottom: 10px
+}
+
+@media screen and (max-width: 767px) {
+    .table-responsive {
+        width: 100%;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+  
+    .table-responsive > .table {
+        margin-bottom: 0;
+    }
+
+    .table-responsive > .table > tbody > tr > td,
+    .table-responsive > .table > tbody > tr > th,
+    .table-responsive > .table > tfoot > tr > td,
+    .table-responsive > .table > tfoot > tr > th,
+    .table-responsive > .table > thead > tr > td,
+    .table-responsive > .table > thead > tr > th {
+        white-space: nowrap;
+    }
+
+    .table td,
+    .table th {
+        font-size: 70%;
+    }
+}
+
+footer .footer-nav{
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+footer .footer-nav li{
+    display: inline-block;
+}
+
+footer .footer-nav li:after {
+    content: '|';
+    font-size: 5px;
+    margin-left: 5px;
+}
+
+footer .footer-nav li:last-child:after{
+    content: none;
+}
+
+footer .footer-nav li a{
+    color: #8a8585;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+footer .footer-nav li a:hover{
+    border-bottom: 1px dashed #bdbdbd;
+}
+
+@media only screen and (max-width: 600px) {
+    .search-box{
+        margin: auto;
+    }
+
+    .app-brand .brand-text{
+        display:none;
+    }
+
+    .btn {
+        min-width: 25%;
+        font-size: 12px;
+        padding: 0 7px;
+    }
+}
+amp-selector {
+    padding: 6px 0;
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid #d7d7d7;
+    padding: 10px 0;
+}
+
+amp-selector.inline-flex {
+    display: flex;
+    align-items: center;
+}
+
+amp-selector .option-text{
+    flex-grow: 1;
+    display: inline-block;
+    padding: 0 10px;
+    flex-basis: 10%;
+    white-space: pre-wrap;
+}
+
+amp-selector [option] {
+    display: inline-block;
+    padding: 8px 15px;
+    min-width: 45px;
+    font-size: 14px;
+    margin-bottom: 0;
+    border: 1px solid #c0bdbd;
+    border-radius: 10px;
+    color: #b3b3b3;
+    -webkit-box-shadow: 0 1px 4px 0 #d1d8dc;
+    box-shadow: 0 1px 4px 0 #d1d8dc;
+    text-align: center;
+}
+
+amp-selector [option]:focus {
+    outline: none;
+}
+
+amp-selector.radio-selector .selector-opt [option] {
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    border-bottom: 0;
+    width: 80px;
+    box-shadow:none;
+    text-align: left;
+}
+
+amp-selector.radio-selector{
+    align-items: flex-start;
+}
+
+amp-selector.radio-selector .selector-opt [option] {
+    display: block;
+    margin: 0;
+    border-radius: 0;
+    border-bottom: 0;
+    min-width: 138px;
+    box-shadow:none;
+}
+
+amp-selector.radio-selector .selector-opt [option]:first-child{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    -webkit-box-shadow: 0 -1px 6px 0 #d1d8dc;
+    box-shadow: 0 -1px 6px 0 #d1d8dc;
+}
+
+amp-selector.radio-selector .selector-opt [option]:last-child{
+    border-bottom: 1px solid #c0bdbd;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-box-shadow: 0 1px 6px 0 #d1d8dc;
+    box-shadow: 0 1px 6px 0 #d1d8dc;
+}
+
+amp-selector [option][selected] {
+    background-color: #4366a0;
+    color: #fff;
+    outline: none;  
+}
+
+amp-selector.radio-selector [option] {
+    padding: 10px;
+}
+    </style>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+    <script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
+    <script async custom-element="amp-selector" src="https://cdn.ampproject.org/v0/amp-selector-0.1.js"></script>
+    <script async custom-element="amp-list" src="https://cdn.ampproject.org/v0/amp-list-0.1.js"></script>
+    <script async custom-template="amp-mustache" src="https://cdn.ampproject.org/v0/amp-mustache-0.2.js"></script>
+    <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
+    <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
+    <body on="tap:AMP.setState({ filteredCalculators: [] })" tabindex="0" role="button">
+  
+    
+      <header>
+        <div class="preview-container" on="tap: AMP.setState({ filteredCalculators: [] })" tabindex="0" role="button">
+          <h1 class="app-brand">
+            <a href="https://caddy.health">
+              <amp-img alt="Caddy" src="https://caddy.health/assets/caddy_white_logo.png" layout="responsive" width="50" height="43.36" ></amp-img>
+              <span class="brand-text">Caddy</span>
+            </a>
+          </h1>
+          <div class="search-box">
+            <label style="display:none">Enter search:</label>
+            <input [value]="search" [placeholder]="'Search Calculators'" placeholder="Search Calculators" on="input-debounced:AMP.setState({ 
+                filteredCalculators: event.value.length == 0 ? 
+                [] : calculators.items.filter(search => search.title.toLowerCase().indexOf(event.value.toLowerCase()) >= 0 )
+             ,myRangeValue: event.value,visible: !visible})" [class]="visible ? 'show event-test' : 'hide'" class="hide">
+            <amp-selector class="search-suggestion" keyboard-select-mode="focus" on="select:AMP.setState({ search: event.targetOption, filteredCalculators: [] })" >
+              <amp-list id="auto-suggest" items="" height="0" layout="fixed-height" [src]="filteredCalculators" [height]="(filteredCalculators.length > 0 ? (filteredCalculators.length*40) : 0)" >
+                <template type="amp-mustache">
+                  <div><a href="{{url}}" >{{title}}</a></div>
+                </template>
+              </amp-list>
+            </amp-selector>
+            <amp-state id="calculators" src="/calculator_list.json"></amp-state>
+          </div>
+        </div>
+      </header>
+      <main class="calculator">
+        <div>
+          
+    <h2>CHA2DSS2-VASc (Atrial Fibrillation Stroke Risk)</h2>
+    
+    <amp-selector class="radio-selector inline-flex"
+    layout="container"
+    on="select: AMP.setState({item0: event.selectedOptions})">
+
+      <span class="selector-opt option-text">Age</span>
+      <div class="selector-opt selector-main selector-age-div"><span option=0><span><65</span><span style="float: right"> +0</span></span>
+        <div option=1><span>65-74</span><span style="float: right"> +1</span></div>
+        <div option=2><span>≥75</span><span style="float: right"> +2</span></div>
+        </div>
+    </amp-selector>
+    
+    <amp-selector class="radio-selector inline-flex"
+    layout="container"
+    on="select: AMP.setState({item1: event.selectedOptions})">
+
+      <span class="selector-opt option-text">Gender</span>
+      <div class="selector-opt selector-gender-div"><span option=0><span>Male</span><span style="float: right"> +0</span></span>
+        <div option=1><span>Female</span><span style="float: right"> +1</span></div>
+        </div>
+    </amp-selector>
+    
+          <amp-selector layout="container" class="inline-flex"
+          on="select: AMP.setState({item2: event.selectedOptions})">
+
+            <span class="selector-opt option-text">Congestive Heart Failure</span>
+        
+            <div class="selector-opt">
+              <span option=0 selected  class="congestive-heart-failure-span_no">No &nbsp;&nbsp;0</span>
+              <span option=1 class="congestive-heart-failure-span_yes">Yes &nbsp;+1</span>
+            </div>
+          </amp-selector>
+          
+          <amp-selector layout="container" class="inline-flex"
+          on="select: AMP.setState({item3: event.selectedOptions})">
+
+            <span class="selector-opt option-text">Hypertension</span>
+        
+            <div class="selector-opt">
+              <span option=0 selected class="hypertension-span_no">No &nbsp;&nbsp;0</span>
+              <span option=1 class="hypertension-span_yes">Yes &nbsp;+1</span>
+            </div>
+          </amp-selector>
+          
+          <amp-selector layout="container" class="inline-flex"
+          on="select: AMP.setState({item4: event.selectedOptions})">
+
+            <span class="selector-opt option-text">Stroke/TIA/Thromboembolism</span>
+        
+            <div class="selector-opt">
+              <span option=0 selected class="stroke-thromboembolism-no">No &nbsp;&nbsp;0</span>
+              <span option=1 class="stroke-thromboembolism-yes">Yes &nbsp;+1</span>
+            </div>
+          </amp-selector>
+          
+          <amp-selector layout="container" class="inline-flex"
+          on="select: AMP.setState({item5: event.selectedOptions})">
+
+            <span class="selector-opt option-text">Vascular Disease</span>
+        
+            <div class="selector-opt">
+              <span option=0 selected class="vascular-disease-no">No &nbsp;&nbsp;0</span>
+              <span option=1 class="vascular-disease-yes">Yes &nbsp;+1</span>
+            </div>
+          </amp-selector>
+          
+          <amp-selector layout="container" class="inline-flex"
+          on="select: AMP.setState({item6: event.selectedOptions})">
+
+            <span class="selector-opt option-text">Diabetes Mellitus</span>
+        
+            <div class="selector-opt">
+              <span option=0 selected class="diabetes-mellitus-no">No &nbsp;&nbsp;0</span>
+              <span option=1 class="diabetes-mellitus-yes">Yes &nbsp;+1</span>
+            </div>
+          </amp-selector>
+          
+  
+  <amp-bind-macro id="result0" expression="(round(([item0,item1,item2,item3,item4,item5,item6].reduce((x, y) => +(+x) + (+y)))*10)/10).toFixed(1)"></amp-bind-macro>
+  
+  <amp-bind-macro id="interpretationResult" arguments="originalResult" 
+  expression="(originalResult < 1 ? 0 : (2 > originalResult) ? 1 : 2).toFixed(1)"></amp-bind-macro>
+
+  <amp-state id="interpretations">
+    <script type="application/json">
+      {
+        
+    "0.0": {
+        "result0": "Low risk, does not require anticoagulation"},
+    "1.0": {
+        "result0": "Low to moderate risk, should consider antiplatelet or anticoagulation"},
+    "2.0": {
+        "result0": "Moderate to high risk, should be on anticoagulation"}
+      }
+    </script>
+  </amp-state>
+      
+  <div class="output-box"><div class="output">Results <span [text]="result0()">0.0</span></div>
+
+            <div class="output">
+              <span [text]="interpretations[interpretationResult(result0())].result0">Low risk, does not require anticoagulation</span>
+            </div>
+          </div>
+
+  <div class="reference-box">
+    
+      <div class="refs-block">
+        <div class='table-responsive'>
+          <table class="table">
+              <thead>
+                <tr>
+                    <th align="left" class="tg-left tg-bf">Score</th>
+                    <th class="tg-right tg-bf">Interpretation</th>
+                </tr>
+              </thead>
+              <tbody><tr><td>0.0</td><td class="tg-right">Low risk, does not require anticoagulation</td></tr><tr><td>1.0</td><td class="tg-right">Low to moderate risk, should consider antiplatelet or anticoagulation</td></tr><tr><td>2.0</td><td class="tg-right">Moderate to high risk, should be on anticoagulation</td></tr></tbody>
+             </table>
+        </div>
+      </div>
+      
+  </div>
+  <div class="reference-box">
+    
+      <div class="refs-block">
+        <h3>Evidence</h3>
+        <p>
+        Lip GY, Nieuwlaat R, Pisters R, Lane DA, Crijns HJ. Refining clinical risk stratification for predicting stroke and thromboembolism in atrial fibrillation using a novel risk factor-based approach: the euro heart survey on atrial fibrillation. Chest. 2010 Feb;137(2):263-72. doi: 10.1378/chest.09-1584. Epub 2009 Sep 17. PubMed PMID: 19762550.</p><p>
+        Ntaios G, et al. CHADS2, CHA2DS2-VASc, and long-term stroke outcome in patients without atrial fibrillation. March 12, 2013 80:1009-1017; published ahead of print February 13, 2013</p><p>
+        Friberg L, Rosenqvist M, Lip GY. Evaluation of risk stratification schemes for ischaemic stroke and bleeding in 182 678 patients with atrial fibrillation: the Swedish Atrial Fibrillation cohort study. Eur Heart J. 2012 Jun;33(12):1500-10. doi: 10.1093/eurheartj/ehr488. Epub 2012 Jan 13. PubMed PMID: 22246443.</p><p>
+        Okumura K, Inoue H, Atarashi H, Yamashita T, Tomita H, Origasa H; J-RHYTHM Registry Investigators.Validation of CHA₂DS₂-VASc and HAS-BLED scores in Japanese patients with nonvalvular atrial fibrillation: an analysis of the J-RHYTHM Registry. Circ J. 2014;78(7):1593-9. Epub 2014 Apr 22.</p><p>
+        Camm AJ, Lip GY, De Caterina R, Savelieva I, Atar D, Hohnloser SH, Hindricks G, Kirchhof P; ESC Committee for Practice Guidelines (CPG). 2012 focused update of the ESC Guidelines for the management of atrial fibrillation: an update of the 2010 ESC Guidelines for the management of atrial fibrillation. Developed with the special contribution of the European Heart Rhythm Association. Eur Heart J. 2012 Nov;33(21):2719-47. doi: 10.1093/eurheartj/ehs253. Epub 2012 Aug 24. Erratum in: Eur Heart J. 2013 Mar;34(10):790. Eur Heart J. 2013 Sep;34(36):2850-1. PubMed PMID: 22922413.</p>
+      </div>
+     
+  </div>
+    
+        </div>
+      </main>
+      
+  <amp-analytics type="gtag" data-credentials="include">
+    <script type="application/json">
+      {
+      "vars" : {
+      "gtag_id": "UA-140401390-1",
+      "config" : {
+        "UA-140401390-1": { "groups": "default" }
+      }
+    },
+    "triggers": {
+      "trackPageview": {
+        "on": "visible",
+        "request": "pageview"
+        }
+      }
+    }   
+    </script>
+</amp-analytics>
+    <amp-analytics type="googleanalytics">
+        <script type="application/json">
+        {
+        "extraUrlParams" : {
+            "input-search": "${ampState(myRangeValue)}"
+        },    
+        "vars": {
+        "account": "UA-140401390-1"
+        },
+        "triggers": {
+                "scrollPings": {
+                  "on": "scroll",
+                  "scrollSpec": {
+                    "verticalBoundaries": [25, 50, 90],
+                    "horizontalBoundaries": [90]
+                  },
+                  "request": "event",
+                  "vars": {
+                    "eventCategory": "Stroke Risk",
+                    "eventAction": "page-scroll",
+                    "eventLabel": "page scrolling"
+                }
+                },
+                "trackClickOnHeader1" : {
+                    "on": "click",
+                    "selector": ".selector-age-div",
+                    "request": "event",
+                    "vars": {
+                    "eventCategory": "Stroke Risk",
+                    "eventId": "1",
+                    "eventAction": "button-click-age",
+                    "eventLabel": "Clicked on a age div"
+                       }
+                      },
+                      "trackClickOnHeader2" : {
+                        "on": "click",
+                        "selector": ".selector-gender-div",
+                        "request": "event",
+                        "vars": {
+                        "eventCategory": "Stroke Risk",
+                        "eventAction": "button-gender-click",
+                        "eventLabel": "Clicked on a Gender div"
+                           }
+                          },
+                          "trackAnchorClicks3": {
+                            "on": "click",
+                            "selector": ".event-test",
+                            "request": "event",
+                            "vars": {
+                              "eventCategory": "Stroke Risk search box", 
+                              "eventAction": "${ampState(myRangeValue)}",
+                              "eventLabel": "${ampState(myRangeValue)}"
+                            }
+                        },
+                        "trackspandivcontent4": {
+                            "on": "click",
+                            "selector": ".congestive-heart-failure-span_no",
+                            "request": "event",
+                            "vars": {
+                                "eventCategory": "Stroke Risk", 
+                                "eventAction": "div-span-no",
+                                "eventLabel": "div span no"
+                            }
+                        },
+                        "trackspandivcontent5": {
+                            "on": "click",
+                            "selector": ".congestive-heart-failure-span_yes",
+                            "request": "event",
+                            "vars": {
+                                "eventCategory": "Stroke Risk", 
+                                "eventAction": "Congestive-Heart-Failure-yes",
+                                "eventLabel": "Congestive Heart Failure Yes"
+                            }
+                        },
+                        "trackspandivcontent6": {
+                            "on": "click",
+                            "selector": ".hypertension-span_no",
+                            "request": "event",
+                            "vars": {
+                                "eventCategory": "Stroke Risk", 
+                                "eventAction": "hypertension-no",
+                                "eventLabel": "Hypertension No"
+                            }
+                        },
+                        "trackspandivcontent7": {
+                            "on": "click",
+                            "selector": ".hypertension-span_yes",
+                            "request": "event",
+                            "vars": {
+                                "eventCategory": "Stroke Risk", 
+                                "eventAction": "hypertension-yes",
+                                "eventLabel": "Hypertension Yes"
+                            }
+                        },
+                        "trackspandivcontent8": {
+                            "on": "click",
+                            "selector": ".stroke-thromboembolism-no",
+                            "request": "event",
+                            "vars": {
+                                "eventCategory": "Stroke Risk", 
+                                "eventAction": "stroke-thromboembolism-no",
+                                "eventLabel": "Stroke Thromboembolism No"
+                            }
+                        },
+                        "trackspandivcontent9": {
+                            "on": "click",
+                            "selector": ".stroke-thromboembolism-yes",
+                            "request": "event",
+                            "vars": {
+                                "eventCategory": "Stroke Risk", 
+                                "eventAction": "stroke-thromboembolism-yes",
+                                "eventLabel": "Stroke Thromboembolism Yes"
+                            }
+                        },
+                        "trackspandivcontent10": {
+                            "on": "click",
+                            "selector": ".vascular-disease-no",
+                            "request": "event",
+                            "vars": {
+                                "eventCategory": "Stroke Risk", 
+                                "eventAction": "vascular-disease-no",
+                                "eventLabel": "Vascular Disease No"
+                            }
+                        },
+                        "trackspandivcontent11": {
+                            "on": "click",
+                            "selector": ".vascular-disease-yes",
+                            "request": "event",
+                            "vars": {
+                                "eventCategory": "Stroke Risk", 
+                                "eventAction": "vascular-disease-yes",
+                                "eventLabel": "Vascular Disease Yes"
+                            }
+                        },
+                        "trackspandivcontent12": {
+                            "on": "click",
+                            "selector": ".diabetes-mellitus-no",
+                            "request": "event",
+                            "vars": {
+                                "eventCategory": "Stroke Risk", 
+                                "eventAction": "diabetes-mellitus-no",
+                                "eventLabel": "Diabetes Mellitus No"
+                            }
+                        },
+                        "trackspandivcontent13": {
+                            "on": "click",
+                            "selector": ".diabetes-mellitus-yes",
+                            "request": "event",
+                            "vars": {
+                                "eventCategory": "Stroke Risk", 
+                                "eventAction": "diabetes-mellitus-yes",
+                                "eventLabel": "Diabetes Mellitus Yes"
+                            }
+                        }
+              }
+        }
+        </script>
+        </amp-analytics>
+        <footer>
+            <ul class="footer-nav">
+                <li><a href="https://caddy.health/privacy-policy">Privacy Policy</a></li>
+                <li><a href="https://caddy.health/terms-of-use">Terms Of Use</a></li>
+                <li><a href="https://caddy.health/disclaimer">Disclaimer</a></li>
+                <li><a href="https://caddy.health/categories">Categories</a></li>
+            </ul>
+        </footer>
+      </body>
+    </html>
