@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+
+
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>KJ Engineering</title>
+
+    <meta name="description" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="_css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/bootstrap.min.js"></script>
+    <style type="text/css">
+    html, body {
+        height: 100%;
+        margin: 0;
+    }
+        body {
+            /* background-image: url("image/bg.png"); */
+            background-color: #FEF4E8;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        div#iframecontainer iframe {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+        @media only screen and (min-width: 1248px) and (max-width: 1439px) {
+            .block-title { margin-bottom: 13px;}
+            section#section_one .container { padding: 0;}
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#iframecontainer").hide();
+            $("#enter-submit").click(function () {
+                var fname = $("#fname").val();
+                var company = $("#company").val();
+                var email = $("#email").val();
+                var mob = $("#numberph").val();
+
+                $("#err_inputflds_first_name").html("");
+                $("#err_inputflds_email").html("");
+                $("#err_inputflds_company").html("");
+                $("#err_inputflds_mob").html("");
+
+
+
+                if (email == '' && fname == '' && company == '' && mob == '') {
+                    $("#err_inputflds_first_name").html("Please Enter your Name");
+                    $("#err_inputflds_email").html("Please Enter your Email");
+                    $("#err_inputflds_company").html("Please Enter you Company");
+                    $("#err_inputflds_mob").html("Please Enter your Mobile Number");
+
+                }
+
+                else if (fname == '') {
+                    $("#err_inputflds_first_name").html("Please Enter your Name");
+                }
+
+                else if (email == '') {
+                    $("#err_inputflds_email").html("Please Enter your Email");
+                }
+                else if (company == '') {
+                    $("#err_inputflds_company").html("Please Enter your Company");
+                }
+                else if (mob == '') {
+                    $("#err_inputflds_mob").html("Please Enter your Mobile Number");
+                }
+                if (fname != "" && company != "" && email != "") {
+                    sessionStorage.setItem('Register', 'Success');
+                    $("#iframecontainer").show();
+                    $(".container").hide();
+                }
+            });
+        });
+        $(document).ready(function () {
+            var check = sessionStorage.getItem('Register');
+            if (check == "Success") {
+                $("#iframecontainer").show();
+                $(".container").hide();
+            }
+            else {
+                $("#iframecontainer").hide();
+                $(".container").show();
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <section id="section_one">
+        <div class="container">
+            <div class="row">
+                <div class="block-1">
+                    <div class="block-title">
+                        <h3>KJ Engineering</h3>
+                        <h4>Visit our <br>Virtual Showroom</h4>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="col-md-5">
+                            <div class="form-box">
+                                <form method="post">
+                                    <div class="field-control"><input type="text" id="fname" name="fname"
+                                            placeholder="Name*" required></div>
+                                    <div><span id=err_inputflds_first_name style="color:red; text-align:center"></span>
+                                    </div>
+
+                                    <div class="field-control"><input type="text" id="company" name="company"
+                                            placeholder="Company Name*" required></div>
+                                    <div><span id=err_inputflds_company style="color:red; text-align:center"></span>
+                                    </div>
+
+                                    <div class="field-control"><input type="text" id="email" name="email"
+                                            placeholder="Email*" required></div>
+                                    <div><span id=err_inputflds_email style="color:red; text-align:center"></span></div>
+
+                                    <div class="field-control cus-moi"><select class="slect-class">
+                                            <option value="">+82</option>
+                                            <option value="">+91</option>
+                                        </select>
+                                        <input type="text" id="numberph" name="numberph" placeholder="Contact Number">
+                                    </div>
+                                    <div><span id=err_inputflds_mob style="color:red; text-align:center"></span></div>
+                                    <div class="field-control" style="text-align: center;"><input type="button"
+                                            value="Enter" id="enter-submit"></div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-md-7">
+                            <div class="lap-im">
+                                <img src="image/image-new1.png">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="iframecontainer">
+            <iframe id='iframe2' src="https://kjeng.alphacaptain.com/1/tour/index.htm" frameborder="0" style="overflow: hidden; height: 100%;
+        width: 100%; position: absolute;"></iframe>
+        </div>
+
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+#: locale=en
+
+## Tour
+
+### Title
+tour.name = KJ Engineering Tour
+
+## Media
+
+### Title
+panorama_3B01B5B3_3090_3D6E_41A5_5CEF00F2761E.label = 04 MFD
+panorama_3B198A80_3090_172B_41B2_445AEF4D50DA.label = 02 Alpha & Inmarsat
+panorama_3B19F011_3091_F32D_41B9_9124C279B780.label = 03 TV Cafe
+panorama_3B1B5AD0_3090_772A_41C2_90A009A393E0.label = 05 Lounge
+panorama_3B720233_3090_176E_41A9_462B3779AE1F.label = 01 Info area
+
+## Action
+
+### URL
+LinkBehaviour_6D767E6E_754B_071A_41D8_7E337DCE41A8.source = https://whatsapp.virtulab.online/getlink/?p=01049443449&m=Hi,%20I%20visited%20KJ%20Engineering%20virtual%20tour%20&%20I%20have%20some%20quarries%20about%20some%20of%20your%20products.%20
