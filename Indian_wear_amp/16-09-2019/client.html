@@ -1,0 +1,2074 @@
+
+	
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>	
+				 
+    <link rel="shortcut icon" type="image/x-icon" href='https://getethnic.com/images/favicon2.ico'>
+    <link rel="amphtml" href="https://getethnic.com/amp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Get CUSTOM MADE INDIAN BRIDAL WEAR as per your requirements and our elite designers will send FREE swatches, embroideries, and sketches in a sample file. Click here.">
+
+	<meta name="keywords" content="Punjabi Jutti Online, Designer Juttis Online, Punjabi Jutti For Boy, Punjabi Jutti For Girls.">
+
+ <title>Indian Wedding wear for Bride and Groom | Custom wedding Wear Online</title>   
+    
+
+        	
+	<!-- Bootstrap -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css"/>    <link rel="stylesheet" href="/css/nav.css"/>    <link rel="stylesheet" href="/css/styles.css"/>	
+	<!-- font-awesome.css -->
+    <link rel="stylesheet" href="/css/font-awesome.min.css"/>    <link rel="stylesheet" href="/css/jquery.bxslider.css"/>	
+	<!-- flages.css -->
+    <link rel="stylesheet" href="/css/flags.css"/>	
+	<!-- responsive css -->
+    <link rel="stylesheet" href="/css/media-css.css"/>        
+	<!-- Font Stylesheets -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora"/>    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700"/>	
+	<!-- saree, suit and lehenga pages css -->
+    <link rel="stylesheet" href="/css/developer.css"/>    <link rel="stylesheet" href="/css/product_style.css"/>	<link rel="stylesheet" href="/css/zoomstyle.css"/>	<link rel="stylesheet" href="/css/owl.carousel.css"/>    <link rel="stylesheet" href="/css/jquery.mobile-menu.css"/>	<link rel="stylesheet" href="/css/site-icons.css"/>	<link rel="stylesheet" href="/css/slick.css"/>	<link rel="stylesheet" href="/css/iThing.css"/>	<link rel="stylesheet" href="/css/jquery.fancybox.css"/>	 <link rel="stylesheet" href="/css/dev.css"/>	
+            <script src="/js/jquery.min.js"></script>	<script src="/js/jquery-ui.min.js"></script>        <script src="/js/jquery.validate.js"></script>    <script src="https://getethnic.com/js/common.js?v=1706505650"></script>    
+    
+    <script src="/js/additional-methods.js"></script>	<script src="/js/jQRangeSlider-min.js"></script>    
+	
+	<script src="/js/cloud-zoom.1.0.2.js"></script>	<script src="/js/app.js"></script>	<script src="/js/jquery.galleriffic.js"></script>	<script src="/js/products/products.js"></script>	
+	<script src="/js/jquery.opacityrollover.js"></script>	<script src="/js/jquery.fancybox.js"></script>	
+	
+    	<script src="/js/arrow27.js"></script>	<script src="/js/owl.carousel.js"></script>	<script src="/js/slick.min.js"></script>    <script src="/js/jquery.mobile-menu.js"></script>	<script src="/js/global.js?ver=123"></script>   <!--link rel="stylesheet" href="https://fancyapps.com/fancybox/source/jquery.fancybox.css?v=2.1.3" type="text/css" media="screen" /-->
+       <link rel="stylesheet" href="/css/sidemenu.css"/>   <script src="/js/sidemenu.js"></script>   
+   <!-- Addedd for Auto Scroll Functionality -->
+   <script src="/js/jquery.infinitescroll.min.js"></script>
+<script>
+
+
+
+	(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "https://getethnic.com/webroot/js/sdk.js";
+		  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+	
+	window.fbAsyncInit = function() {
+    FB.init({
+      appId      : 401946776983270,
+      cookie     : true,  // enable cookies to allow the server to access the session
+      xfbml      : true,  // parse social plugins on this page
+      version    : 'v2.3' // use version 2.3
+    });
+
+ };
+   /*Current menu color*/
+   $(window).bind("load", function() {
+var page = location.href;
+$('.navlist-wrapper ul li a').each(function(){
+      var href = $(this).attr('href');
+      console.log(href);
+      if ( (href == page) || (href == '') ) {
+        $(this).addClass('current-active-menu');
+      }
+      else {
+        $(this).removeClass('current-active-menu');
+      }
+});
+$('.cc-tablinks:first-child').addClass("active") 
+});
+ // This is called with the results from from FB.getLoginStatus().
+function statusChangeCallback(response) {
+
+  if (response.status === 'connected') {
+      // Logged into your app and Facebook.
+      // we need to hide FB login button
+      $('#fblogin').hide();
+      //fetch data from facebook
+      getUserInfo();
+  } else if (response.status === 'not_authorized') {
+      // The person is logged into Facebook, but not your app.
+      $('#status').html('Please log into this app.');
+  } else {
+      // The person is not logged into Facebook, so we're not sure if
+      // they are logged into this app or not.
+      $('#status').html('Please log into facebook');
+  }
+}
+
+// This function is called when someone finishes with the Login
+// Button.  See the onlogin handler attached to it in the sample code below.
+function checkLoginState() {
+  FB.getLoginStatus(function(response) {
+    statusChangeCallback(response);
+  });
+}
+
+function FBLogin()
+{
+      FB.login(function(response) {
+         if (response.authResponse) 
+         { 
+             getUserInfo(); //Get User Information.
+          } else
+          {
+           alert('Authorization failed.');
+          }
+       },{scope: 'public_profile,email'});
+}
+
+function getUserInfo() { 
+    FB.api('/me',{fields: 'id,name,email,first_name,last_name'}, function(response) { 
+      $.ajax({
+	            url: SITE_URL+"/users/sociallogin",
+	            data: response,
+	            type:'post',
+				dataType: 'json',
+	            beforeSend: function () {
+					$('#social_login_message').html('Please wait , getting details from facebook');
+	            },
+	            complete: function () {
+					//e.val(cText).removeAttr('disabled');
+	            },
+	            success: function (json) { 
+						if(json.exception_message){
+							$('#social_login_message').html(json.exception_message);
+						} else {
+							$('#social_login_message').html(json.message);
+							
+							if(json.success==true){
+								window.location.href = $( "#social_redirect" ).val();
+							}
+						}
+	            },
+	            error: function (xhr, ajaxOptions, thrownError) {
+	            	bootbox.dialog({
+						message: "Something might went wrong , please try again later",
+						title: "Warning",
+						buttons: {
+							main: {
+								label: "Ok",
+								className: "btn-primary",
+								callback: function() {
+
+								}
+							}
+						}
+					});
+	            }
+	        });
+
+    });
+}
+
+$(window).scroll(function() {
+if ($(this).scrollTop() > 110){  
+    $('header').addClass("sticky");
+  }
+  else{
+    $('header').removeClass("sticky");
+  }
+});
+$(window).scroll(function() {
+    if($(".fancybox").length > 0){
+      $(".fancybox")
+      .attr('rel', 'gallery')
+      .fancybox({
+          openEffect  : 'none',
+          closeEffect : 'none',
+          nextEffect  : 'none',
+          prevEffect  : 'none',
+          padding     : 0,
+          margin      : [20, 60, 20, 60] // Increase left/right margin
+      });
+      $(".fancybox").html('How to take Measurement');
+    }
+});
+
+</script>
+
+
+
+<script type='text/javascript'>
+	// Lucky Orange Code
+window.__lo_site_id = 141647;
+
+	(function() {
+		var wa = document.createElement('script'); wa.type = 'text/javascript'; wa.async = true;
+		wa.src = 'https://d10lpsik1i8c69.cloudfront.net/w.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(wa, s);
+	  })();
+</script>
+
+
+
+<script>
+	// Mobile Menu Script (SideMenu)
+	sideMenu = new SideMenu({
+		overlay: true
+	});
+	
+	sideMenu = new SideMenu([
+		], {
+			overlay: true
+		});
+
+	// Finally add SideMenu object to DOM tree target.
+	$(function() {
+		sideMenu.appendTo(document.getElementById('menu'));
+	});
+	</script>
+  <script> var base_url = 'https://getethnic.com';</script>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2787036027981076');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2787036027981076&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+  
+</head>
+<body>
+<div id="myModal2" class="123 modal fade top">
+    <div class="modal-dialog">
+        <div class="modal-content top-videos">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4>Submit Measurements</h4>
+            </div>
+            <div class="modal-body">
+                
+ 
+                
+                <div>
+    <div>
+        
+        
+  <div class="col-md-4 col-sm-4 col-xs-12 marginBottom25">
+      <h3>Suit</h3>
+   <div class="wrapper">
+    <div class="youtube" data-embed="OZXgTvxeQz8">
+        <div class="play-button"></div>
+    </div>
+</div>
+  <a href="https://getethnic.com/measurement/suit">Submit Suit Measurements</a>    
+  </div>
+    
+    <div class="col-md-4 col-sm-4 col-xs-12 marginBottom25">
+        <h3>Saree</h3>
+    <!--iframe id="iframe1" width="560" height="315" data-src="https://www.youtube.com/embed/Ffv7r6jBJJw" frameborder="0" allowfullscreen></iframe-->
+	<div class="wrapper">
+    <div class="youtube" data-embed="eosaIfW46AU">
+        <div class="play-button"></div>
+    </div>
+</div>
+        
+        <a href="https://getethnic.com/measurement/saree">Submit Saree Measurements</a> 
+  </div>
+    
+    <div class="col-md-4 col-sm-4 col-xs-12 marginBottom25">
+        <h3>Lehenga</h3>
+    <!--iframe id="iframe1" width="560" height="315" data-src="https://www.youtube.com/embed/qvsiVpJX3tk" frameborder="0" allowfullscreen></iframe-->
+	<div class="wrapper">
+    <div class="youtube" data-embed="qvsiVpJX3tk">
+        <div class="play-button"></div>
+    </div>
+</div>
+        
+        <a href="https://getethnic.com/measurement/lehenga">Submit Lehenga Measurements</a> 
+  </div>
+    <hr class="submitMeasurementsHr">
+    <div class="col-md-4 col-sm-4 col-xs-12 marginBottom25">
+        <h3>Mens</h3>
+    <!--iframe id="iframe1" width="560" height="315" data-src="https://www.youtube.com/embed/qvsiVpJX3tk" frameborder="0" allowfullscreen></iframe-->
+	<div class="wrapper">
+    <div class="youtube" data-embed="YdCIpULESXs">
+        <div class="play-button"></div>
+    </div>
+</div>
+        
+        <a href="https://getethnic.com/measurement/mens">Submit Mens Measurements</a> 
+  </div>
+    
+    <div class="col-md-4 col-sm-4 col-xs-12 marginBottom25">
+        <h3>Kids</h3>
+    <!--iframe id="iframe1" width="560" height="315" data-src="https://www.youtube.com/embed/qvsiVpJX3tk" frameborder="0" allowfullscreen></iframe-->
+        <div class="wrapper">
+    <div class="youtube" data-embed="CyMufi0AV30">
+        <div class="play-button"></div>
+    </div>
+</div>
+        <a href="https://getethnic.com/measurement/kids">Submit Kids Measurements</a> 
+  </div>
+    
+    <div class="col-md-4 col-sm-4 col-xs-12 marginBottom25">
+        <h3>Jutti</h3>
+    <!--iframe id="iframe1" width="560" height="315" data-src="https://www.youtube.com/embed/qvsiVpJX3tk" frameborder="0" allowfullscreen></iframe-->
+        <div class="wrapper">
+    <div class="youtube" data-embed="E5yKZwqVVoY">
+        <div class="play-button"></div>
+    </div>
+</div>
+        <a href="https://getethnic.com/measurement/jutti">Submit Jutti Measurements</a> 
+  </div>
+        
+    <div class="clear1"></div>   
+</div>
+</div>   
+            </div>
+             
+        </div>
+    </div>
+</div>
+<!-- model 3 starts -->
+<div id="myModal3" class="modal fade top">
+    <div class="modal-dialog">
+        <div class="modal-content top-videos">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h2>GET $25 OFF</h2>
+            </div>
+            <div class="modal-body">               
+             <div>
+			<div>       
+			  <div class="col-md-12 col-sm-4 col-xs-12">
+			  <!--<div style="width:100%;float:left;text-align:center;margin:15px 0 0px 0;">
+				<img src="http://getethnic.com/cake3\images\logo_Images\logo_ImgID1.png" style="max-width:280px;">
+				</div>-->
+				<div style="float:left;width:100%;text-align:center;">
+					Only valid for 1st time customers !!				</div>
+				
+				<div style="float:left;width:100%;text-align:center;">
+					We are masters of Indian Ethnic Custom Wear				</div>
+
+				<form id="frmSubscribe" name="frmSubscribe">
+					<div class="form-section">
+						<div class="col-md-12 col-sm-12 col-xs-12">
+							<input type="email" name="txtEmail" placeholder="Email" required/>							
+						</div>
+						<br>
+						<div class="col-md-12 col-sm-12 col-xs-12">					
+							<input type="button"  class="btn btn-lg btn-info btn-block" name="submit_subscribe" value="Submit" data-coupon="SAVE50" id="submit_subscribe" /> 	
+						</div>
+					</div>
+				</form>	
+				<div style="float:left;width:100%;text-align:center;">
+					[This coupon is valid for all garments a minimum purchase of $250 USD]				</div>				
+			  </div>					
+				<div class="clear1"></div>			
+			</div>
+			</div>
+            </div>
+             
+        </div>
+    </div>
+</div>
+
+<!-- model 3 ends -->	
+<Script>
+$("#submit_subscribe").click(function() {		
+var couponData = $(this).attr('data-coupon');
+ $.ajax({
+                url: SITE_URL + "/Pages/send_subscribe_request",
+                data: $('#frmSubscribe').serialize()+'&Coupon='+couponData,
+                type: 'post',
+                dataType: 'json',
+                beforeSend: function() {
+                  //  e.val(e.data('loading-text')).attr('disabled', true);
+                },
+                complete: function() {
+                    //e.val(cText).removeAttr('disabled');
+                },
+                success: function(json) {
+					
+					var mess = json.message;
+					$('#myModal3').modal('hide');
+                    
+                    /* if(mess == 'Mail sent successfully'){
+                        bootbox.dialog({
+                            message: mess,
+                            title: "Success",
+                            buttons: {
+                                main: {
+                                    label: "Navigate to Home",
+                                    className: "btn-success",
+                                    callback: function() {
+                                        window.location.href = SITE_URL;
+                                    }
+                                }
+                            }
+                        });
+                    } */
+					/* 
+					window.location.href = SITE_URL; */
+                },
+                error: function(xhr, ajaxOptions, thrownError) {
+                    bootbox.dialog({
+                        message: "Something might went wrong , please try again later",
+                        title: "Warning",
+                        buttons: {
+                            main: {
+                                label: "Ok",
+                                className: "btn-primary",
+                                callback: function() {}
+                            }
+                        }
+                    });
+                }
+            });
+
+});	
+</script><!-- Mobile Menu -->
+<div id="menu" class="sm-main cc-mobile-sidemenu"></div> 
+<!-- END -->
+    ﻿<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content container-fluid">
+
+<div class="row">
+	<button type="button" class="close crossicon" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-remove"></i></span></button>
+		<div class="col-md-6 login">
+			<div class="span12">
+				<div id="tab" class="btn-group shipping-details col-md-12 padding-zero" data-toggle="buttons-radio"> 
+				<h4>Login</h4>
+			 	</div>
+				
+					<div class="col-md-12  register-from">
+						<p>Please Enter Your Email and Password.</p>
+						<p id="loginmessage"></p>
+						<form name="user_login" id="user_login" method="post">
+								<div class="row">
+									<label class="col-lg-3 label-text">Email address<span>*</span></label>
+									<div class="col-lg-9 field_area"><input type="text" value="" name="email" id="email" class=""></div>
+								</div>
+								
+								<div class="row">
+									<label class="col-lg-3 label-text">Password<span>*</span></label>
+									<div class="col-lg-9 field_area"><input type="password" value="" name="password" id="password" class=""></div>
+								</div>
+								
+								<div class="row">
+									<div class="col-lg-3 hidden-xs hidden-sm"></div>
+								<div class="col-lg-6 col-xs-12">
+								<div class="checkbox-holder">
+									<input type="checkbox"  value="1" id="dwfrm_login_rememberme" name="login_rememberme" checked="checked" class="col-md-2">
+									<label for="dwfrm_login_rememberme" class="checkbox col-md-10">Remember me</label>
+                                
+								<div class="underline small col-md-8">
+									<a href="#" data-toggle="modal" data-target=".pop-up-1">Forgot your password?</a>
+                                </div>
+                               
+                                
+                              
+                              </div>
+								</div>
+                                		<div class="col-md-12 height-space"></div>
+										<div class="col-md-12">&nbsp;</div>
+										<input type="submit" name="submit_login" id="submit_login" class="col-md-4 col-xs-6 login_checkout" value="Login" data-loading-text="Logging in....">
+								</div><!--/ row -->
+								</fieldset>
+								</form>
+						
+						
+					</div><!--/ col-md-12 register-from -->	
+				
+		<!--/ col-md-12 -->
+    </div>
+				</div>
+				
+				
+				<!-- Guest checkout -->
+				<div class="col-md-6 login">
+					<h4 class="register"><a>Register</a> -OR- <img onClick="FBLogin();" src="https://getethnic.com/images/cfb.jpg" style="cursor: pointer;"></h4>
+					<p id="social_login_message"></p>
+					<input id="social_redirect" type="hidden" name="social_redirect" value="https://getethnic.com">
+					<div class="col-md-12  register-from">
+					
+						<p>Please Enter Below Details to Register</p>
+						<p id="registration_message"></p>
+								<form name="registration" id="registration" method="post">
+								<div class="row">
+								<label class="col-lg-3 label-text">First Name<span>*</span></label>
+									<div class="col-lg-9 field_area"><input type="text" value="" name="first_name" id="first_name" class=""></div>
+								</div>
+								
+								<div class="row">
+									<label class="col-lg-3 label-text">Last Name<span>*</span></label>
+									<div class="col-lg-9 field_area"><input type="text" value="" name="last_name" id="last_name" class=""></div>
+								</div>
+								
+								<div class="row">
+									<label class="col-lg-3 label-text">Email Address<span>*</span></label>
+									<div class="col-lg-9 field_area"><input type="email"  value="" name="email_register" id="email_register" class=""></div>
+								</div>
+								
+								<div class="row">
+									<label class="col-lg-3 label-text">Password<span>*</span></label>
+									<div class="col-lg-9 field_area"><input type="password"  value="" name="password" id="password" class=""></div>
+								</div>
+								
+								<div class="row">
+									<div class="col-lg-3 hidden-xs hidden-sm"></div>
+									<div class="col-lg-6 col-xs-12">
+										<div class="checkbox-holder">
+											<input type="checkbox"  value="1" id="register_subscribe" name="register_subscribe" checked="checked" class="col-md-2">
+											<label for="dwfrm_login_rememberme" class="checkbox col-md-10">Subscribe Me!!</label>
+										</div>
+									</div>
+									<input type="submit" name="register_submit" id="register_submit" class="col-md-4 col-xs-6 login_checkout" value="Register" data-loading-text="Registering..">
+								</div>
+							</form>
+					</div>
+				</div>	
+			</div>
+		  </div>
+  </div>
+</div>
+
+<!-- Forgot your password popup-->
+	<div class="modal fade pop-up-1" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-1" aria-hidden="true">
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+				<div class="modal-header">
+					
+					<h4 class="modal-title" id="myLargeModalLabel-1">Reset password</h4>
+				</div><!--/ modal-header --> 
+				
+			<form name="forgot_password" id="forgot_password" method="post">
+				<div class="modal-body">
+					<p>Provide the email address linked to your Account to receive instructions on how to reset your password.</p>
+					<p id="forgot_password_message"></p>
+					<label class="col-lg-3 label-text">Email address<span>*</span></label>
+					<div class="col-lg-9 field_area">
+						<input type="text" name="forgot_email" id="forgot_email">		 				
+					</div>
+						
+							<input type="button" name="cancel" class="col-md-2 col-xs-6 login_checkout" data-dismiss="modal" aria-label="Close" value="Cancel">
+						
+						<input type="submit" name="submit" class="col-md-2 col-xs-6 login_checkout" value="Send" data-loading-text="Sending...">
+					<p>* Required</p>   
+				</div><!--/ modal-body -->
+			</form>
+			</div><!--/ modal-content -->
+		 </div><!--/ modal-dialog modal-md-->
+	</div>
+<!--/ Forgot your password popup end-->
+
+<!-- Forgot your password popup-->
+	<div class="modal fade pop-up-thank-you" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel-thankyoupop" aria-hidden="true">
+			
+		<div class="modal-dialog modal-md">
+			<div class="modal-content">
+			<button type="button" class="close crossicon" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-remove"></i></span></button>
+				<div class="modal-header">
+					<h4 class="modal-title" id="myLargeModalLabel-thankyoupop">Thank You</h4>
+				</div><!--/ modal-header --> 
+
+				<div class="modal-body">
+					<!-- <p>Password has been sent to the email id.</p> -->
+					<p>Reset password link sent to your email, Please check junk if not present in inbox.</p>
+				</div><!--/ modal-body -->
+		
+			</div><!--/ modal-content -->
+		 </div><!--/ modal-dialog modal-md-->
+	</div>
+<!--/ Forgot your password popup end-->
+
+<!-- Login Popup for Login from Measurement Section -->
+<div class="modal fade login-measurement-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-md">
+<div class="modal-content container-fluid">
+
+<div class="row">
+	<button type="button" class="closeM crossicon" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-remove"></i></span></button>
+		<div class="col-md-12 login">
+			<div class="span12">
+				<div id="tab" class="btn-group shipping-details col-md-12 padding-zero" data-toggle="buttons-radio"> 
+				<h4>Login</h4>
+			 	</div>
+				
+					<div class="col-md-12  register-from">
+						<p>Please Enter Your Email and Password.</p>
+						<p id="loginmessage_measurement"></p>
+						<form name="user_login" id="user_login_measurement" method="post">
+								<div class="row">
+									<label class="col-lg-3 label-text">Email address<span>*</span></label>
+									<div class="col-lg-9 field_area"><input type="text" value="" name="email" id="email" class=""></div>
+								</div>
+								
+								<div class="row">
+									<label class="col-lg-3 label-text">Password<span>*</span></label>
+									<div class="col-lg-9 field_area"><input type="password" value="" name="password" id="password" class=""></div>
+								</div>
+								
+								<div class="row">
+									<div class="col-lg-3 hidden-xs hidden-sm"></div>
+								
+                                		<div class="col-md-12 height-space"></div>
+										<div class="col-md-12">&nbsp;</div>
+										<input type="submit" name="submit_login" id="submit_login_measurement" class="col-md-4 col-xs-6 login_checkout" value="Login" data-loading-text="Logging in....">
+								</div><!--/ row -->
+								</fieldset>
+								</form>
+						
+						
+					</div><!--/ col-md-12 register-from -->	
+				
+		<!--/ col-md-12 -->
+    </div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End  -->
+
+<!-- Login Popup for Login from Measurement Section -->
+<div class="modal fade login-body-measurement-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal-dialog modal-lg">
+<div class="modal-content container-fluid">
+
+<div class="row">
+	<button type="button" class="closeB crossicon" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-remove"></i></span></button>
+		<div class="col-md-6 login">
+			<div class="span12">
+				<div id="tab" class="btn-group shipping-details col-md-12 padding-zero" data-toggle="buttons-radio"> 
+				<h4>Login</h4>
+			 	</div>
+				
+					<div class="col-md-12  register-from">
+						<p>Please Enter Your Email and Password.</p>
+						<p id="loginmessage_body_measurement"></p>
+						<form name="user_login" id="user_login_body_measurement" method="post">
+								<div class="row">
+									<label class="col-lg-3 label-text">Email address<span>*</span></label>
+									<div class="col-lg-9 field_area"><input type="text" value="" name="email" id="email" class=""></div>
+								</div>
+								
+								<div class="row">
+									<label class="col-lg-3 label-text">Password<span>*</span></label>
+									<div class="col-lg-9 field_area"><input type="password" value="" name="password" id="password" class=""></div>
+								</div>
+								
+								<div class="row">
+									<div class="col-lg-3 hidden-xs hidden-sm"></div>
+								
+                                		<div class="col-md-12 height-space"></div>
+										<div class="col-md-12">&nbsp;</div>
+										<input type="submit" name="submit_login" id="submit_login_body_measurement" class="col-md-4 col-xs-6 login_checkout" value="Login" data-loading-text="Logging in....">
+								</div><!--/ row -->
+								</fieldset>
+								</form>
+						
+						
+					</div><!--/ col-md-12 register-from -->	
+				
+		<!--/ col-md-12 -->
+    </div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+</div>
+<!-- End  -->﻿﻿<div class="menu menu-cart">		
+	  <!-- add to cart flip -->
+	  <div>
+		<i class="fa fa-remove icon-close icon-close-cart"></i>
+	  </div>
+	<span id="right-cart-popup">
+		<div class="row nopadding checkout-details">
+  <ul>
+		<li class="col-md-8">
+			<ul>
+				<h4>Cart is empty</h4>
+			</ul>
+		</li>
+  </ul>
+</div>
+	</span>
+</div>
+  <!-- send a message popup -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content coupon">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close" aria-hidden="true"><i class="fa fa-remove"></i></button>
+        <h4 class="modal-title" id="myModalLabel">Send a Message to Us!</h4>
+      </div>
+      <div class="modal-body row send-ordermessage">
+		<p id="send_message_return"></p>
+        <form method="post" name="send_message" id="send_message">
+			<div class="col-md-6">
+				<label><span>*</span> Name</label>
+				<input type="text" name="name" id="name" class="form-control">
+			</div>
+			
+			<div class="col-md-6">
+				<label><span>*</span> Email</label>
+				<input type="text" name="email" id="email" class="form-control">
+			</div>
+			
+			<div class="col-md-6">
+			<label><span>*</span> Subject</label>
+				<select class="form-select" name="message_subject" id="message_subject">
+					<option value="" class="form-control">Select Subject</option>
+					<option value="Regarding Custom Made Outfits">Regarding Custom Made Outfits</option>
+					<option value="Bridal or Groom Wear Outfits">Bridal or Groom Wear Outfits</option>
+					<option value="Custom Made matching Jutti/Shoes">Custom Made matching Jutti/Shoes</option>
+					<option value="Check Order Status">Check Order Status</option>
+					<option value="Suggestions or Comments">Suggestions or Comments</option>
+				</select>
+			</div>
+			
+			<div class="col-md-6">
+				<label><span>*</span> Phone Number</label>
+				<input type="text" name="phone_num" id="phone_num" class="form-control">
+			</div>
+			
+			<div class="col-md-12">
+				<label><span>*</span> Message</label>
+				<textarea name="message_detail" id="message_detail" class="form-control"></textarea>
+			</div>
+			
+			<div class="col-md-12 submitm">
+				<input type="submit" class="form-btn" value="Submit" data-loading-text="Submitting...">
+			</div>
+			
+		</form>
+      </div>
+      
+    </div>
+  </div>
+</div><!--/ send a message popup -->
+
+
+    <div id="overlay1"></div>
+<div id="wrapper">
+                <header class="desktop">
+        <div class="cc-navbar">
+            <div class="container newcontainerforimage">
+                <div class="cc-topnavbar">
+                    <div class="cc-row align-cent">
+                        <div class="cc-col-50">
+                            <div class="cc-logo-wrapper">
+                            <a href="https://getethnic.com"><img src="https://getethnic.com/images/logo_Images/desktop-logo.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="cc-col-50">
+                            <ul class="cc-right-list">
+                                                            <li class="register"><a href="#" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-edit"></i><span class="hidden-xs hidden-sm"></span> &nbsp;Send A Message</a></li>
+                                <li class="signIn"><a href="#" data-toggle="modal" data-target=".bs-example-modal-lg"><i class="glyphicon glyphicon-user"></i><span class="hidden-xs hidden-sm"></span></a></li>
+                                                                <li class="one h-login-reg">
+                                <a href="#"><i class="glyphicon glyphicon-heart"></i><span class="hidden-xs hidden-sm"></span>
+                                <div class="col-md-12 wishlist-dropdown nopadding" id="two">
+    								    									<div class="wishlist-pro">
+    										<p><center>No Items in your Wishlist</center></p>
+    									</div>
+    								    							</div>
+                                </li>
+                                                                  <li class="noborder h-cart"><a href="javascript:;" id="top_cart_click"><i class="glyphicon glyphicon-shopping-cart"></i><span class="hidden-xs hidden-sm"><span class="top_cart_quantity"></span></span></a></li>
+                                                                <li>
+                                    <div class="dropdown coount">
+                                        <button class="btn dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                                            aria-expanded="true">
+                                            <img src="https://getethnic.com/images/inrflag.png"> INR India                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                                        					<li><a href="javascript:;" data-code="USD" class="change_currency"><img src="https://getethnic.com/images/usdflag.png"> <span class="hidden-xs hidden-sm">$ USA<span></a></li>
+    				      					<li><a href="javascript:;" data-code="INR" class="change_currency"><img src="https://getethnic.com/images/inrflag.png"> <span class="hidden-xs hidden-sm">INR India<span></a></li>
+    				      					<li><a href="javascript:;" data-code="EUR" class="change_currency"><img src="https://getethnic.com/images/eurflag.png"> <span class="hidden-xs hidden-sm">EUR EU<span></a></li>
+    				      					<li><a href="javascript:;" data-code="AUD" class="change_currency"><img src="https://getethnic.com/images/audflag.png"> <span class="hidden-xs hidden-sm">$ Australia<span></a></li>
+    				      					<li><a href="javascript:;" data-code="CAD" class="change_currency"><img src="https://getethnic.com/images/cadflag.png"> <span class="hidden-xs hidden-sm">CAD Canada<span></a></li>
+    				      					<li><a href="javascript:;" data-code="SGD" class="change_currency"><img src="https://getethnic.com/images/sgdflag.png"> <span class="hidden-xs hidden-sm">$ Singapore<span></a></li>
+    				      					<li><a href="javascript:;" data-code="AED" class="change_currency"><img src="https://getethnic.com/images/uaeflg.png"> <span class="hidden-xs hidden-sm">AED UAE<span></a></li>
+    				      					<li><a href="javascript:;" data-code="GBP" class="change_currency"><img src="https://getethnic.com/images/gbpflag.png"> <span class="hidden-xs hidden-sm">£ UK<span></a></li>
+    				                                          </ul>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                            
+
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="navlist-wrapper">
+                    <ul>
+                    <li><a href="https://getethnic.com"><i class="glyphicon glyphicon-home"></i></a></li><li><a href="https://getethnic.com/indian-wedding-wear"> &nbsp;&nbsp;&nbsp;Bride & Groom</a></li>
+
+                        <li> 
+                            <a href="javascript:void(0)">Gallery</a>
+                            <div class="cc-gallery-mega-menu">
+                                <div class="cc-menu-section">
+                                    <!-- cc-tab links -->
+                                    
+                                    <div class="cc-tab">
+                                                                            										                                        <button class="cc-tablinks" onmouseover="openmmTab(event, 'Women')">
+                                        <span class="cc-btn-unerline-wrapper"> <span>Women</span> <span class='cc-btn-underline'></span> </span>
+                                        </button>
+                                                                                                                        										                                        <button class="cc-tablinks" onmouseover="openmmTab(event, 'Mens')">
+                                        <span class="cc-btn-unerline-wrapper"> <span>Mens</span> <span class='cc-btn-underline'></span> </span>
+                                        </button>
+                                                                                                                        										                                        <button class="cc-tablinks" onmouseover="openmmTab(event, 'Kids')">
+                                        <span class="cc-btn-unerline-wrapper"> <span>Kids</span> <span class='cc-btn-underline'></span> </span>
+                                        </button>
+                                                                                                                        										                                        <button class="cc-tablinks" onmouseover="openmmTab(event, 'Accessories')">
+                                        <span class="cc-btn-unerline-wrapper"> <span>Accessories</span> <span class='cc-btn-underline'></span> </span>
+                                        </button>
+                                                                                                                    </div>
+                                    
+      
+                                    <!-- cc-tab content -->
+
+                                    <div class="cc-tabs-content">
+                                                                            <div id="Women" class="cc-tabcontent">
+
+                                            <div class="cc-wrapp-inner-blog">
+                                             
+                                                <div class="cc-mm-inner-blog">
+                                                    <a href="https://getethnic.com/women/bridal-lehenga">
+                                                        <img src="https://getethnic.com/images/7.jpg" alt="">
+                                                        <h3>Bridal Lehenga</h3>
+                                                    </a>
+                                                </div>
+                                                 
+                                                <div class="cc-mm-inner-blog">
+                                                    <a href="https://getethnic.com/women/designer-gowns">
+                                                        <img src="https://getethnic.com/images/8.jpg" alt="">
+                                                        <h3>Designer Gowns</h3>
+                                                    </a>
+                                                </div>
+                                                 
+                                                <div class="cc-mm-inner-blog">
+                                                    <a href="https://getethnic.com/women/designer-suits-sarees">
+                                                        <img src="https://getethnic.com/images/9.jpg" alt="">
+                                                        <h3>Designer Suits & Sarees</h3>
+                                                    </a>
+                                                </div>
+                                                 
+                                                <div class="cc-mm-inner-blog">
+                                                    <a href="https://getethnic.com/women/indian-bridesmaid-dresses">
+                                                        <img src="https://getethnic.com/images/10.jpg" alt="">
+                                                        <h3>Indian Bridesmaid Dresses</h3>
+                                                    </a>
+                                                </div>
+                                                 
+                                                <div class="cc-mm-inner-blog">
+                                                    <a href="https://getethnic.com/women/plus-size-ethnic-wear">
+                                                        <img src="https://getethnic.com/images/11.jpg" alt="">
+                                                        <h3>Plus size ethnic wear</h3>
+                                                    </a>
+                                                </div>
+                                                                                                                                            </div>
+                                        </div>
+                                                                                <div id="Mens" class="cc-tabcontent">
+
+                                            <div class="cc-wrapp-inner-blog">
+                                             
+                                                <div class="cc-mm-inner-blog">
+                                                    <a href="https://getethnic.com/mens/mens">
+                                                        <img src="https://getethnic.com/images/2.jpg" alt="">
+                                                        <h3>Mens</h3>
+                                                    </a>
+                                                </div>
+                                                                                                                                            </div>
+                                        </div>
+                                                                                <div id="Kids" class="cc-tabcontent">
+
+                                            <div class="cc-wrapp-inner-blog">
+                                             
+                                                <div class="cc-mm-inner-blog">
+                                                    <a href="https://getethnic.com/kids/boys-wear">
+                                                        <img src="https://getethnic.com/images/3.jpg" alt="">
+                                                        <h3>Boys Wear</h3>
+                                                    </a>
+                                                </div>
+                                                 
+                                                <div class="cc-mm-inner-blog">
+                                                    <a href="https://getethnic.com/kids/girls-wear">
+                                                        <img src="https://getethnic.com/images/4.jpg" alt="">
+                                                        <h3>Girls Wear</h3>
+                                                    </a>
+                                                </div>
+                                                                                                                                            </div>
+                                        </div>
+                                                                                <div id="Accessories" class="cc-tabcontent">
+
+                                            <div class="cc-wrapp-inner-blog">
+                                             
+                                                <div class="cc-mm-inner-blog">
+                                                    <a href="https://getethnic.com/accessories/punjabi-jutti">
+                                                        <img src="https://getethnic.com/images/6.jpg" alt="">
+                                                        <h3>Punjabi Jutti</h3>
+                                                    </a>
+                                                </div>
+                                                                                                                                            </div>
+                                        </div>
+                                                                            </div>
+
+                                </div>
+
+                            </div>
+                        </li>
+                        <li><a href="https://getethnic.com/clients">Clients</a></li>
+                        <li><a href="#myModal2" role="button" data-toggle="modal">Measurements</a></li>
+                        <li><a href="https://getethnic.com/blogs" target="_blank">blog</a></li>
+                        <li><a href="https://getethnic.com/get_started" style="color:#c60303">GET STARTED</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+          </header>
+      </div>
+        <div id="content">
+                        
+			<div style="max-width: 92%; width: 100%; margin: 0px auto; min-height: 1000px;">
+
+    <div id="js-grid-masonry-projects" class="cbp cbp-l-grid-masonry-projects">
+	
+					<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientP/1.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">
+									 <a href="https://www.youtube.com/embed/Bsl7dFp1kpk?rel=0&autoplay=1&mute=1" class="cbp-lightbox" data-title="WATCH VIDEO<br>"><img src="https://getethnic.com/gallery/img/video-icon.png"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">WATCH VIDEO</a>
+					<div class="cbp-l-grid-masonry-projects-desc"></div>
+				</div>
+				
+						
+					<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientP/2.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">
+									 <a href="https://www.youtube.com/embed/fmZ15q-WXB0?rel=0&autoplay=1&mute=1" class="cbp-lightbox" data-title="WATCH VIDEO<br>"><img src="https://getethnic.com/gallery/img/video-icon.png"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">WATCH VIDEO</a>
+					<div class="cbp-l-grid-masonry-projects-desc"></div>
+				</div>
+				
+						
+					<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientP/3.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">
+									 <a href="https://www.youtube.com/embed/toGcLcZSonQ?rel=0&autoplay=1&mute=1" class="cbp-lightbox" data-title="WATCH VIDEO<br>"><img src="https://getethnic.com/gallery/img/video-icon.png"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">WATCH VIDEO</a>
+					<div class="cbp-l-grid-masonry-projects-desc"></div>
+				</div>
+				
+						
+					<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientP/4.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">
+									 <a href="https://www.youtube.com/embed/du-t3cztQJ0?rel=0&autoplay=1&mute=1" class="cbp-lightbox" data-title="WATCH VIDEO<br>"><img src="https://getethnic.com/gallery/img/video-icon.png"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">WATCH VIDEO</a>
+					<div class="cbp-l-grid-masonry-projects-desc"></div>
+				</div>
+				
+						
+					<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientP/5.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">
+									 <a href="https://www.youtube.com/embed/FsZwuqP1Wlk?rel=0&autoplay=1&mute=1" class="cbp-lightbox" data-title="WATCH VIDEO<br>"><img src="https://getethnic.com/gallery/img/video-icon.png"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">WATCH VIDEO</a>
+					<div class="cbp-l-grid-masonry-projects-desc"></div>
+				</div>
+				
+						
+					<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientP/6.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">
+									 <a href="https://www.youtube.com/embed/HmU8xPPdy_w?rel=0&autoplay=1&mute=1" class="cbp-lightbox" data-title="WATCH VIDEO<br>"><img src="https://getethnic.com/gallery/img/video-icon.png"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">WATCH VIDEO</a>
+					<div class="cbp-l-grid-masonry-projects-desc"></div>
+				</div>
+				
+						
+					<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientP/7.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">
+									 <a href="https://www.youtube.com/embed/D1lH3zt4xyQ?rel=0&autoplay=1&mute=1" class="cbp-lightbox" data-title="WATCH VIDEO<br>"><img src="https://getethnic.com/gallery/img/video-icon.png"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">WATCH VIDEO</a>
+					<div class="cbp-l-grid-masonry-projects-desc"></div>
+				</div>
+				
+						
+					<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientP/8.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">
+									 <a href="https://www.youtube.com/embed/0zA-KBaPwaY?rel=0&autoplay=1&mute=1" class="cbp-lightbox" data-title="WATCH VIDEO<br>"><img src="https://getethnic.com/gallery/img/video-icon.png"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">WATCH VIDEO</a>
+					<div class="cbp-l-grid-masonry-projects-desc"></div>
+				</div>
+				
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/9.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/9.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="WATCH VIDEO<br>">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">WATCH VIDEO</a>
+					<div class="cbp-l-grid-masonry-projects-desc"></div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/991.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/991.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bride and Groom-Sabyasachi Inspired Look<br>Canada">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Bride and Groom-Sabyasachi Inspired Look</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Canada</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/992.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/992.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bridesmaids<br>Canada">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Bridesmaids</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Canada</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/993.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/993.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="The Bridal and Groom Party<br>Canada">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">The Bridal and Groom Party</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Canada</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/994.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/994.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Sherwani and Groomsmen Kurtas with Printed Stoles<br>Canada">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Sherwani and Groomsmen Kurtas with Printed Stoles</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Canada</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/1002.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/1002.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Maroon Bridal Lehenga<br>India">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Maroon Bridal Lehenga</a>
+					<div class="cbp-l-grid-masonry-projects-desc">India</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/860.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/860.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Maroon Custom Made Velvet Lehenga<br>New York">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Maroon Custom Made Velvet Lehenga</a>
+					<div class="cbp-l-grid-masonry-projects-desc">New York</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/861.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/861.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bride with Her Bridesmaids<br>Wedding in Puerto Rico">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Bride with Her Bridesmaids</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Wedding in Puerto Rico</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/862.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/862.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bride & Groom with their Groomsmen<br>Wedding in Puerto Rico">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Bride & Groom with their Groomsmen</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Wedding in Puerto Rico</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/863.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/863.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bride with Her Bridesmaids<br>Wedding in Puerto Rico">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Bride with Her Bridesmaids</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Wedding in Puerto Rico</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/864.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/864.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Custom Made Butterfy Blouse with Hand Embroidered Lehenga<br>Australia">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Custom Made Butterfy Blouse with Hand Embroidered Lehenga</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Australia</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/865.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/865.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Custom Made Lehenga<br>Chicago, US">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Custom Made Lehenga</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Chicago, US</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/1041.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/1041.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bride & Groom in their Custom Made Outfits<br>Canada">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Bride & Groom in their Custom Made Outfits</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Canada</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/867.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/867.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Red Kundan Work Lehenga<br>Delhi, India">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Red Kundan Work Lehenga</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Delhi, India</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/868.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/868.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Gorgeous Custom Made Lehenga<br>New Delhi, India">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Gorgeous Custom Made Lehenga</a>
+					<div class="cbp-l-grid-masonry-projects-desc">New Delhi, India</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/869.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/869.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Beautiful Custom Made Lehenga<br>New Delhi, India">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Beautiful Custom Made Lehenga</a>
+					<div class="cbp-l-grid-masonry-projects-desc">New Delhi, India</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/870.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/870.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bridal Lehenga<br>Chandigarh, India">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Bridal Lehenga</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Chandigarh, India</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/871.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/871.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="White Bridal Gown<br>Chicago, US">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">White Bridal Gown</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Chicago, US</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/872.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/872.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Maroon and Pink Velevet Engagement Gown<br>Delhi, India">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Maroon and Pink Velevet Engagement Gown</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Delhi, India</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/873.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/873.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Maroon and Pink Velevet Engagement Gown with Flower Girls<br>Delhi, India">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Maroon and Pink Velevet Engagement Gown with Flower Girls</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Delhi, India</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/854.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/854.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Custom Printed Sherwani with A Hand Embroidered Anarkali <br>Missisaga, Canada">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Custom Printed Sherwani with A Hand Embroidered Anarkali </a>
+					<div class="cbp-l-grid-masonry-projects-desc">Missisaga, Canada</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/1004.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/1004.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Red And Green Bridal Lehenga<br>Brampton, Canada">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Red And Green Bridal Lehenga</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Brampton, Canada</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/1134.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/1134.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="The Unusual Mint Green Bridal Lehenega<br>Chicago, US">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">The Unusual Mint Green Bridal Lehenega</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Chicago, US</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/1007.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/1007.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Red Bridal Lehenga<br>Seattle, US">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Red Bridal Lehenga</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Seattle, US</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/866.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/866.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Fuchia Pink Bridal Lehenga<br>Delhi, India">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Fuchia Pink Bridal Lehenga</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Delhi, India</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/1026.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/1026.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Matching Printed Couple Outfits<br>Missisaga, Canada">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Matching Printed Couple Outfits</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Missisaga, Canada</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/1091.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/1091.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Baby Pink Bridal Lehenga<br>Delhi, India">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Baby Pink Bridal Lehenga</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Delhi, India</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/1028.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/1028.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Kurta and Short Lehenga<br>Ohio, US">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Kurta and Short Lehenga</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Ohio, US</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/1029.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/1029.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Bridal Lehenga<br>Delhi, India">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Bridal Lehenga</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Delhi, India</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/1012.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/1012.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Yellow Saree<br>Chicago, US">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Yellow Saree</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Chicago, US</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/1063.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/1063.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="White Lehenga With Heavy Dupata<br>Chicago, US">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">White Lehenga With Heavy Dupata</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Chicago, US</div>
+				</div>
+						
+	 
+			
+				<div class="cbp-item graphic">
+					<div class="cbp-caption">
+						<div class="cbp-caption-defaultWrap">
+							<img src="https://getethnic.com/webroot/images/ClientPT/1020.jpg" alt="">
+						</div>
+						<div class="cbp-caption-activeWrap">
+							<div class="cbp-l-caption-alignCenter">
+								<div class="cbp-l-caption-body">                             
+									<a href="https://getethnic.com/webroot/images/ClientPT/1020.jpg" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Floral Emberoidery Gown, Mother-Daughter Duo<br>Chicago, US">Enlarge</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#" class=" cbp-l-grid-masonry-projects-title" rel="nofollow">Floral Emberoidery Gown, Mother-Daughter Duo</a>
+					<div class="cbp-l-grid-masonry-projects-desc">Chicago, US</div>
+				</div>
+						
+	 
+    </div>
+    <div id="wait" style="margin: auto;width: 10%;padding: 10px;display:none;">
+	<img src="https://getethnic.com/webroot/images/demo_wait.gif" width="30" height="30"/>
+	Loading ....
+	</div>
+     <div id="loadMore1" style="display:none;">
+      <a href="javascript:void(0)">Load More</a>
+    </div>
+    <div class="loadmorelimit" style="text-align:center;"></div>
+		
+
+
+	<link rel="stylesheet" type="text/css" href="https://getethnic.com/gallery/css/cubeportfolio.min.css">
+    <!-- load jquery -->
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script> -->
+
+    <!-- load cubeportfolio -->
+    <script type="text/javascript" src="https://getethnic.com/gallery/js/jquery.cubeportfolio.min.js"></script>
+
+    <!-- init cubeportfolio -->
+    <script type="text/javascript" src="https://getethnic.com/gallery/js/main.js"></script>
+    
+    
+    
+  </div>
+
+<style>
+    
+      .cbp-ready .cbp-item{
+          -webkit-box-shadow: -1px 3px 8px -2px rgba(0,0,0,0.3) ;
+          -moz-box-shadow: -1px 3px 8px -2px rgba(0,0,0,0.3) ;
+          box-shadow: -1px 3px 8px -2px rgba(0,0,0,0.3);
+          padding-bottom: 10px;
+}
+      .cbp-l-grid-masonry-projects-title{
+          color: #911c2d;
+          text-align: left;
+          padding-left: 15px;
+          
+      }
+      .cbp-l-grid-masonry-projects-title:hover{
+          color: #000;
+          
+      }
+      .cbp-l-grid-masonry-projects-desc{
+          text-align: left;
+          padding-left: 15px;
+      }
+      .cbp-l-grid-masonry-projects .cbp-caption-activeWrap{
+          background: rgba(0,0,0,0.7);
+      }
+      .cbp-lightbox img{
+          width: auto;
+          margin: auto;
+      }
+      #loadMore1{
+    padding-bottom: 30px;
+    padding-top: 30px;
+    text-align: center;
+    width: 100%;
+}
+#loadMore1 a {
+    background: #faa635;
+    border-radius: 3px;
+    color: white;
+    display: inline-block;
+    padding: 10px 30px;
+    transition: all 0.25s ease-out;
+    -webkit-font-smoothing: antialiased;
+}
+#loadMore1 a:hover {
+    background-color: #042a63;
+}
+.loadmorelimit 
+{
+text-align: center;
+}
+
+    </style>
+	<script>
+		function sleep(milliseconds) {
+			var start = new Date().getTime();
+				for (var i = 0; i < 1e7; i++) {
+					if ((new Date().getTime() - start) > milliseconds){
+						break;
+					}
+				}
+		}
+		$.fn.isInViewport = function() {
+			var elementTop = $(this).offset().top;
+			var elementBottom = elementTop + $(this).outerHeight();
+			var viewportTop = $(window).scrollTop();
+			var viewportBottom = viewportTop + $(window).height();
+			return elementBottom > viewportTop && elementTop < viewportBottom;
+		};
+		$(window).load(function(){
+			$("#loadMore1").show();
+		});
+		$(document).ready(function(){
+			localStorage.removeItem("imagecount");
+			localStorage.removeItem("totalimagecount");
+		});
+var processing;
+$(window).load(function(){
+			if (processing)
+            return false;
+			localStorage.setItem("imagecount",$(".cbp-lightbox").length);
+			localStorage.setItem("totalimagecount",$(".cbp-caption .cbp-caption-defaultWrap img").eq(51).attr("data"));
+			processing = true;
+			//setTimeout(() => {
+			getajax();
+			//}, 1000);
+            processing = false;
+        });
+function getajax()
+{
+	localStorage.setItem("imagecount",$(".cbp-lightbox").length);
+	localStorage.setItem("totalimagecount",$(".cbp-caption .cbp-caption-defaultWrap img").eq(51).attr("data"));
+	if(localStorage.getItem("imagecount") < localStorage.getItem("totalimagecount"))
+	{
+	$.ajax({
+						url: '/clients',
+						type: 'GET',
+						data: {imagecount: localStorage.getItem("imagecount")},
+						dataType: "html",
+						beforeSend:function(){
+							$("#wait").css('display', 'flex').css('align-items', 'center').css('justify-content', 'center');
+							$("#loadMore1").hide();
+						},
+						success: function(response){
+							console.log(response);
+							if(response.length > 0){
+								jQuery("#js-grid-masonry-projects").cubeportfolio('appendItems', response);
+								setTimeout(() => {
+									$("#wait").css('display', 'none');
+									$('#loadMore1').hide();
+								}, 1000);
+							}
+							getajax();
+						}
+					});
+	}
+	else
+	{
+		$("#wait").append('<p>No More Images</p>');
+		$("#wait").css('display', 'none');
+		return false;
+	}	
+}
+	</script>
+        </div>
+
+
+       <section id="footer">
+  <footer>
+    <div class="container">
+      <div class="row">
+         
+<div class="col-lg-2 col-sm-4 col-xs-6 company">
+          <h4 style="font-size: 20px;font-weight: bold;letter-spacing: 1px;">Company</h4>
+          <ul>
+            <li><a href="https://getethnic.com/aboutus">About</a></li>
+            <li><a href="https://getethnic.com/contact-us">Contact Us</a></li>
+            <li><a href="https://getethnic.com/faq">FAQS</a></li>
+            <li><a href="https://getethnic.com/howtobuy">How To Buy</a></li>
+            <li><a href="https://getethnic.com/shipping">Shipping & Refund Policy</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-2 col-sm-4 col-xs-6 policies">
+         <h4 style="font-size: 20px;font-weight: bold;letter-spacing: 1px;">Policies</h4>
+          <ul>
+            <li><a href="https://getethnic.com/termandcondition">Terms of use</a></li>
+           <!--<li><a href="https://getethnic.com/privacy-policy">Privacy Policy</a></li>-->
+            <li><a href="https://getethnic.com/testimonial">Customer's Sentiments</a></li>
+            <li><a href="https://getethnic.com/shipping">Return Policy</a></li>
+            <li><a href="https://getethnic.com/customization">Customization </a></li>
+          </ul>
+        </div>
+          
+          <div class="col-lg-2 col-sm-6 col-xs-6 policies">
+          <h4 style="font-size: 20px;font-weight: bold;letter-spacing: 1px;">Measurement </h4>
+          <ul>
+            <li><a href="https://getethnic.com/measurement/suit">Suit Measurement</a></li>
+            
+            <li><a href="https://getethnic.com/measurement/saree">Saree Measurement</a></li>
+            <li><a href="https://getethnic.com/measurement/lehenga">lehenga Measurement</a></li>
+            <li><a href="https://getethnic.com/measurement/mens">Mens Measurement</a></li>
+            <li><a href="https://getethnic.com/measurement/kids">Kids Measurement</a></li>
+            <li><a href="https://getethnic.com/measurement/jutti">Jutti Measurement</a></li>
+            
+          </ul>
+        </div>
+         
+          
+        <div class="col-lg-3 col-sm-6 col-xs-12 follow">
+          <h4 style="font-size: 20px;font-weight: bold;letter-spacing: 1px;">Follow</h4>
+          <ul class="socialhori">
+            <li><a href="https://www.facebook.com/Getethnic/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UClZJcm1eT80HrdRktNNEh9A" target="_blank"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="https://www.instagram.com/getethnic/"  target="_blank"><i class="fa fa-instagram"></i></a></li>
+              <li><a href="https://www.pinterest.com/getethnic/"  target="_blank"><i class="fa fa-pinterest"></i></a></li>
+            <li><a href="https://plus.google.com/103354910477835252056"  target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+          </ul>
+           
+        <h4 style="font-size: 20px;font-weight: bold;letter-spacing: 1px;">We Accept</h4>
+		   <img src="https://getethnic.com/images/payment-options2.png"/>
+          		   
+        </div>
+        <div class="col-lg-3 col-sm-6 col-xs-12 newsletter">
+          <h4 style="font-size: 20px;font-weight: bold;letter-spacing: 1px;">Subscribe for Newsletter</h4>
+          <p>To Receive Special Offers and Promotions</p>
+		   <p id="newsletter_return"></p>
+          <br />
+          <form role="form" method="post" name="newsletter" id="newsletter">
+            <div class="form-group">
+              <input type="text" class="form-control" name="name" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" name="email" id="email" placeholder="Enter Your Email">
+            </div>
+            <input type="submit" class="btn btn-default" value="Submit" data-loading-text="Submitting...">
+          </form>
+        
+        </div>
+      </div>
+      <p style="text-align:center;">&copy; GetEthnic.com, All Righs Reserved 2019-20</p>
+    </div>
+  </footer>
+</section>
+</div>
+<script src="/js/bootstrap.min.js"></script><script src="/js/common.js?v=415749724"></script><script src="/js/jquery.flagstrap.js"></script><script src="/js/currency.js"></script><script src="/js/bootbox.min.js"></script><script src="/js/jqzoom.js"></script>
+<script type="text/javascript">
+$("#bzoom").zoom({
+	zoom_area_width: 300,
+    autoplay_interval :3000,
+    small_thumbs : 4,
+    autoplay : false
+});
+</script>
+<script>
+ 
+    $('#currency').flagStrap({
+        buttonSize: "btn-lg",
+        buttonType: "btn-primary",
+        labelMargin: "20px",
+        scrollable: false,
+        scrollableHeight: "350px"
+    });
+
+</script>
+<script>
+$(document).ready(function() {
+
+	/** $(".wishlist-dropdown").hide();
+	$(".wish").click(function(){
+		$(".wishlist-dropdown").toggle();
+	});
+	**/
+  $('#media').carousel({
+    pause: true,
+    interval: false,
+  });
+
+});
+</script>
+<script>
+$(document).click(function(e) {
+       if (!$(e.target).is('.menu-cart, .menu-cart *')) {
+           $(".icon-close").click();
+       }
+   });
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+		var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+		s1.async=true;
+		s1.src='https://embed.tawk.to/585cad147418a41587c20f4b/default';
+		s1.charset='UTF-8';
+		s1.setAttribute('crossorigin','*');
+		s0.parentNode.insertBefore(s1,s0);
+	})();
+</script>
+<!-- End of Tawk.to Script-->
+<script>
+function init() {
+var vidDefer = document.getElementsByTagName('iframe');
+for (var i=0; i<vidDefer.length; i++) 
+{
+if(vidDefer[i].getAttribute('data-src')) 
+{
+vidDefer[i].setAttribute('src',vidDefer[i].getAttribute('data-src'));
+} } }
+window.onload = init;
+</script>
+<script>
+( function() {
+
+    var youtube = document.querySelectorAll( ".youtube" );
+    
+    for (var i = 0; i < youtube.length; i++) {
+        
+        var source = "https://img.youtube.com/vi/"+ youtube[i].dataset.embed +"/sddefault.jpg";
+        
+        var image = new Image();
+                image.src = source;
+                image.addEventListener( "load", function() {
+                    youtube[ i ].appendChild( image );
+                }( i ) );
+        
+                youtube[i].addEventListener( "click", function() {
+
+                    var iframe = document.createElement( "iframe" );
+
+                            iframe.setAttribute( "frameborder", "0" );
+                            iframe.setAttribute( "allowfullscreen", "" );
+                            iframe.setAttribute( "src", "https://www.youtube.com/embed/"+ this.dataset.embed +"?rel=0&showinfo=0&autoplay=0" );
+
+                            this.innerHTML = "";
+                            this.appendChild( iframe );
+                } );    
+    };
+    
+} )();
+</script>
+<script>
+    jQuery("button.close").click(function() {
+$('#myModal2 iframe').attr('src', $('#myModal2 iframe').attr('src'));});
+</script>
+<script src="/js/jquery.fancybox.pack.js"></script><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108614307-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-108614307-1');
+</script>
+<script>
+/*Current menu color*/
+function openmmTab(evt, cityName) {
+              var i, tabcontent, tablinks;
+              tabcontent = document.getElementsByClassName("cc-tabcontent");
+              for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("cc-tablinks");
+              for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+              }
+              document.getElementById(cityName).style.display = "block";
+              evt.currentTarget.className += " active";
+            }
+            
+            // Get the element with id="defaultOpen" and click on it
+            document.getElementById("defaultOpen").click();
+            document.getElementById("Women").style.display="block";
+$(document).ready(function(){
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+            if (scroll >0) {
+                $('header .cc-navbar').addClass("fixedheader");
+            } else {
+                $('header .cc-navbar').removeClass("fixedheader")
+            }
+
+        });
+    });
+</script>
+
+<style>
+.marginBottom25 img{max-width: 100%;}
+</style>
+<script>
+$('.dropdown').mouseenter(function () { $(this).addClass('open'); }); $('.dropdown').mouseleave(function () { $(this).removeClass('open'); });
+</script>
+</body>
+</html>
