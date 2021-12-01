@@ -1,0 +1,2 @@
+if(($(window).height()+100)<$(document).height()){$('.backtotop').affix({offset:{top:200}});}
+console.log("Surge Framework: Developed by Rodrigo A Paredes Leon - github.com/Rodrigoleon - Optimized360");

@@ -1,0 +1,1 @@
+<a class="testimonial-link" href="<?php echo esc_url( get_option( 'testimonials_link_url','#' )); ?>"><?php echo get_option( 'testimonials_link_text','Read more reviews' ); ?></a>

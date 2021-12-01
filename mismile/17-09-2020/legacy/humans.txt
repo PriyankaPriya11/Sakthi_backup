@@ -1,0 +1,37 @@
+/* TEAM */
+
+CEO: Sean Fahimi
+Site: Optimized360.com
+Twitter: @Optimized360
+Location: Newport Beach, United States.      
+
+Lead Developer: Rodrigo Leon     
+Site: Github.com/RodrigoLeon      
+Twitter: @LeonRx
+Location: Newport Beach, United States.
+                         
+                 
+                        [...]
+						
+
+							
+/* THANKS */	
+
+Testers:
+Support Specialitst: Jan S.
+Creative Director: Belinda T.
+
+						
+                 
+                        [...]
+                        
+
+                            
+/* FRAMEWORK */                
+Last major update: 2016/05/04.
+Standards: HTML5, CSS3, PHP.
+Components: Bootstrap, jQuery, Wordpress, FontAwesome.
+Software: SublimeText, Git, Bitbucket, SourceTree, MAMP, iTerm.
+Project Designation: Surge.
+Project Purpose: Multipurpose Wordpress Framework.
+Project Description: This Wordpress Framework (Surge) uses Wordpress Customizer, a set of custom fuctions and a complex directory structure to allow for optimized web development.

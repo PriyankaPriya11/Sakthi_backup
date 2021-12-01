@@ -1,0 +1,41 @@
+/* Restricting Access to Everyone for security reasons. */
+#wp-admin-bar-network-admin-p, #menu-plugins, .plugins-php #wpwrap .wrap, .plugin-install-php #wpbody .wrap{/*display: none;*/}
+
+/* Welcome Panel For now Making it transparnet */
+/* Hide the dashboard widgets: #dashboard-widgets-wrap,*/
+#footer-thankyou,
+#welcome-panel .welcome-panel-content{
+	display: none;
+}
+
+/* Removing Divi */
+#toplevel_page_et_divi_options{
+    display: none;
+}
+
+.currentusericon{
+	position: fixed;
+    bottom: 20px;
+    left: 20px;
+    height: 50px;
+    width: 120px;
+    background: #23282d;
+    z-index: 999;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 50px;
+    color: #eee;
+}
+
+.currentusericon span{
+    line-height: 50px;
+    margin-right: 4px;
+}
+
+@media only screen and (max-width: 960px){
+	
+	.currentusericon{
+		display: none;
+	}
+
+}

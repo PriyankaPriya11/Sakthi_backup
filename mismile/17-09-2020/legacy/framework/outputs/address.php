@@ -1,0 +1,2 @@
+<!-- Address -->
+<span class="address"><span class="ba-address"><?php echo get_option( 'address','My Address' ); ?></span> <span class="ba-city"><?php echo get_option( 'city','My City' ); ?>,</span> <span class="ba-state"><?php echo get_option( 'state','My State' ); ?></span> <span class="ba-zip"><?php echo get_option( 'zip','54321' ); ?></span></span>

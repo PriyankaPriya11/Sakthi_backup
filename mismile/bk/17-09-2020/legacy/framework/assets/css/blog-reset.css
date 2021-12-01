@@ -1,0 +1,109 @@
+/* Blog Reset CSS
+Only active when Blog Reset Styles option is activated.
+*/
+
+/* Blog Resets From Framework.css */
+.entry-meta{margin:20px 0;}
+.entry-meta i.fa{margin:0 6px;}
+.entry-meta i.fa-first{margin-left:0;}
+
+/* Blog Centric Reset */
+.posted-on .updated{display:none;}
+.author.vcard img{margin-right:6px;}
+article.post h2{margin-top:0;}
+.system-output .archive-header{margin-bottom: 20px;}
+
+/* Wordpress Defaults */
+.sticky{}
+.gallery-caption{}
+
+/* By Post Author List Style */
+.bypostauthor{
+	border-top: 4px solid #e4e4e4;
+	position: relative;
+}
+
+.bypostauthor::after{
+	content: 'Author';
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	background: #e4e4e4;
+	padding: 10px;
+}
+
+/* Comment Section Comment Title */
+.system-output .comments-title{
+  margin: 0 0 1.5em;
+}
+
+/* Comment Section Comment List */
+.comment-list{
+  margin: 0 0 1.5em;
+  list-style: none;
+  padding: 0;
+}
+
+.comment-list li{
+	margin: 0 0 1.5em;
+}
+
+.comment-list .comment-body{
+  background-color: transparent;
+  margin: 0;
+  overflow: hidden;
+  padding: 25px;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-color: #e4e4e4;
+  border-radius: 4px;
+}
+
+.comment-author.vcard{
+  margin: 0 0 1.5em;
+}
+
+.comment-meta .comment-metadata{
+  margin: 0 0 1.5em;
+}
+
+/* Comment Section Comment Navigation */
+.system-output .comment-navigation{
+  margin: 0 0 1.5em;
+}
+
+/* Comment Section Comment Form */
+.comment-form-comment label{
+	font-weight: normal;
+}
+
+.comment-form-comment textarea{
+  width: 100%;
+  background: transparent;
+  border: 1px solid #e4e4e4;
+}
+
+.comment-form-author label{
+  display: block;
+  font-weight: normal;
+}
+
+.comment-form-email label{
+  display: block;
+  font-weight: normal;
+}
+.comment-form-url label{
+  display: block;
+  font-weight: normal;
+}
+
+.form-submit input.submit{
+  background: transparent;
+  border: 1px solid #e4e4e4;
+  padding: 10px 20px;
+}
+
+.form-submit input.submit:hover{
+  background: transparent;
+  border: 1px solid #999999;
+  padding: 10px 20px;
+}

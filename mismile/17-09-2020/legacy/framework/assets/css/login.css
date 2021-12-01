@@ -1,0 +1,11 @@
+body{
+	background: #eee;
+}
+
+.login h1 a{
+	background-image: url(http://optimized360.com/wp-content/themes/optimized/images/logo/logo-top.png);
+	height: 52px;
+	width: 100%;
+	background-size: initial;
+	-webkit-background-size: initial;
+}
