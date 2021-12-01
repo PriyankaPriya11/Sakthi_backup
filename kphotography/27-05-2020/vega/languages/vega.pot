@@ -1,0 +1,578 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Minos Theme\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-07 16:06+0700\n"
+"PO-Revision-Date: 2018-05-18 17:44+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;gettext;gettext_noop;_e;_n\n"
+"X-Poedit-Basepath: .\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:22
+msgid "Apologies, but the content you requested could not be found."
+msgstr ""
+
+#: ../blog_f.php:160 ../blog_fullscreen.php:312 ../blog_g.php:119
+#: ../blog_l.php:208 ../blog_r.php:187 ../index.php:131
+#: ../lib/contentbuilder.lib.php:170
+msgid "by"
+msgstr ""
+
+#: ../blog_f.php:184 ../blog_fullscreen.php:336 ../blog_g.php:128
+#: ../blog_l.php:232 ../blog_r.php:211 ../index.php:155
+#: ../lib/contentbuilder.lib.php:178
+msgid "Read More"
+msgstr ""
+
+#: ../blog_f.php:199 ../blog_fullscreen.php:351 ../blog_l.php:247
+#: ../blog_r.php:227
+msgid "New Search"
+msgstr ""
+
+#: ../blog_f.php:200 ../blog_fullscreen.php:352 ../blog_l.php:248
+#: ../blog_r.php:228
+msgid "Oops, The Content Could Not Be Found. Please try a new search."
+msgstr ""
+
+#: ../blog_f.php:203 ../blog_fullscreen.php:355 ../blog_l.php:251
+#: ../blog_r.php:231
+msgid "Type and hit enter"
+msgstr ""
+
+#: ../blog_f.php:204 ../blog_fullscreen.php:356 ../blog_l.php:252
+#: ../blog_r.php:232
+msgid "Search"
+msgstr ""
+
+#: ../blog_fullscreen.php:161 ../templates/template-blog-header.php:90
+msgid "Blog Archives"
+msgstr ""
+
+#: ../blog_fullscreen.php:164 ../templates/template-blog-header.php:93
+msgid "Posts archives "
+msgstr ""
+
+#: ../blog_fullscreen.php:169 ../templates/template-blog-header.php:131
+msgid "Posts category "
+msgstr ""
+
+#: ../blog_fullscreen.php:174 ../templates/template-blog-header.php:168
+msgid "Search Results for "
+msgstr ""
+
+#: ../blog_fullscreen.php:179 ../templates/template-blog-header.php:205
+msgid "Posts tagged "
+msgstr ""
+
+#: ../comments.php:4
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: ../contact.php:68 ../contact_f.php:107 ../contact_map.php:71
+#: ../functions.php:1528
+msgid "Name"
+msgstr ""
+
+#: ../contact.php:77 ../contact_f.php:116 ../contact_map.php:80
+#: ../functions.php:1529
+msgid "Email"
+msgstr ""
+
+#: ../contact.php:85 ../contact_f.php:124 ../contact_map.php:88
+#: ../templates/comments-form.php:33
+msgid "Message"
+msgstr ""
+
+#: ../contact.php:93 ../contact_f.php:132 ../contact_map.php:96
+msgid "Address"
+msgstr ""
+
+#: ../contact.php:101 ../contact_f.php:140 ../contact_map.php:104
+msgid "Phone"
+msgstr ""
+
+#: ../contact.php:109 ../contact_f.php:148 ../contact_map.php:112
+msgid "Mobile"
+msgstr ""
+
+#: ../contact.php:117 ../contact_f.php:156 ../contact_map.php:120
+msgid "Company Name"
+msgstr ""
+
+#: ../contact.php:125 ../contact_f.php:164 ../contact_map.php:128
+msgid "Country"
+msgstr ""
+
+#: ../contact.php:145 ../contact_f.php:184 ../contact_map.php:148
+msgid "Type the two words"
+msgstr ""
+
+#: ../contact.php:158 ../contact_f.php:197 ../contact_map.php:161
+msgid "Send Message"
+msgstr ""
+
+#: ../fields/gallery/tg-gallery.php:58
+msgid "Gallery Images"
+msgstr ""
+
+#: ../fields/gallery/tg-gallery.php:100
+msgid "Allowed Files"
+msgstr ""
+
+#: ../fields/gallery/tg-gallery.php:123
+msgid "Upload Image"
+msgstr ""
+
+#: ../fields/gallery/tg-gallery.php:124
+msgid "Delete All Images"
+msgstr ""
+
+#: ../fields/gallery/tg-gallery.php:131
+msgid "Remove"
+msgstr ""
+
+#: ../fields/post.fields.php:8
+msgid "Add New Gallery"
+msgstr ""
+
+#: ../fields/post.fields.php:9
+msgid "Edit Gallery"
+msgstr ""
+
+#: ../fields/post.fields.php:10
+msgid "New Gallery"
+msgstr ""
+
+#: ../fields/post.fields.php:11
+msgid "View Gallery"
+msgstr ""
+
+#: ../fields/post.fields.php:12
+msgid "Search Gallery"
+msgstr ""
+
+#: ../fields/post.fields.php:13
+msgid "No Gallery found"
+msgstr ""
+
+#: ../fields/post.fields.php:14
+msgid "No Gallery found in Trash"
+msgstr ""
+
+#: ../fields/post.fields.php:36
+msgid "Search Gallery Categories"
+msgstr ""
+
+#: ../fields/post.fields.php:37
+msgid "All Gallery Categories"
+msgstr ""
+
+#: ../fields/post.fields.php:38
+msgid "Parent Gallery Category"
+msgstr ""
+
+#: ../fields/post.fields.php:39
+msgid "Parent Gallery Category:"
+msgstr ""
+
+#: ../fields/post.fields.php:40
+msgid "Edit Gallery Category"
+msgstr ""
+
+#: ../fields/post.fields.php:41
+msgid "Update Gallery Category"
+msgstr ""
+
+#: ../fields/post.fields.php:42
+msgid "Add New Gallery Category"
+msgstr ""
+
+#: ../fields/post.fields.php:43
+msgid "New Gallery Category Name"
+msgstr ""
+
+#: ../fields/post.fields.php:67
+msgid "Add New Portfolio"
+msgstr ""
+
+#: ../fields/post.fields.php:68
+msgid "Edit Portfolio"
+msgstr ""
+
+#: ../fields/post.fields.php:69
+msgid "New Portfolio"
+msgstr ""
+
+#: ../fields/post.fields.php:70
+msgid "View Portfolio"
+msgstr ""
+
+#: ../fields/post.fields.php:71
+msgid "Search Portfolios"
+msgstr ""
+
+#: ../fields/post.fields.php:72
+msgid "No Portfolio found"
+msgstr ""
+
+#: ../fields/post.fields.php:73
+msgid "No Portfolio found in Trash"
+msgstr ""
+
+#: ../fields/post.fields.php:95
+msgid "Search Portfolio Categories"
+msgstr ""
+
+#: ../fields/post.fields.php:96
+msgid "All Portfolio Categories"
+msgstr ""
+
+#: ../fields/post.fields.php:97
+msgid "Parent Portfolio Category"
+msgstr ""
+
+#: ../fields/post.fields.php:98
+msgid "Parent Portfolio Category:"
+msgstr ""
+
+#: ../fields/post.fields.php:99
+msgid "Edit Portfolio Category"
+msgstr ""
+
+#: ../fields/post.fields.php:100
+msgid "Update Portfolio Category"
+msgstr ""
+
+#: ../fields/post.fields.php:101
+msgid "Add New Portfolio Category"
+msgstr ""
+
+#: ../fields/post.fields.php:102
+msgid "New Portfolio Category Name"
+msgstr ""
+
+#: ../fields/post.fields.php:156
+msgid "Thumbnail"
+msgstr ""
+
+#: ../functions.php:222 ../lib/menu.lib.php:7
+msgid "Main Menu Left Side"
+msgstr ""
+
+#: ../functions.php:223 ../lib/menu.lib.php:8
+msgid "Main Menu Right Side"
+msgstr ""
+
+#: ../functions.php:407
+msgid "Thank you! We will get back to you as soon as possible"
+msgstr ""
+
+#: ../functions.php:421
+msgid "Email from contact form"
+msgstr ""
+
+#: ../functions.php:900
+msgid "Updating..."
+msgstr ""
+
+#: ../functions.php:901
+msgid "Successfully<br/>Update"
+msgstr ""
+
+#: ../functions.php:923
+msgid "Theme Setting"
+msgstr ""
+
+#: ../functions.php:929
+msgid "Save All Changes"
+msgstr ""
+
+#: ../functions.php:949
+msgid "The path "
+msgstr ""
+
+#: ../functions.php:949
+msgid ""
+" is not writable, please login with your FTP account and make it writable "
+"(chmod 777) otherwise CSS and javascript compression feature won't work."
+msgstr ""
+
+#: ../functions.php:1106
+msgid "Below are fonts that already installed."
+msgstr ""
+
+#: ../functions.php:1206 ../functions.php:1215
+msgid "Delete"
+msgstr ""
+
+#: ../functions.php:1215
+msgid "Listen current music"
+msgstr ""
+
+#: ../functions.php:1381
+msgid "Add"
+msgstr ""
+
+#: ../functions.php:1476
+msgid "Save changes"
+msgstr ""
+
+#: ../functions.php:1530 ../templates/comments-form.php:27
+msgid "Website"
+msgstr ""
+
+#: ../functions.php:1546 ../functions.php:1624
+msgid "Category Featured Image"
+msgstr ""
+
+#: ../functions.php:1552 ../functions.php:1630
+msgid ""
+"Category Featured Image which displays as header background image on this "
+"category page"
+msgstr ""
+
+#: ../gallery_kenburns.php:55
+msgid "Your browser doesn't support canvas!"
+msgstr ""
+
+#: ../gallery_proofing.php:119 ../portfolio_grid.php:143
+#: ../portfolio_masonry.php:143
+msgid "All"
+msgstr ""
+
+#: ../gallery_proofing.php:123
+msgid "Approved Photos"
+msgstr ""
+
+#: ../gallery_proofing.php:127
+msgid "Rejected Photos"
+msgstr ""
+
+#: ../gallery_proofing.php:183
+msgid "Approve"
+msgstr ""
+
+#: ../get_captcha.php:16
+msgid "Please enter correct captcha text"
+msgstr ""
+
+#: ../lib/custom.lib.php:245
+msgid "Page"
+msgstr ""
+
+#: ../lib/custom.lib.php:274
+msgid "Reply"
+msgstr ""
+
+#: ../lib/custom.lib.php:274
+msgid "Login to Reply"
+msgstr ""
+
+#: ../lib/custom.lib.php:280
+msgid "(Your comment is awaiting moderation.)"
+msgstr ""
+
+#: ../lib/custom.lib.php:355
+msgid "Recent Posts"
+msgstr ""
+
+#: ../lib/custom.lib.php:363
+msgid "Popular Posts"
+msgstr ""
+
+#: ../lib/shortcode.lib.php:644
+msgid "Comment & share"
+msgstr ""
+
+#: ../modules/envato-wordpress-toolkit-library/class-envato-protected-api.php:67
+msgid "Please enter your Envato Marketplace Username."
+msgstr ""
+
+#: ../modules/envato-wordpress-toolkit-library/class-envato-protected-api.php:71
+msgid "Please enter your Envato Marketplace API Key."
+msgstr ""
+
+#: ../modules/envato-wordpress-toolkit-library/class-envato-protected-api.php:96
+msgid "The API \"set\" is a required parameter."
+msgstr ""
+
+#: ../modules/envato-wordpress-toolkit-library/class-envato-protected-api.php:167
+msgid "The Envato Marketplace \"item ID\" is a required parameter."
+msgstr ""
+
+#: ../modules/envato-wordpress-toolkit-library/class-envato-wordpress-theme-upgrader.php:288
+msgid "Downloading upgrade package from the Envato API&#8230;"
+msgstr ""
+
+#: ../modules/envato-wordpress-toolkit-library/class-envato-wordpress-theme-upgrader.php:299
+msgid "Downloading install package from the Envato API&#8230;"
+msgstr ""
+
+#: ../modules/shortcode_generator.php:318
+msgid "Select Shortcode"
+msgstr ""
+
+#: ../modules/shortcode_generator.php:319
+msgid ""
+"Please select short code from list below then enter short code attributes "
+"and click \"Generate Shortcode\"."
+msgstr ""
+
+#: ../modules/shortcode_generator.php:322
+msgid "(no short code selected)"
+msgstr ""
+
+#: ../modules/shortcode_generator.php:458
+msgid "Shortcode"
+msgstr ""
+
+#: ../modules/shortcode_generator.php:462
+msgid "Generate Shortcode"
+msgstr ""
+
+#: ../modules/woocommerce.php:7
+msgid "Shop"
+msgstr ""
+
+#: ../single-post-f.php:220 ../single-post-fullscreen.php:186
+#: ../single-post-l.php:239 ../single-post-r.php:220
+msgid "Written By"
+msgstr ""
+
+#: ../single-post-f.php:221 ../single-post-fullscreen.php:187
+#: ../single-post-l.php:240 ../single-post-r.php:221
+msgid "On"
+msgstr ""
+
+#: ../single-post-f.php:258 ../single-post-fullscreen.php:224
+#: ../single-post-l.php:277 ../single-post-r.php:258
+msgid "Previous Post"
+msgstr ""
+
+#: ../single-post-f.php:272 ../single-post-fullscreen.php:238
+#: ../single-post-l.php:291 ../single-post-r.php:272
+msgid "Next Post"
+msgstr ""
+
+#: ../templates/comments-form.php:13
+msgid "Leave A Reply"
+msgstr ""
+
+#: ../templates/comments-form.php:21
+msgid "Name (required)"
+msgstr ""
+
+#: ../templates/comments-form.php:24
+msgid "Email (required)"
+msgstr ""
+
+#: ../templates/comments-form.php:37
+msgid "Submit"
+msgstr ""
+
+#: ../templates/script-contact-form.php:36
+msgid "Please enter"
+msgstr ""
+
+#: ../templates/script-contact-form.php:42
+msgid "Please enter valid"
+msgstr ""
+
+#: ../templates/template-client-password.php:35
+#: ../templates/template-password.php:35
+msgid "Error Password is incorrect"
+msgstr ""
+
+#: ../templates/template-client-password.php:65
+#: ../templates/template-password.php:79
+msgid "To view it please enter your password below"
+msgstr ""
+
+#: ../templates/template-client-password.php:76
+#: ../templates/template-password.php:90
+msgid "Password"
+msgstr ""
+
+#: ../templates/template-menu.php:236
+msgid "Type to search and hit enter..."
+msgstr ""
+
+#: ../templates/template-share.php:42
+msgid "Share On Facebook"
+msgstr ""
+
+#: ../templates/template-share.php:43
+msgid "Share On Twitter"
+msgstr ""
+
+#: ../templates/template-share.php:44
+msgid "Share On Pinterest"
+msgstr ""
+
+#: ../templates/template-share.php:45
+msgid "Share On Google+"
+msgstr ""
+
+#: ../templates/template-social.php:20
+msgid "Facebook"
+msgstr ""
+
+#: ../templates/template-social.php:30
+msgid "Twitter"
+msgstr ""
+
+#: ../templates/template-social.php:40
+msgid "Flickr"
+msgstr ""
+
+#: ../templates/template-social.php:50
+msgid "Youtube"
+msgstr ""
+
+#: ../templates/template-social.php:60
+msgid "Vimeo"
+msgstr ""
+
+#: ../templates/template-social.php:70
+msgid "Tumblr"
+msgstr ""
+
+#: ../templates/template-social.php:80
+msgid "Google+"
+msgstr ""
+
+#: ../templates/template-social.php:90
+msgid "Dribbble"
+msgstr ""
+
+#: ../templates/template-social.php:100
+msgid "Linkedin"
+msgstr ""
+
+#: ../templates/template-social.php:110
+msgid "Pinterest"
+msgstr ""
+
+#: ../templates/template-social.php:120
+msgid "Instagram"
+msgstr ""
+
+#: ../templates/template-social.php:130
+msgid "Behance"
+msgstr ""
+
+#: ../templates/template-social.php:140
+msgid "500px"
+msgstr ""
+
+#, fuzzy
+#~ msgid "Cancel Reply"
+#~ msgstr "Leave a Reply"

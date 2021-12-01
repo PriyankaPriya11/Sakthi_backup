@@ -1,0 +1,21 @@
+<div class="ppb_wrapper">
+<div class="one"><div class="page_content_wrapper"><div class="inner"><p></p>
+<div class="row">
+<div class="col-sm-6 img_align">
+<img src="https://kpolidanphotography.mdh80f8f-liquidwebsites.com/wp-content/uploads/2020/01/Frutig-Farms_-Misty-Farms_TheValleyWedding_KateDiamondWedding-123.jpg">
+</div>
+<div class="col-sm-6">
+<p>Named one of the Top Wedding Photographers in the world by Harper’s Bazaar  </p>
+<p><img src="https://kpolidanphotography.mdh80f8f-liquidwebsites.com/wp-content/uploads/2020/01/Frutig-Farms_-Misty-Farms_TheValleyWedding_KateDiamondWedding-123.jpg">
+</p></div>
+</div>
+<p>
+   </p></div></div></div>
+   <div class="one"><div class="page_content_wrapper"><div class="inner"><p></p>
+<div class="gallery">
+<p>View our wedding portfolio, real moments and engagement sessions.</p>
+</div>
+<p>
+   </p></div></div></div>
+   <div class="one"><div class="page_content_wrapper"><div class="inner"><div class="one_third"><div class="image_classic_frame expand animate"><div class="image_wrapper"><a href="https://kpolidanphotography.mdh80f8f-liquidwebsites.com/wp-content/uploads/2020/01/Frutig-Farms_-Misty-Farms_TheValleyWedding_KateDiamondWedding-114.jpg" class="img_frame"><img src="https://kpolidanphotography.mdh80f8f-liquidwebsites.com/wp-content/uploads/2020/01/Frutig-Farms_-Misty-Farms_TheValleyWedding_KateDiamondWedding-114.jpg" alt="" class="portfolio_img"></a></div></div></div><div class="one_third"><div class="image_classic_frame expand animate"><div class="image_wrapper"><a href="https://kpolidanphotography.mdh80f8f-liquidwebsites.com/wp-content/uploads/2020/01/Frutig-Farms_-Misty-Farms_TheValleyWedding_KateDiamondWedding-120.jpg%20" class="img_frame"><img src="https://kpolidanphotography.mdh80f8f-liquidwebsites.com/wp-content/uploads/2020/01/Frutig-Farms_-Misty-Farms_TheValleyWedding_KateDiamondWedding-120.jpg%20" alt="" class="portfolio_img"></a></div></div></div><div class="one_third last animate"><div class="image_classic_frame expand"><div class="image_wrapper"><a href="https://kpolidanphotography.mdh80f8f-liquidwebsites.com/wp-content/uploads/2019/09/RcohesterHillsWedding_KPolidanPhotography-2.jpg" class="img_frame"><img src="https://kpolidanphotography.mdh80f8f-liquidwebsites.com/wp-content/uploads/2019/09/RcohesterHillsWedding_KPolidanPhotography-2.jpg" alt="" class="portfolio_img"></a></div></div></div><br class="clear"></div></div></div>
+   </div>
