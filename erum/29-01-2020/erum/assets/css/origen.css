@@ -1,0 +1,46 @@
+.ss-header-txt h1 {color: #FFFFFF; font-family: "Playfair Display";	font-size: 200px; letter-spacing: 6.67px; line-height: 266px; text-align: left; padding: 10% 0 0;}
+body.page-template-origen { background-color: rgba(232,232,232,0.86);}
+body.page-template-origen .light-logo > a:first-child { display: none;}
+.ss-header-txt h3 { color: #525252; font-family: Arimo; font-size: 50px; font-weight: bold; letter-spacing: 1.67px; line-height: 58px; text-align: left; margin-top: -9%; margin-left: 7%; margin-bottom: 7%;}
+body.page-template-origen .elg-navigation p { color: #000000;}
+body.page-template-origen .elg-nav-line { background-color: #000000;} 
+.ss-paragraph p { color: #525252; font-family: Arimo;  font-size: 15px; line-height: 24px;  font-weight: normal;}
+.ss-video-1 { position: absolute; top: 0; z-index: -1; left: 44%; opacity: 0.3;}
+.ss-video-2 { position: absolute; bottom: 0; z-index: -1; right: 0; opacity: 0.3;}
+body.page-template-origen .ss-section-one .col-md-6 { width: 46%;}
+#myVideo, #myVideo-1  { width: 554px; height: 415px; object-fit: cover; z-index: -100;}
+.ss-col-ig { margin: 0 0 7%;}
+.ss-col-txt h4 { color: #525252; font-family: Arimo; font-size: 20px; letter-spacing: 0.67px; line-height: 23px; font-weight: 100;}
+.ss-col-txt h3 { color: #525252; font-family: Arimo; font-size: 30px; font-weight: bold; letter-spacing: 1px; line-height: 34px;}
+.ss-col-txt { padding: 0 25% 0 0;}
+.ss-col-txt p { color: #525252; font-family: Arimo; font-size: 15px; line-height: 24px; font-weight: 100;}
+.ss-section-two { padding: 8% 0 0;}
+.owl-item { height: 100vh;}
+.owl-nav { display: none;}
+.owl-dots { position: absolute; bottom: 40px; left: 30%;}
+button.owl-dot.active span:after { content: ""; position: absolute; top: 20px; color: #525252; font-family: Arimo; font-size: 15px; letter-spacing: 2.57px; line-height: 24px;
+    text-align: center; text-transform: uppercase; margin-left: -30px;}
+button.owl-dot.active:first-child span:after { content: "Origen"; background: #75B331;animation-name: drawLines; animation-duration: .3s; 
+    animation-delay: .3s; animation-timing-function: cubic-bezier(.16,.71,.68,.86); animation-iteration-count: 1; animation-fill-mode: forwards; height: 1px; position: absolute; top: 9px; left: 37px;}
+button.owl-dot.active:nth-child(2) span:after { content: "Lorem"; margin-left: -60px; background: #75B331;animation-name: drawLines; animation-duration: .3s; 
+    animation-delay: .3s; animation-timing-function: cubic-bezier(.16,.71,.68,.86); animation-iteration-count: 1; animation-fill-mode: forwards; height: 1px; position: absolute; top: 9px; left: 321px;}
+button.owl-dot.active:nth-child(3) span:after { content: "Ipsum"; margin-left: -60px; background: #75B331;animation-name: drawLines; animation-duration: .3s; 
+    animation-delay: .3s; animation-timing-function: cubic-bezier(.16,.71,.68,.86); animation-iteration-count: 1; animation-fill-mode: forwards; height: 1px; position: absolute; top: 9px; left: 575px;}
+.ss-tt { position: absolute; width: 30%; right: 10%; top: 19%;}
+.ss-tt .ss-col-txt { padding: 0;}
+@media only screen and (min-width: 1921px) {
+    .ss-header-txt h1 { font-size: 212px; padding: 25% 0 0;}
+    #myVideo { width: 660px; height: 630px;}
+    #myVideo-1 { width: 950px; height: 630px;}
+    body.page-template-origen .ss-section-one .col-md-6 { width: 36%;}
+    .ss-video-2 { right: -10%;}
+    .owl-dots { left: 35%;}
+    .ss-section-two { padding: 15% 0 0;}
+    .cc-map-point.cc-mp-2 { top: 45%; left: 41%;}
+    .cc-map-point.cc-mp-3 { top: 41%;}
+    .cc-map-point.cc-mp-4 { top: 54%; left: 60.5%;}
+    .cc-map-point.cc-mp-5 { top: 35%; left: 73%;}
+    .cc-map-point.cc-mp-6 { top: 48%; left: 62.5%;}
+    .cc-map-point.cc-mp-7 { left: 59%;}
+    .cc-map-point.cc-mp-8 { top: 58%; left: 68.5%;}
+}
